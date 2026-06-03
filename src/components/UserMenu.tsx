@@ -1123,8 +1123,10 @@ export const UserMenu: React.FC = () => {
           });
 
           if (response.ok) {
-            // 重新加载设备列表
-            await loadDevices();
+            // 撤销成功后不重新加载列表，仅移除当前撤销的设备项
+            setDevices((prevDevices) =>
+              prevDevices.filter((device) => device.tokenId !== tokenId)
+            );
           } else {
             alert('撤销失败，请重试');
           }
