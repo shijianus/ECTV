@@ -143,44 +143,38 @@ jobs:
       - name: Build for Cloudflare
         run: pnpm run build:cloudflare
 
-      # 这里是关键修复点：使用 npm 替代 pnpm 进行全局安装
+      # 手动安装 Wrangler
       - name: Install Wrangler
         run: npm install -g wrangler@4.60.0
 
+      # 显式执行 D1 迁移
       - name: Run D1 Database Migrations
         run: |
           STORAGE_TYPE="${{ secrets.NEXT_PUBLIC_STORAGE_TYPE }}"
-
           if [ "$STORAGE_TYPE" != "d1" ]; then
-            echo "Storage type is not d1 (current: $STORAGE_TYPE), skipping D1 migrations"
+            echo "Storage type is not d1, skipping migrations."
             exit 0
           fi
-
           if [ -z "${{ secrets.D1_DATABASE_ID }}" ]; then
-            echo "D1_DATABASE_ID not set, skipping migrations"
+            echo "D1_DATABASE_ID not set, skipping migrations."
             exit 0
           fi
-
-          echo "Running D1 database migrations..."
-
           for migration_file in ./migrations/*.sql; do
             if [ -f "$migration_file" ]; then
               echo "Executing migration: $(basename $migration_file)"
-              # 如果还是找不到命令，这里可以用 npx wrangler d1 execute 作为双重保险
-              npx -y wrangler d1 execute moontvplus --remote --file="$migration_file" || echo "⚠️ Migration may have been skipped (already applied)"
+              wrangler d1 execute moontvplus --remote --file="$migration_file" || echo "Migration skipped or failed"
             fi
           done
-
-          echo "✅ Migrations completed"
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
 
-      - name: Deploy to Cloudflare
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: deploy
-          packageManager: pnpm
-          wranglerVersion: "4.60.0"
+      # 核心修改点：放弃使用预包装的 Action，改为纯命令行执行发布
+      # 这样我们可以清楚地看到如果失败，到底报了什么错
+      - name: Manual Deploy to Cloudflare
+        run: |
+          echo "Starting manual deployment via wrangler..."
+          wrangler deploy --name moontvplus
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
