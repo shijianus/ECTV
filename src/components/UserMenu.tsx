@@ -4615,7 +4615,7 @@ export const UserMenu: React.FC = () => {
                 </div>
               </div>
               <p className='mt-5 text-sm leading-6 text-slate-600 dark:text-slate-400'>
-                可直接作为 MoonTV Plus 电视端使用，适合安装到 Android TV / 电视盒子。
+                可直接作为 ECTV 电视端使用，适合安装到 Android TV / 电视盒子。
               </p>
               <div className='mt-5'>
                 <h5 className='mb-2 text-sm font-bold text-slate-700 dark:text-slate-300'>
@@ -5322,3 +5322,4 @@ export const UserMenu: React.FC = () => {
     </>
   );
 };
+

@@ -1,4 +1,4 @@
-/* MoonTVPlus Web Push handlers */
+/* ECTV Web Push handlers */
 
 self.addEventListener('install', (event) => {
   event.waitUntil(self.skipWaiting());
@@ -15,10 +15,10 @@ self.addEventListener('push', (event) => {
   try {
     payload = event.data.json();
   } catch (error) {
-    payload = { title: 'MoonTVPlus', body: event.data.text() };
+    payload = { title: 'ECTV', body: event.data.text() };
   }
 
-  const title = payload.title || 'MoonTVPlus';
+  const title = payload.title || 'ECTV';
   const options = {
     body: payload.body || payload.message || '',
     icon: '/icons/icon-192x192.png',

@@ -487,7 +487,7 @@ export function configSelfCheck(adminConfig: AdminConfig): AdminConfig {
   // 确保必要的属性存在和初始化
   if (!adminConfig.SiteConfig) {
     adminConfig.SiteConfig = {
-      SiteName: 'MoonTVPlus',
+      SiteName: 'ECTV',
       Announcement: '',
       SearchDownstreamMaxPage: 5,
       SiteInterfaceCacheTime: 7200,
