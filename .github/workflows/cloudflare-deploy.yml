@@ -79,9 +79,7 @@ jobs:
 
           if [ "$STORAGE_TYPE" != "d1" ]; then
             echo "Storage type is not d1 (current: $STORAGE_TYPE), removing D1 database configuration"
-            # Remove the entire [[d1_databases]] section including the comment
             sed -i '/^# D1 数据库绑定$/,/^database_id = .*$/d' wrangler.toml
-            # Also remove any remaining [[d1_databases]] block
             sed -i '/^\[\[d1_databases\]\]$/,/^$/{ /^\[\[d1_databases\]\]$/d; /^binding = /d; /^database_name = /d; /^database_id = /d; }' wrangler.toml
             echo "D1 configuration removed from wrangler.toml"
           elif [ -n "${{ secrets.D1_DATABASE_ID }}" ]; then
@@ -94,7 +92,6 @@ jobs:
 
       - name: Update wrangler.toml with environment variables
         run: |
-          # Function to append variable to wrangler.toml if it has a value
           append_var() {
             local var_name=$1
             local var_value=$2
@@ -103,7 +100,6 @@ jobs:
             fi
           }
 
-          # Append all environment variables to wrangler.toml
           append_var "NEXT_PUBLIC_STORAGE_TYPE" "${{ secrets.NEXT_PUBLIC_STORAGE_TYPE }}"
           append_var "NEXT_PUBLIC_SITE_NAME" "${{ secrets.NEXT_PUBLIC_SITE_NAME }}"
           append_var "NEXT_PUBLIC_SEARCH_MAX_PAGE" "${{ secrets.NEXT_PUBLIC_SEARCH_MAX_PAGE }}"
@@ -147,8 +143,9 @@ jobs:
       - name: Build for Cloudflare
         run: pnpm run build:cloudflare
 
+      # 这里是关键修复点：使用 npm 替代 pnpm 进行全局安装
       - name: Install Wrangler
-        run: pnpm add -g wrangler@4.60.0
+        run: npm install -g wrangler@4.60.0
 
       - name: Run D1 Database Migrations
         run: |
@@ -169,7 +166,8 @@ jobs:
           for migration_file in ./migrations/*.sql; do
             if [ -f "$migration_file" ]; then
               echo "Executing migration: $(basename $migration_file)"
-              wrangler d1 execute moontvplus --remote --file="$migration_file" || echo "⚠️ Migration may have been skipped (already applied)"
+              # 如果还是找不到命令，这里可以用 npx wrangler d1 execute 作为双重保险
+              npx -y wrangler d1 execute moontvplus --remote --file="$migration_file" || echo "⚠️ Migration may have been skipped (already applied)"
             fi
           done
 
