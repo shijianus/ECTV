@@ -54,19 +54,19 @@ export default function WarningPage() {
             <ul className='space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-600'>
               <li className='flex items-start'>
                 <span className='text-red-500 mr-2 mt-0.5'>•</span>
-                <span>未经授权的访问可能导致内容被恶意传播</span>
+                <span>用户导入的任何非法内容源将由用户承担全部法律责任</span>
               </li>
               <li className='flex items-start'>
                 <span className='text-red-500 mr-2 mt-0.5'>•</span>
-                <span>服务器资源可能被滥用，影响正常服务</span>
+                <span>未经授权的公开访问可能导致部署者卷入版权纠纷</span>
               </li>
               <li className='flex items-start'>
                 <span className='text-red-500 mr-2 mt-0.5'>•</span>
-                <span>可能收到相关权利方的法律通知</span>
+                <span>服务器资源滥用可能导致服务提供商终止您的合规账户</span>
               </li>
               <li className='flex items-start'>
                 <span className='text-red-500 mr-2 mt-0.5'>•</span>
-                <span>服务提供商可能因合规问题终止服务</span>
+                <span>站点负责人需对用户行为进行监管，以免承担不必要的连带风险</span>
               </li>
             </ul>
           </div>

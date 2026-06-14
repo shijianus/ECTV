@@ -12,19 +12,18 @@ LogVar 弹幕 API 服务器
 ![GitHub License](https://img.shields.io/github/license/huangxd-/danmu_api)
 ![Docker Image Version](https://img.shields.io/docker/v/logvar/danmu-api?sort=semver)
 ![Docker Pulls](https://img.shields.io/docker/pulls/logvar/danmu-api)
-[![telegram](https://img.shields.io/static/v1?label=telegram&message=telegram_channel&color=blue)](https://t.me/logvar_danmu_channel)
-[![telegram](https://img.shields.io/static/v1?label=telegram&message=telegram_group&color=blue)](https://t.me/logvar_danmu_group)
+[![telegram](https://img.shields.io/static/v1?label=telegram&message=telegram_bot&color=blue)](https://t.me/epocanvas_bot)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/huangxd-/danmu_api)
 
 ---
 
 一个人人都能部署的基于 js 的弹幕 API 服务器，支持爱优腾芒哔咪人韩巴狐乐西埋帆弹幕直接获取，兼容弹弹play的搜索、详情查询和弹幕获取接口规范，并提供日志记录，支持vercel/netlify/edgeone/cloudflare/docker/hf等部署方式，不用提前下载弹幕，没有nas或小鸡也能一键部署。
 
-本项目仅为个人学习爱好开发，代码开源。如有任何侵权行为，请联系本人删除。
+本项目仅作为中立的弹幕解析工具，不存储任何资源。用户对所获取内容的合法性承担全部责任。如有侵权行为，请联系站点负责人删除。
 
-有问题提issue或 [私信机器人](https://t.me/ddjdd_bot) 都ok。
+有问题提issue或 [私信机器人](https://t.me/epocanvas_bot) 都ok。
 
-新加了 [tg频道](https://t.me/logvar_danmu_channel) ，方便发送更新通知，以及群组，太多人私信咨询了，索性增加一个 [互助群](https://t.me/logvar_danmu_group) ，大家有问题可以在群里求助。
+如果你是版权方，请通过机器人或邮件 admin@epocanvas.com 联系我们。
 
 > 请不要在国内媒体平台宣传本项目！
 

@@ -16347,9 +16347,10 @@ const WebLiveConfig = ({
 
                 <div className='bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4 mb-6'>
                   <p className='text-sm text-gray-700 dark:text-gray-300 leading-relaxed'>
-                    本功能仅供个人学习和技术研究使用，请勿将其部署在公网环境中，更不得用于任何违法违规行为。
-                    使用本功能所产生的一切法律责任由使用者自行承担，与开发者无关。
-                    启用此功能即表示您已充分理解并同意承担相应风险。
+                    本功能仅作为中立的技术研究工具，不包含任何预设内容。
+                    您作为站点的部署者与使用者，应对通过此工具访问或传播的所有第三方内容负全部法律责任。
+                    请确保您的行为符合当地法律法规。如有版权方联系，请务必及时响应处理。
+                    启用此功能即表示您同意承担由用户行为引发的一切合规风险。
                   </p>
                 </div>
 

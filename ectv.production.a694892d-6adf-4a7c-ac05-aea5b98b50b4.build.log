@@ -1,0 +1,1119 @@
+2026-06-14T18:46:04.663Z	Initializing build environment...
+2026-06-14T18:46:04.663Z	Initializing build environment...
+2026-06-14T18:46:05.914Z	Success: Finished initializing build environment
+2026-06-14T18:46:06.405Z	Cloning repository...
+2026-06-14T18:46:09.181Z	Restoring from dependencies cache
+2026-06-14T18:46:09.185Z	Restoring from build output cache
+2026-06-14T18:46:10.931Z	Detected the following tools from environment: nodejs@24.16.0, pnpm@10.14.0
+2026-06-14T18:46:10.933Z	Installing nodejs 24.16.0
+2026-06-14T18:46:19.853Z	Installing project dependencies: pnpm install --frozen-lockfile
+2026-06-14T18:46:20.637Z	Lockfile is up to date, resolution step is skipped
+2026-06-14T18:46:20.782Z	Progress: resolved 1, reused 0, downloaded 0, added 0
+2026-06-14T18:46:21.001Z	Packages: +1776
+2026-06-14T18:46:21.002Z	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-06-14T18:46:21.784Z	Progress: resolved 1776, reused 0, downloaded 0, added 0
+2026-06-14T18:46:23.435Z	Progress: resolved 1776, reused 0, downloaded 1, added 0
+2026-06-14T18:46:24.434Z	Progress: resolved 1776, reused 0, downloaded 5, added 0
+2026-06-14T18:46:26.468Z	Progress: resolved 1776, reused 0, downloaded 5, added 1
+2026-06-14T18:46:27.468Z	Progress: resolved 1776, reused 0, downloaded 75, added 27
+2026-06-14T18:46:28.472Z	Progress: resolved 1776, reused 0, downloaded 176, added 64
+2026-06-14T18:46:29.475Z	Progress: resolved 1776, reused 0, downloaded 191, added 68
+2026-06-14T18:46:30.476Z	Progress: resolved 1776, reused 0, downloaded 193, added 68
+2026-06-14T18:46:31.480Z	Progress: resolved 1776, reused 0, downloaded 367, added 167
+2026-06-14T18:46:32.483Z	Progress: resolved 1776, reused 0, downloaded 422, added 192
+2026-06-14T18:46:33.483Z	Progress: resolved 1776, reused 0, downloaded 436, added 195
+2026-06-14T18:46:34.484Z	Progress: resolved 1776, reused 0, downloaded 438, added 196
+2026-06-14T18:46:35.485Z	Progress: resolved 1776, reused 0, downloaded 614, added 304
+2026-06-14T18:46:36.582Z	Progress: resolved 1776, reused 0, downloaded 716, added 361
+2026-06-14T18:46:37.493Z	Progress: resolved 1776, reused 0, downloaded 774, added 385
+2026-06-14T18:46:38.493Z	Progress: resolved 1776, reused 0, downloaded 958, added 487
+2026-06-14T18:46:40.060Z	Progress: resolved 1776, reused 0, downloaded 981, added 495
+2026-06-14T18:46:41.060Z	Progress: resolved 1776, reused 0, downloaded 1088, added 537
+2026-06-14T18:46:42.061Z	Progress: resolved 1776, reused 0, downloaded 1103, added 541
+2026-06-14T18:46:43.063Z	Progress: resolved 1776, reused 0, downloaded 1109, added 545
+2026-06-14T18:46:44.061Z	Progress: resolved 1776, reused 0, downloaded 1286, added 665
+2026-06-14T18:46:45.062Z	Progress: resolved 1776, reused 0, downloaded 1377, added 1008
+2026-06-14T18:46:46.936Z	Progress: resolved 1776, reused 0, downloaded 1377, added 1009
+2026-06-14T18:46:47.882Z	Progress: resolved 1776, reused 0, downloaded 1486, added 1052
+2026-06-14T18:46:48.881Z	Progress: resolved 1776, reused 0, downloaded 1559, added 1078
+2026-06-14T18:46:49.881Z	Progress: resolved 1776, reused 0, downloaded 1654, added 1169
+2026-06-14T18:46:50.882Z	Progress: resolved 1776, reused 0, downloaded 1729, added 1193
+2026-06-14T18:46:51.884Z	Progress: resolved 1776, reused 0, downloaded 1762, added 1205
+2026-06-14T18:46:52.873Z	Progress: resolved 1776, reused 0, downloaded 1776, added 1776, done
+2026-06-14T18:46:53.411Z	.../node_modules/better-sqlite3 install$ prebuild-install || node-gyp rebuild --release
+2026-06-14T18:46:53.542Z	.../node_modules/better-sqlite3 install: (node:2206) [DEP0176] DeprecationWarning: fs.R_OK is deprecated, use fs.constants.R_OK instead
+2026-06-14T18:46:53.543Z	.../node_modules/better-sqlite3 install: (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-06-14T18:46:53.853Z	.../node_modules/better-sqlite3 install: Done
+2026-06-14T18:46:54.039Z	
+2026-06-14T18:46:54.039Z	dependencies:
+2026-06-14T18:46:54.039Z	+ @dnd-kit/core 6.3.1
+2026-06-14T18:46:54.040Z	+ @dnd-kit/modifiers 9.0.0
+2026-06-14T18:46:54.040Z	+ @dnd-kit/sortable 10.0.0
+2026-06-14T18:46:54.040Z	+ @dnd-kit/utilities 3.2.2
+2026-06-14T18:46:54.041Z	+ @headlessui/react 2.2.9
+2026-06-14T18:46:54.041Z	+ @heroicons/react 2.2.0
+2026-06-14T18:46:54.041Z	+ @types/crypto-js 4.2.2
+2026-06-14T18:46:54.041Z	+ @types/nprogress 0.2.3
+2026-06-14T18:46:54.041Z	+ @types/qrcode 1.5.6
+2026-06-14T18:46:54.042Z	+ @upstash/redis 1.36.0
+2026-06-14T18:46:54.042Z	+ @vercel/postgres 0.10.0
+2026-06-14T18:46:54.042Z	+ @vidstack/react 1.12.13
+2026-06-14T18:46:54.042Z	+ @xmldom/xmldom 0.9.10
+2026-06-14T18:46:54.042Z	+ anime4k-webgpu 1.0.0
+2026-06-14T18:46:54.042Z	+ artplayer 5.4.0
+2026-06-14T18:46:54.044Z	+ artplayer-plugin-auto-thumbnail 1.1.0
+2026-06-14T18:46:54.044Z	+ artplayer-plugin-danmuku 5.2.0
+2026-06-14T18:46:54.047Z	+ better-sqlite3 12.6.2
+2026-06-14T18:46:54.047Z	+ bs58 6.0.0
+2026-06-14T18:46:54.047Z	+ cheerio 1.1.2
+2026-06-14T18:46:54.048Z	+ clsx 2.1.1
+2026-06-14T18:46:54.050Z	+ crypto-js 4.2.0
+2026-06-14T18:46:54.051Z	+ edge-tts-universal 1.4.0
+2026-06-14T18:46:54.051Z	+ flv.js 1.6.2
+2026-06-14T18:46:54.051Z	+ framer-motion 12.23.26
+2026-06-14T18:46:54.051Z	+ he 1.2.0
+2026-06-14T18:46:54.051Z	+ hls.js 1.6.15
+2026-06-14T18:46:54.051Z	+ https-proxy-agent 7.0.6
+2026-06-14T18:46:54.051Z	+ lucide-react 0.438.0
+2026-06-14T18:46:54.051Z	+ media-icons 1.1.5
+2026-06-14T18:46:54.051Z	+ mux.js 6.3.0
+2026-06-14T18:46:54.051Z	+ nanoid 5.1.6
+2026-06-14T18:46:54.051Z	+ next 14.2.35
+2026-06-14T18:46:54.051Z	+ next-pwa 5.6.0
+2026-06-14T18:46:54.051Z	+ next-themes 0.4.6
+2026-06-14T18:46:54.051Z	+ node-fetch 2.7.0
+2026-06-14T18:46:54.051Z	+ nodemailer 7.0.12
+2026-06-14T18:46:54.051Z	+ nprogress 0.2.0
+2026-06-14T18:46:54.051Z	+ opencc-js 1.0.5
+2026-06-14T18:46:54.051Z	+ parse-torrent-name 0.5.4
+2026-06-14T18:46:54.052Z	+ qrcode 1.5.4
+2026-06-14T18:46:54.052Z	+ react 18.3.1
+2026-06-14T18:46:54.052Z	+ react-dom 18.3.1
+2026-06-14T18:46:54.052Z	+ react-icons 5.5.0
+2026-06-14T18:46:54.052Z	+ react-markdown 10.1.0
+2026-06-14T18:46:54.052Z	+ redis 4.7.1
+2026-06-14T18:46:54.052Z	+ server-only 0.0.1
+2026-06-14T18:46:54.052Z	+ sharp 0.34.5
+2026-06-14T18:46:54.052Z	+ socket.io 4.8.3
+2026-06-14T18:46:54.052Z	+ socket.io-client 4.8.3
+2026-06-14T18:46:54.052Z	+ swiper 11.2.10
+2026-06-14T18:46:54.052Z	+ tailwind-merge 2.6.0
+2026-06-14T18:46:54.052Z	+ vidstack 0.6.15
+2026-06-14T18:46:54.052Z	+ xml2js 0.6.2
+2026-06-14T18:46:54.052Z	+ xpath 0.0.34
+2026-06-14T18:46:54.052Z	+ zod 3.25.76
+2026-06-14T18:46:54.052Z	
+2026-06-14T18:46:54.052Z	devDependencies:
+2026-06-14T18:46:54.052Z	+ @opennextjs/cloudflare 1.15.1
+2026-06-14T18:46:54.052Z	+ @svgr/webpack 8.1.0
+2026-06-14T18:46:54.052Z	+ @tailwindcss/forms 0.5.11
+2026-06-14T18:46:54.052Z	+ @tailwindcss/typography 0.5.19
+2026-06-14T18:46:54.053Z	+ @testing-library/jest-dom 5.17.0
+2026-06-14T18:46:54.053Z	+ @testing-library/react 15.0.7
+2026-06-14T18:46:54.053Z	+ @types/better-sqlite3 7.6.13
+2026-06-14T18:46:54.053Z	+ @types/bs58 5.0.0
+2026-06-14T18:46:54.053Z	+ @types/he 1.2.3
+2026-06-14T18:46:54.053Z	+ @types/node 24.0.3
+2026-06-14T18:46:54.053Z	+ @types/node-fetch 2.6.13
+2026-06-14T18:46:54.053Z	+ @types/nodemailer 7.0.5
+2026-06-14T18:46:54.053Z	+ @types/pg 8.16.0
+2026-06-14T18:46:54.053Z	+ @types/react 18.3.27
+2026-06-14T18:46:54.053Z	+ @types/react-dom 19.2.3
+2026-06-14T18:46:54.053Z	+ @types/testing-library__jest-dom 5.14.9
+2026-06-14T18:46:54.053Z	+ @types/xml2js 0.4.14
+2026-06-14T18:46:54.053Z	+ @typescript-eslint/eslint-plugin 5.62.0
+2026-06-14T18:46:54.059Z	+ @typescript-eslint/parser 5.62.0
+2026-06-14T18:46:54.059Z	+ autoprefixer 10.4.23
+2026-06-14T18:46:54.059Z	+ eslint 8.57.1
+2026-06-14T18:46:54.059Z	+ eslint-config-next 14.2.35
+2026-06-14T18:46:54.059Z	+ eslint-config-prettier 8.10.2
+2026-06-14T18:46:54.059Z	+ eslint-plugin-simple-import-sort 7.0.0
+2026-06-14T18:46:54.059Z	+ eslint-plugin-unused-imports 2.0.0
+2026-06-14T18:46:54.059Z	+ jest 27.5.1
+2026-06-14T18:46:54.059Z	+ next-router-mock 0.9.13
+2026-06-14T18:46:54.059Z	+ postcss 8.5.6
+2026-06-14T18:46:54.059Z	+ prettier 2.8.8
+2026-06-14T18:46:54.059Z	+ prettier-plugin-tailwindcss 0.5.14
+2026-06-14T18:46:54.059Z	+ tailwindcss 3.4.19
+2026-06-14T18:46:54.059Z	+ typescript 4.9.5
+2026-06-14T18:46:54.059Z	+ vercel 50.4.10
+2026-06-14T18:46:54.059Z	+ webpack-obfuscator 3.6.0
+2026-06-14T18:46:54.059Z	
+2026-06-14T18:46:54.079Z	Done in 34s using pnpm v10.14.0
+2026-06-14T18:46:54.292Z	Executing user build command: pnpm run build
+2026-06-14T18:46:54.675Z	
+2026-06-14T18:46:54.675Z	> moontv@0.1.0 build /opt/buildhome/repo
+2026-06-14T18:46:54.675Z	> pnpm gen:manifest && next build
+2026-06-14T18:46:54.675Z	
+2026-06-14T18:46:55.046Z	
+2026-06-14T18:46:55.046Z	> moontv@0.1.0 gen:manifest /opt/buildhome/repo
+2026-06-14T18:46:55.047Z	> node scripts/generate-manifest.js
+2026-06-14T18:46:55.047Z	
+2026-06-14T18:46:55.085Z	✅ Generated manifest.json with site name: MoonTVPlus
+2026-06-14T18:46:56.189Z	⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+2026-06-14T18:46:56.193Z	Attention: Next.js now collects completely anonymous telemetry regarding usage.
+2026-06-14T18:46:56.193Z	This information is used to shape Next.js' roadmap and prioritize features.
+2026-06-14T18:46:56.193Z	You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+2026-06-14T18:46:56.194Z	https://nextjs.org/telemetry
+2026-06-14T18:46:56.195Z	
+2026-06-14T18:46:56.283Z	  ▲ Next.js 14.2.35
+2026-06-14T18:46:56.283Z	  - Experiments (use with caution):
+2026-06-14T18:46:56.283Z	    · webpackBuildWorker
+2026-06-14T18:46:56.283Z	    · instrumentationHook
+2026-06-14T18:46:56.283Z	
+2026-06-14T18:46:56.324Z	   Creating an optimized production build ...
+2026-06-14T18:46:59.999Z	> [PWA] Compile server
+2026-06-14T18:47:00.002Z	> [PWA] Compile server
+2026-06-14T18:47:00.003Z	> [PWA] Compile client (static)
+2026-06-14T18:47:00.005Z	> [PWA] Auto register service worker with: /opt/buildhome/repo/node_modules/.pnpm/next-pwa@5.6.0_@babel+core@7.28.5_@types+babel__core@7.20.5_next@14.2.35_@babel+core@7._3501a5593ef0f1cb5ceadc66c3da8712/node_modules/next-pwa/register.js
+2026-06-14T18:47:00.005Z	> [PWA] Service worker: /opt/buildhome/repo/public/sw.js
+2026-06-14T18:47:00.006Z	> [PWA]   url: /sw.js
+2026-06-14T18:47:00.006Z	> [PWA]   scope: /
+2026-06-14T18:47:40.991Z	> [PWA] Compile server
+2026-06-14T18:47:40.993Z	> [PWA] Compile server
+2026-06-14T18:47:40.995Z	> [PWA] Compile client (static)
+2026-06-14T18:47:40.995Z	> [PWA] Auto register service worker with: /opt/buildhome/repo/node_modules/.pnpm/next-pwa@5.6.0_@babel+core@7.28.5_@types+babel__core@7.20.5_next@14.2.35_@babel+core@7._3501a5593ef0f1cb5ceadc66c3da8712/node_modules/next-pwa/register.js
+2026-06-14T18:47:40.995Z	> [PWA] Service worker: /opt/buildhome/repo/public/sw.js
+2026-06-14T18:47:40.995Z	> [PWA]   url: /sw.js
+2026-06-14T18:47:40.996Z	> [PWA]   scope: /
+2026-06-14T18:47:47.837Z	<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (135kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+2026-06-14T18:47:48.406Z	 ⚠ Compiled with warnings
+2026-06-14T18:47:48.406Z	
+2026-06-14T18:47:48.407Z	./node_modules/.pnpm/@redis+client@1.6.1/node_modules/@redis/client/dist/lib/client/socket.js
+2026-06-14T18:47:48.407Z	A Node.js API is used (setImmediate at line: 83) which is not supported in the Edge Runtime.
+2026-06-14T18:47:48.407Z	Learn more: https://nextjs.org/docs/api-reference/edge-runtime
+2026-06-14T18:47:48.407Z	
+2026-06-14T18:47:48.407Z	Import trace for requested module:
+2026-06-14T18:47:48.407Z	./node_modules/.pnpm/@redis+client@1.6.1/node_modules/@redis/client/dist/lib/client/socket.js
+2026-06-14T18:47:48.408Z	./node_modules/.pnpm/@redis+client@1.6.1/node_modules/@redis/client/dist/lib/client/index.js
+2026-06-14T18:47:48.408Z	./node_modules/.pnpm/@redis+client@1.6.1/node_modules/@redis/client/dist/index.js
+2026-06-14T18:47:48.408Z	./node_modules/.pnpm/redis@4.7.1/node_modules/redis/dist/index.js
+2026-06-14T18:47:48.408Z	./src/lib/redis-node-client.ts
+2026-06-14T18:47:48.408Z	./src/lib/kvrocks.db.ts
+2026-06-14T18:47:48.408Z	./src/lib/db.ts
+2026-06-14T18:47:48.408Z	./src/lib/refresh-token.ts
+2026-06-14T18:47:48.408Z	
+2026-06-14T18:47:48.408Z	./node_modules/.pnpm/better-sqlite3@12.6.2/node_modules/better-sqlite3/lib/methods/backup.js
+2026-06-14T18:47:48.408Z	A Node.js API is used (setImmediate at line: 41) which is not supported in the Edge Runtime.
+2026-06-14T18:47:48.408Z	Learn more: https://nextjs.org/docs/api-reference/edge-runtime
+2026-06-14T18:47:48.408Z	
+2026-06-14T18:47:48.408Z	Import trace for requested module:
+2026-06-14T18:47:48.408Z	./node_modules/.pnpm/better-sqlite3@12.6.2/node_modules/better-sqlite3/lib/methods/backup.js
+2026-06-14T18:47:48.408Z	./node_modules/.pnpm/better-sqlite3@12.6.2/node_modules/better-sqlite3/lib/database.js
+2026-06-14T18:47:48.408Z	./node_modules/.pnpm/better-sqlite3@12.6.2/node_modules/better-sqlite3/lib/index.js
+2026-06-14T18:47:48.408Z	./src/lib/db.ts
+2026-06-14T18:47:48.408Z	./src/lib/refresh-token.ts
+2026-06-14T18:47:48.408Z	
+2026-06-14T18:47:48.408Z	./node_modules/.pnpm/bindings@1.5.0/node_modules/bindings/bindings.js
+2026-06-14T18:47:48.408Z	A Node.js API is used (process.platform at line: 25) which is not supported in the Edge Runtime.
+2026-06-14T18:47:48.408Z	Learn more: https://nextjs.org/docs/api-reference/edge-runtime
+2026-06-14T18:47:48.408Z	
+2026-06-14T18:47:48.409Z	Import trace for requested module:
+2026-06-14T18:47:48.409Z	./node_modules/.pnpm/bindings@1.5.0/node_modules/bindings/bindings.js
+2026-06-14T18:47:48.409Z	./node_modules/.pnpm/better-sqlite3@12.6.2/node_modules/better-sqlite3/lib/database.js
+2026-06-14T18:47:48.409Z	./node_modules/.pnpm/better-sqlite3@12.6.2/node_modules/better-sqlite3/lib/index.js
+2026-06-14T18:47:48.409Z	./src/lib/db.ts
+2026-06-14T18:47:48.409Z	./src/lib/refresh-token.ts
+2026-06-14T18:47:48.409Z	
+2026-06-14T18:47:48.409Z	./node_modules/.pnpm/bindings@1.5.0/node_modules/bindings/bindings.js
+2026-06-14T18:47:48.409Z	A Node.js API is used (process.arch at line: 26) which is not supported in the Edge Runtime.
+2026-06-14T18:47:48.409Z	Learn more: https://nextjs.org/docs/api-reference/edge-runtime
+2026-06-14T18:47:48.409Z	
+2026-06-14T18:47:48.409Z	Import trace for requested module:
+2026-06-14T18:47:48.409Z	./node_modules/.pnpm/bindings@1.5.0/node_modules/bindings/bindings.js
+2026-06-14T18:47:48.409Z	./node_modules/.pnpm/better-sqlite3@12.6.2/node_modules/better-sqlite3/lib/database.js
+2026-06-14T18:47:48.409Z	./node_modules/.pnpm/better-sqlite3@12.6.2/node_modules/better-sqlite3/lib/index.js
+2026-06-14T18:47:48.409Z	./src/lib/db.ts
+2026-06-14T18:47:48.410Z	./src/lib/refresh-token.ts
+2026-06-14T18:47:48.414Z	
+2026-06-14T18:47:48.414Z	./node_modules/.pnpm/bindings@1.5.0/node_modules/bindings/bindings.js
+2026-06-14T18:47:48.415Z	A Node.js API is used (process.versions at line: 29) which is not supported in the Edge Runtime.
+2026-06-14T18:47:48.415Z	Learn more: https://nextjs.org/docs/api-reference/edge-runtime
+2026-06-14T18:47:48.415Z	
+2026-06-14T18:47:48.415Z	Import trace for requested module:
+2026-06-14T18:47:48.415Z	./node_modules/.pnpm/bindings@1.5.0/node_modules/bindings/bindings.js
+2026-06-14T18:47:48.415Z	./node_modules/.pnpm/better-sqlite3@12.6.2/node_modules/better-sqlite3/lib/database.js
+2026-06-14T18:47:48.415Z	./node_modules/.pnpm/better-sqlite3@12.6.2/node_modules/better-sqlite3/lib/index.js
+2026-06-14T18:47:48.415Z	./src/lib/db.ts
+2026-06-14T18:47:48.415Z	./src/lib/refresh-token.ts
+2026-06-14T18:47:48.415Z	
+2026-06-14T18:47:48.415Z	./node_modules/.pnpm/bindings@1.5.0/node_modules/bindings/bindings.js
+2026-06-14T18:47:48.415Z	A Node.js API is used (process.platform at line: 31) which is not supported in the Edge Runtime.
+2026-06-14T18:47:48.415Z	Learn more: https://nextjs.org/docs/api-reference/edge-runtime
+2026-06-14T18:47:48.415Z	
+2026-06-14T18:47:48.415Z	Import trace for requested module:
+2026-06-14T18:47:48.415Z	./node_modules/.pnpm/bindings@1.5.0/node_modules/bindings/bindings.js
+2026-06-14T18:47:48.415Z	./node_modules/.pnpm/better-sqlite3@12.6.2/node_modules/better-sqlite3/lib/database.js
+2026-06-14T18:47:48.415Z	./node_modules/.pnpm/better-sqlite3@12.6.2/node_modules/better-sqlite3/lib/index.js
+2026-06-14T18:47:48.415Z	./src/lib/db.ts
+2026-06-14T18:47:48.415Z	./src/lib/refresh-token.ts
+2026-06-14T18:47:48.416Z	
+2026-06-14T18:47:48.416Z	./node_modules/.pnpm/bindings@1.5.0/node_modules/bindings/bindings.js
+2026-06-14T18:47:48.416Z	A Node.js API is used (process.arch at line: 33) which is not supported in the Edge Runtime.
+2026-06-14T18:47:48.416Z	Learn more: https://nextjs.org/docs/api-reference/edge-runtime
+2026-06-14T18:47:48.416Z	
+2026-06-14T18:47:48.416Z	Import trace for requested module:
+2026-06-14T18:47:48.416Z	./node_modules/.pnpm/bindings@1.5.0/node_modules/bindings/bindings.js
+2026-06-14T18:47:48.416Z	./node_modules/.pnpm/better-sqlite3@12.6.2/node_modules/better-sqlite3/lib/database.js
+2026-06-14T18:47:48.416Z	./node_modules/.pnpm/better-sqlite3@12.6.2/node_modules/better-sqlite3/lib/index.js
+2026-06-14T18:47:48.416Z	./src/lib/db.ts
+2026-06-14T18:47:48.416Z	./src/lib/refresh-token.ts
+2026-06-14T18:47:48.416Z	
+2026-06-14T18:47:48.416Z	./node_modules/.pnpm/bindings@1.5.0/node_modules/bindings/bindings.js
+2026-06-14T18:47:48.417Z	A Node.js API is used (process.versions at line: 34) which is not supported in the Edge Runtime.
+2026-06-14T18:47:48.417Z	Learn more: https://nextjs.org/docs/api-reference/edge-runtime
+2026-06-14T18:47:48.417Z	
+2026-06-14T18:47:48.417Z	Import trace for requested module:
+2026-06-14T18:47:48.417Z	./node_modules/.pnpm/bindings@1.5.0/node_modules/bindings/bindings.js
+2026-06-14T18:47:48.417Z	./node_modules/.pnpm/better-sqlite3@12.6.2/node_modules/better-sqlite3/lib/database.js
+2026-06-14T18:47:48.417Z	./node_modules/.pnpm/better-sqlite3@12.6.2/node_modules/better-sqlite3/lib/index.js
+2026-06-14T18:47:48.417Z	./src/lib/db.ts
+2026-06-14T18:47:48.417Z	./src/lib/refresh-token.ts
+2026-06-14T18:47:48.417Z	
+2026-06-14T18:47:48.417Z	./node_modules/.pnpm/bindings@1.5.0/node_modules/bindings/bindings.js
+2026-06-14T18:47:48.417Z	A Node.js API is used (process.cwd at line: 200) which is not supported in the Edge Runtime.
+2026-06-14T18:47:48.417Z	Learn more: https://nextjs.org/docs/api-reference/edge-runtime
+2026-06-14T18:47:48.417Z	
+2026-06-14T18:47:48.417Z	Import trace for requested module:
+2026-06-14T18:47:48.417Z	./node_modules/.pnpm/bindings@1.5.0/node_modules/bindings/bindings.js
+2026-06-14T18:47:48.417Z	./node_modules/.pnpm/better-sqlite3@12.6.2/node_modules/better-sqlite3/lib/database.js
+2026-06-14T18:47:48.417Z	./node_modules/.pnpm/better-sqlite3@12.6.2/node_modules/better-sqlite3/lib/index.js
+2026-06-14T18:47:48.417Z	./src/lib/db.ts
+2026-06-14T18:47:48.418Z	./src/lib/refresh-token.ts
+2026-06-14T18:47:48.419Z	
+2026-06-14T18:47:48.419Z	./src/lib/db.ts
+2026-06-14T18:47:48.419Z	A Node.js API is used (process.cwd at line: 91) which is not supported in the Edge Runtime.
+2026-06-14T18:47:48.419Z	Learn more: https://nextjs.org/docs/api-reference/edge-runtime
+2026-06-14T18:47:48.419Z	
+2026-06-14T18:47:48.419Z	Import trace for requested module:
+2026-06-14T18:47:48.419Z	./src/lib/db.ts
+2026-06-14T18:47:48.419Z	./src/lib/refresh-token.ts
+2026-06-14T18:47:48.419Z	
+2026-06-14T18:47:48.419Z	./src/lib/web-push.ts
+2026-06-14T18:47:48.419Z	A Node.js module is loaded ('crypto' at line 1) which is not supported in the Edge Runtime.
+2026-06-14T18:47:48.420Z	Learn More: https://nextjs.org/docs/messages/node-module-in-edge-runtime
+2026-06-14T18:47:48.422Z	
+2026-06-14T18:47:48.422Z	Import trace for requested module:
+2026-06-14T18:47:48.422Z	./src/lib/web-push.ts
+2026-06-14T18:47:48.422Z	./src/lib/d1.db.ts
+2026-06-14T18:47:48.422Z	./src/lib/db.ts
+2026-06-14T18:47:48.422Z	./src/lib/refresh-token.ts
+2026-06-14T18:47:48.422Z	
+2026-06-14T18:47:48.423Z	./node_modules/.pnpm/@upstash+redis@1.36.0/node_modules/@upstash/redis/nodejs.mjs
+2026-06-14T18:47:48.423Z	A Node.js API is used (process.version at line: 71) which is not supported in the Edge Runtime.
+2026-06-14T18:47:48.423Z	Learn more: https://nextjs.org/docs/api-reference/edge-runtime
+2026-06-14T18:47:48.423Z	
+2026-06-14T18:47:48.423Z	Import trace for requested module:
+2026-06-14T18:47:48.423Z	./node_modules/.pnpm/@upstash+redis@1.36.0/node_modules/@upstash/redis/nodejs.mjs
+2026-06-14T18:47:48.423Z	./src/lib/upstash.db.ts
+2026-06-14T18:47:48.423Z	./src/lib/db.ts
+2026-06-14T18:47:48.423Z	./src/lib/refresh-token.ts
+2026-06-14T18:47:48.423Z	
+2026-06-14T18:47:50.250Z	> [PWA] Compile server
+2026-06-14T18:47:50.251Z	> [PWA] Compile server
+2026-06-14T18:47:50.253Z	> [PWA] Compile client (static)
+2026-06-14T18:47:50.253Z	> [PWA] Auto register service worker with: /opt/buildhome/repo/node_modules/.pnpm/next-pwa@5.6.0_@babel+core@7.28.5_@types+babel__core@7.20.5_next@14.2.35_@babel+core@7._3501a5593ef0f1cb5ceadc66c3da8712/node_modules/next-pwa/register.js
+2026-06-14T18:47:50.253Z	> [PWA] Service worker: /opt/buildhome/repo/public/sw.js
+2026-06-14T18:47:50.254Z	> [PWA]   url: /sw.js
+2026-06-14T18:47:50.254Z	> [PWA]   scope: /
+2026-06-14T18:47:54.323Z	Browserslist: browsers data (caniuse-lite) is 6 months old. Please run:
+2026-06-14T18:47:54.323Z	  npx update-browserslist-db@latest
+2026-06-14T18:47:54.323Z	  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+2026-06-14T18:48:05.675Z	Browserslist: caniuse-lite is outdated. Please run:
+2026-06-14T18:48:05.676Z	  npx update-browserslist-db@latest
+2026-06-14T18:48:05.676Z	  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+2026-06-14T18:48:17.636Z	 ⚠ Compiled with warnings
+2026-06-14T18:48:17.636Z	
+2026-06-14T18:48:17.636Z	/_next/static/chunks/b426f651.a2601def00bb2b18.js is 3.48 MB, and won't be precached. Configure maximumFileSizeToCacheInBytes to change this limit.
+2026-06-14T18:48:17.636Z	
+2026-06-14T18:48:17.778Z	 ✓ Compiled successfully
+2026-06-14T18:48:17.779Z	   Skipping linting
+2026-06-14T18:48:17.779Z	   Checking validity of types ...
+2026-06-14T18:49:01.323Z	   Collecting page data ...
+2026-06-14T18:49:06.423Z	   Generating static pages (0/269) ...
+2026-06-14T18:49:07.103Z	localStorage 模式：从环境变量初始化配置
+2026-06-14T18:49:07.107Z	(node:2471) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-06-14T18:49:07.107Z	(Use `node --trace-deprecation ...` to show where the warning was created)
+2026-06-14T18:49:07.560Z	获取 Bangumi subject 失败: B [Error]: Dynamic server usage: Route /api/bangumi/subject couldn't be rendered statically because it used `nextUrl.searchParams`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:07.560Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:07.561Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29137)
+2026-06-14T18:49:07.561Z	    at c (/opt/buildhome/repo/.next/server/app/api/bangumi/subject/route.js:1:1327)
+2026-06-14T18:49:07.561Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:07.561Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:07.561Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:07.561Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:07.561Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+2026-06-14T18:49:07.561Z	    at ProxyTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854)
+2026-06-14T18:49:07.561Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:122:103 {
+2026-06-14T18:49:07.562Z	  description: "Route /api/bangumi/subject couldn't be rendered statically because it used `nextUrl.searchParams`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:07.562Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:07.562Z	}
+2026-06-14T18:49:08.145Z	获取 TMDB 详情失败: B [Error]: Dynamic server usage: Route /api/tmdb-details couldn't be rendered statically because it used `nextUrl.searchParams`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:08.146Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:08.146Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29137)
+2026-06-14T18:49:08.148Z	    at d (/opt/buildhome/repo/.next/server/app/api/tmdb-details/route.js:1:1351)
+2026-06-14T18:49:08.148Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:08.148Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:08.148Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:08.148Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:08.149Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+2026-06-14T18:49:08.149Z	    at ProxyTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854)
+2026-06-14T18:49:08.150Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:122:103 {
+2026-06-14T18:49:08.151Z	  description: "Route /api/tmdb-details couldn't be rendered statically because it used `nextUrl.searchParams`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:08.151Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:08.151Z	}
+2026-06-14T18:49:08.238Z	获取 TMDB 推荐失败: B [Error]: Dynamic server usage: Route /api/tmdb-recommendations couldn't be rendered statically because it used `nextUrl.searchParams`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:08.238Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:08.239Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29137)
+2026-06-14T18:49:08.239Z	    at m (/opt/buildhome/repo/.next/server/app/api/tmdb-recommendations/route.js:1:1545)
+2026-06-14T18:49:08.239Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:08.239Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:08.239Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:08.239Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:08.239Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+2026-06-14T18:49:08.239Z	    at ProxyTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854)
+2026-06-14T18:49:08.239Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:122:103 {
+2026-06-14T18:49:08.239Z	  description: "Route /api/tmdb-recommendations couldn't be rendered statically because it used `nextUrl.searchParams`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:08.239Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:08.239Z	}
+2026-06-14T18:49:10.652Z	AI评论生成失败: B [Error]: Dynamic server usage: Route /api/ai-comments couldn't be rendered statically because it used `nextUrl.searchParams`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:10.653Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:10.653Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29137)
+2026-06-14T18:49:10.653Z	    at m (/opt/buildhome/repo/.next/server/app/api/ai-comments/route.js:34:1686)
+2026-06-14T18:49:10.653Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:10.653Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:10.653Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:10.653Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:10.653Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+2026-06-14T18:49:10.653Z	    at ProxyTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854)
+2026-06-14T18:49:10.653Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:122:103 {
+2026-06-14T18:49:10.653Z	  description: "Route /api/ai-comments couldn't be rendered statically because it used `nextUrl.searchParams`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:10.653Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:10.653Z	}
+2026-06-14T18:49:10.690Z	OIDC回调处理失败: B [Error]: Dynamic server usage: Route /api/auth/oidc/callback couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:10.691Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:10.692Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+2026-06-14T18:49:10.692Z	    at w (/opt/buildhome/repo/.next/server/app/api/auth/oidc/callback/route.js:1:2125)
+2026-06-14T18:49:10.692Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:10.692Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:10.692Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:10.692Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:10.692Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+2026-06-14T18:49:10.692Z	    at ProxyTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854)
+2026-06-14T18:49:10.692Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:122:103 {
+2026-06-14T18:49:10.692Z	  description: "Route /api/auth/oidc/callback couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:10.692Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:10.692Z	}
+2026-06-14T18:49:11.223Z	   Generating static pages (67/269) 
+2026-06-14T18:49:11.892Z	获取弹幕代理错误: B [Error]: Dynamic server usage: Route /api/danmaku/comment couldn't be rendered statically because it used `nextUrl.searchParams`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:11.893Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:11.893Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29137)
+2026-06-14T18:49:11.893Z	    at m (/opt/buildhome/repo/.next/server/app/api/danmaku/comment/route.js:1:1361)
+2026-06-14T18:49:11.893Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:11.893Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:11.893Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:11.894Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:11.894Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+2026-06-14T18:49:11.894Z	    at ProxyTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854)
+2026-06-14T18:49:11.894Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:122:103 {
+2026-06-14T18:49:11.895Z	  description: "Route /api/danmaku/comment couldn't be rendered statically because it used `nextUrl.searchParams`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:11.895Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:11.895Z	}
+2026-06-14T18:49:11.918Z	获取剧集列表代理错误: B [Error]: Dynamic server usage: Route /api/danmaku/episodes couldn't be rendered statically because it used `nextUrl.searchParams`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:11.918Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:11.918Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29137)
+2026-06-14T18:49:11.918Z	    at l (/opt/buildhome/repo/.next/server/app/api/danmaku/episodes/route.js:1:1355)
+2026-06-14T18:49:11.918Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:11.919Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:11.919Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:11.919Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:11.919Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+2026-06-14T18:49:11.919Z	    at ProxyTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854)
+2026-06-14T18:49:11.919Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:122:103 {
+2026-06-14T18:49:11.920Z	  description: "Route /api/danmaku/episodes couldn't be rendered statically because it used `nextUrl.searchParams`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:11.920Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:11.920Z	}
+2026-06-14T18:49:12.232Z	弹幕搜索代理错误: B [Error]: Dynamic server usage: Route /api/danmaku/search couldn't be rendered statically because it used `nextUrl.searchParams`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:12.232Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:12.232Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29137)
+2026-06-14T18:49:12.232Z	    at d (/opt/buildhome/repo/.next/server/app/api/danmaku/search/route.js:1:1355)
+2026-06-14T18:49:12.232Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:12.232Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:12.232Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:12.232Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:12.232Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+2026-06-14T18:49:12.232Z	    at ProxyTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854)
+2026-06-14T18:49:12.232Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:122:103 {
+2026-06-14T18:49:12.232Z	  description: "Route /api/danmaku/search couldn't be rendered statically because it used `nextUrl.searchParams`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:12.232Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:12.232Z	}
+2026-06-14T18:49:12.483Z	获取短剧视频源失败: TypeError: Cannot read properties of null (reading 'getGlobalValue')
+2026-06-14T18:49:12.483Z	    at l.getGlobalValue (/opt/buildhome/repo/.next/server/chunks/267.js:322:12856)
+2026-06-14T18:49:12.483Z	    at i (/opt/buildhome/repo/.next/server/app/api/duanju/categories/route.js:1:3053)
+2026-06-14T18:49:12.483Z	    at c (/opt/buildhome/repo/.next/server/app/api/duanju/sources/route.js:1:1358)
+2026-06-14T18:49:12.483Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:12.483Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:12.483Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:12.484Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:12.484Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+2026-06-14T18:49:12.484Z	    at ProxyTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854)
+2026-06-14T18:49:12.484Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:122:103
+2026-06-14T18:49:12.484Z	获取短剧视频源失败: TypeError: Cannot read properties of null (reading 'getGlobalValue')
+2026-06-14T18:49:12.484Z	    at l.getGlobalValue (/opt/buildhome/repo/.next/server/chunks/267.js:322:12856)
+2026-06-14T18:49:12.484Z	    at i (/opt/buildhome/repo/.next/server/app/api/duanju/categories/route.js:1:3053)
+2026-06-14T18:49:12.484Z	    at c (/opt/buildhome/repo/.next/server/app/api/duanju/sources/route.js:1:1358)
+2026-06-14T18:49:12.484Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:12.484Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:12.484Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:12.484Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:12.484Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+2026-06-14T18:49:12.484Z	    at ProxyTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854)
+2026-06-14T18:49:12.484Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:122:103
+2026-06-14T18:49:13.116Z	获取 Emby 媒体库列表失败: B [Error]: Dynamic server usage: Route /api/emby/views couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:13.117Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:13.117Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+2026-06-14T18:49:13.117Z	    at o (/opt/buildhome/repo/.next/server/app/api/admin/web-live/route.js:1:4098)
+2026-06-14T18:49:13.117Z	    at m (/opt/buildhome/repo/.next/server/app/api/web-live/proxy/[filename]/route.js:1:5908)
+2026-06-14T18:49:13.117Z	    at d (/opt/buildhome/repo/.next/server/app/api/emby/views/route.js:1:1368)
+2026-06-14T18:49:13.118Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:13.118Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:13.118Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:13.118Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:13.118Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093) {
+2026-06-14T18:49:13.118Z	  description: "Route /api/emby/views couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:13.118Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:13.118Z	}
+2026-06-14T18:49:13.644Z	[EPG Download] Error: B [Error]: Dynamic server usage: Route /api/live/epg/download couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:13.645Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:13.646Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+2026-06-14T18:49:13.646Z	    at p (/opt/buildhome/repo/.next/server/app/api/live/epg/download/route.js:1:612)
+2026-06-14T18:49:13.647Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:13.647Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:13.647Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:13.647Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:13.647Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+2026-06-14T18:49:13.647Z	    at ProxyTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854)
+2026-06-14T18:49:13.647Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:122:103 {
+2026-06-14T18:49:13.647Z	  description: "Route /api/live/epg/download couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:13.647Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:13.647Z	}
+2026-06-14T18:49:13.743Z	获取短剧视频源失败: TypeError: Cannot read properties of null (reading 'getGlobalValue')
+2026-06-14T18:49:13.743Z	    at l.getGlobalValue (/opt/buildhome/repo/.next/server/chunks/267.js:322:12856)
+2026-06-14T18:49:13.743Z	    at i (/opt/buildhome/repo/.next/server/app/api/duanju/categories/route.js:1:3053)
+2026-06-14T18:49:13.743Z	    at m (/opt/buildhome/repo/.next/server/app/api/duanju/recommends/route.js:1:1601)
+2026-06-14T18:49:13.743Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:13.743Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:13.743Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:13.743Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:13.743Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+2026-06-14T18:49:13.743Z	    at ProxyTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854)
+2026-06-14T18:49:13.743Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:122:103
+2026-06-14T18:49:13.743Z	获取热播短剧推荐失败: TypeError: Cannot read properties of null (reading 'getGlobalValue')
+2026-06-14T18:49:13.743Z	    at l.getGlobalValue (/opt/buildhome/repo/.next/server/chunks/267.js:322:12856)
+2026-06-14T18:49:13.743Z	    at i (/opt/buildhome/repo/.next/server/app/api/duanju/categories/route.js:1:3053)
+2026-06-14T18:49:13.743Z	    at m (/opt/buildhome/repo/.next/server/app/api/duanju/recommends/route.js:1:1601)
+2026-06-14T18:49:13.743Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:13.743Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:13.747Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:13.747Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:13.747Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+2026-06-14T18:49:13.747Z	    at ProxyTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854)
+2026-06-14T18:49:13.747Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:122:103
+2026-06-14T18:49:13.953Z	代理OpenList音频失败: B [Error]: Dynamic server usage: Route /api/music/audio-proxy couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:13.954Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:13.954Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+2026-06-14T18:49:13.954Z	    at o (/opt/buildhome/repo/.next/server/app/api/admin/web-live/route.js:1:4098)
+2026-06-14T18:49:13.954Z	    at m (/opt/buildhome/repo/.next/server/app/api/web-live/proxy/[filename]/route.js:1:5908)
+2026-06-14T18:49:13.954Z	    at d (/opt/buildhome/repo/.next/server/app/api/music/audio-proxy/route.js:1:1607)
+2026-06-14T18:49:13.954Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:13.954Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:13.954Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:13.954Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:13.954Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093) {
+2026-06-14T18:49:13.954Z	  description: "Route /api/music/audio-proxy couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:13.954Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:13.954Z	}
+2026-06-14T18:49:14.031Z	CMS 代理失败: B [Error]: Dynamic server usage: Route /api/cms-proxy couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:14.031Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:14.032Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+2026-06-14T18:49:14.032Z	    at g (/opt/buildhome/repo/.next/server/app/api/cms-proxy/route.js:1:1413)
+2026-06-14T18:49:14.032Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:14.033Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:14.033Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:14.033Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:14.034Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+2026-06-14T18:49:14.034Z	    at ProxyTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854)
+2026-06-14T18:49:14.034Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:122:103 {
+2026-06-14T18:49:14.034Z	  description: "Route /api/cms-proxy couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:14.035Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:14.035Z	}
+2026-06-14T18:49:14.052Z	代理音频失败: B [Error]: Dynamic server usage: Route /api/music/proxy couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:14.053Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:14.053Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+2026-06-14T18:49:14.054Z	    at o (/opt/buildhome/repo/.next/server/app/api/admin/web-live/route.js:1:4098)
+2026-06-14T18:49:14.055Z	    at m (/opt/buildhome/repo/.next/server/app/api/web-live/proxy/[filename]/route.js:1:5908)
+2026-06-14T18:49:14.055Z	    at l (/opt/buildhome/repo/.next/server/app/api/music/proxy/route.js:1:1354)
+2026-06-14T18:49:14.055Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:14.055Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:14.055Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:14.056Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:14.056Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093) {
+2026-06-14T18:49:14.056Z	  description: "Route /api/music/proxy couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:14.056Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:14.056Z	}
+2026-06-14T18:49:14.126Z	[music-v2] 获取榜单失败: B [Error]: Dynamic server usage: Route /api/music/v2/discovery/boards couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:14.126Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:14.127Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+2026-06-14T18:49:14.127Z	    at d (/opt/buildhome/repo/.next/server/app/api/music/v2/discovery/boards/route.js:1:1370)
+2026-06-14T18:49:14.127Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:14.127Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:14.127Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:14.127Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:14.127Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+2026-06-14T18:49:14.127Z	    at ProxyTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854)
+2026-06-14T18:49:14.127Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:122:103 {
+2026-06-14T18:49:14.127Z	  description: "Route /api/music/v2/discovery/boards couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:14.127Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:14.127Z	}
+2026-06-14T18:49:14.389Z	   Generating static pages (134/269) 
+2026-06-14T18:49:14.742Z	[netdisk-123][play] error B [Error]: Dynamic server usage: Route /api/netdisk/123/play couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:14.742Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:14.742Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+2026-06-14T18:49:14.742Z	    at o (/opt/buildhome/repo/.next/server/app/api/admin/web-live/route.js:1:4098)
+2026-06-14T18:49:14.742Z	    at f (/opt/buildhome/repo/.next/server/app/api/netdisk/123/play/route.js:1:1380)
+2026-06-14T18:49:14.742Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:14.742Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:14.742Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:14.743Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:14.743Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+2026-06-14T18:49:14.743Z	    at ProxyTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854) {
+2026-06-14T18:49:14.743Z	  description: "Route /api/netdisk/123/play couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:14.743Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:14.743Z	}
+2026-06-14T18:49:17.272Z	获取播放链接失败: B [Error]: Dynamic server usage: Route /api/openlist/play couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:17.272Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:17.272Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+2026-06-14T18:49:17.272Z	    at o (/opt/buildhome/repo/.next/server/app/api/admin/web-live/route.js:1:4098)
+2026-06-14T18:49:17.272Z	    at m (/opt/buildhome/repo/.next/server/app/api/web-live/proxy/[filename]/route.js:1:5908)
+2026-06-14T18:49:17.272Z	    at f (/opt/buildhome/repo/.next/server/app/api/openlist/play/route.js:1:1985)
+2026-06-14T18:49:17.272Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:17.272Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:17.272Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:17.272Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:17.272Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093) {
+2026-06-14T18:49:17.272Z	  description: "Route /api/openlist/play couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:17.272Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:17.272Z	}
+2026-06-14T18:49:17.332Z	获取视频列表失败: B [Error]: Dynamic server usage: Route /api/openlist/list couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:17.332Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:17.332Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+2026-06-14T18:49:17.332Z	    at o (/opt/buildhome/repo/.next/server/app/api/admin/web-live/route.js:1:4098)
+2026-06-14T18:49:17.332Z	    at m (/opt/buildhome/repo/.next/server/app/api/web-live/proxy/[filename]/route.js:1:5908)
+2026-06-14T18:49:17.332Z	    at g (/opt/buildhome/repo/.next/server/app/api/openlist/list/route.js:1:1430)
+2026-06-14T18:49:17.332Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:17.332Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:17.332Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:17.332Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:17.332Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093) {
+2026-06-14T18:49:17.332Z	  description: "Route /api/openlist/list couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:17.332Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:17.332Z	}
+2026-06-14T18:49:17.793Z	获取视频详情失败: B [Error]: Dynamic server usage: Route /api/openlist/detail couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:17.793Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:17.793Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+2026-06-14T18:49:17.793Z	    at o (/opt/buildhome/repo/.next/server/app/api/admin/web-live/route.js:1:4098)
+2026-06-14T18:49:17.793Z	    at m (/opt/buildhome/repo/.next/server/app/api/web-live/proxy/[filename]/route.js:1:5908)
+2026-06-14T18:49:17.793Z	    at f (/opt/buildhome/repo/.next/server/app/api/openlist/detail/route.js:1:1424)
+2026-06-14T18:49:17.793Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:17.793Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:17.793Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:17.793Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:17.793Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093) {
+2026-06-14T18:49:17.793Z	  description: "Route /api/openlist/detail couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:17.793Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:17.793Z	}
+2026-06-14T18:49:17.826Z	获取扫描进度失败: B [Error]: Dynamic server usage: Route /api/openlist/scan-progress couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:17.827Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:17.827Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+2026-06-14T18:49:17.827Z	    at o (/opt/buildhome/repo/.next/server/app/api/admin/web-live/route.js:1:4098)
+2026-06-14T18:49:17.827Z	    at m (/opt/buildhome/repo/.next/server/app/api/web-live/proxy/[filename]/route.js:1:5908)
+2026-06-14T18:49:17.827Z	    at d (/opt/buildhome/repo/.next/server/app/api/openlist/scan-progress/route.js:1:1371)
+2026-06-14T18:49:17.827Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:17.827Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:17.827Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:17.827Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:17.827Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093) {
+2026-06-14T18:49:17.827Z	  description: "Route /api/openlist/scan-progress couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:17.827Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:17.827Z	}
+2026-06-14T18:49:19.586Z	获取搜索建议失败 B [Error]: Dynamic server usage: Route /api/search/suggestions couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:19.586Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:19.587Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+2026-06-14T18:49:19.588Z	    at o (/opt/buildhome/repo/.next/server/app/api/admin/web-live/route.js:1:4098)
+2026-06-14T18:49:19.588Z	    at h (/opt/buildhome/repo/.next/server/app/api/search/suggestions/route.js:1:1376)
+2026-06-14T18:49:19.588Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:19.588Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:19.588Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:19.588Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:19.588Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+2026-06-14T18:49:19.588Z	    at ProxyTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854) {
+2026-06-14T18:49:19.588Z	  description: "Route /api/search/suggestions couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:19.588Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:19.588Z	}
+2026-06-14T18:49:20.092Z	TMDB演职人员信息获取失败: B [Error]: Dynamic server usage: Route /api/tmdb/credits couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:20.092Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:20.092Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+2026-06-14T18:49:20.092Z	    at o (/opt/buildhome/repo/.next/server/app/api/admin/web-live/route.js:1:4098)
+2026-06-14T18:49:20.092Z	    at l (/opt/buildhome/repo/.next/server/app/api/tmdb/credits/route.js:1:1365)
+2026-06-14T18:49:20.092Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:20.092Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:20.092Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:20.092Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:20.093Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+2026-06-14T18:49:20.093Z	    at ProxyTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854) {
+2026-06-14T18:49:20.093Z	  description: "Route /api/tmdb/credits couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:20.093Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:20.093Z	}
+2026-06-14T18:49:20.144Z	TMDB详情获取失败: B [Error]: Dynamic server usage: Route /api/tmdb/detail couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:20.145Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:20.146Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+2026-06-14T18:49:20.147Z	    at o (/opt/buildhome/repo/.next/server/app/api/admin/web-live/route.js:1:4098)
+2026-06-14T18:49:20.148Z	    at c (/opt/buildhome/repo/.next/server/app/api/tmdb/detail/route.js:1:1365)
+2026-06-14T18:49:20.148Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:20.149Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:20.149Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:20.150Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:20.150Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+2026-06-14T18:49:20.150Z	    at ProxyTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854) {
+2026-06-14T18:49:20.151Z	  description: "Route /api/tmdb/detail couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:20.151Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:20.152Z	}
+2026-06-14T18:49:20.213Z	获取集数详情失败: B [Error]: Dynamic server usage: Route /api/tmdb/episodes couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:20.213Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:20.215Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+2026-06-14T18:49:20.215Z	    at o (/opt/buildhome/repo/.next/server/app/api/admin/web-live/route.js:1:4098)
+2026-06-14T18:49:20.215Z	    at d (/opt/buildhome/repo/.next/server/app/api/tmdb/episodes/route.js:1:1370)
+2026-06-14T18:49:20.215Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:20.215Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:20.215Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:20.215Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:20.215Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+2026-06-14T18:49:20.215Z	    at ProxyTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854) {
+2026-06-14T18:49:20.215Z	  description: "Route /api/tmdb/episodes couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:20.215Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:20.215Z	}
+2026-06-14T18:49:20.349Z	TMDB图片信息获取失败: B [Error]: Dynamic server usage: Route /api/tmdb/images couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:20.349Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:20.349Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+2026-06-14T18:49:20.349Z	    at o (/opt/buildhome/repo/.next/server/app/api/admin/web-live/route.js:1:4098)
+2026-06-14T18:49:20.349Z	    at m (/opt/buildhome/repo/.next/server/app/api/tmdb/images/route.js:1:1365)
+2026-06-14T18:49:20.350Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:20.350Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:20.350Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:20.350Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:20.350Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+2026-06-14T18:49:20.350Z	    at ProxyTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854) {
+2026-06-14T18:49:20.350Z	  description: "Route /api/tmdb/images couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:20.350Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:20.350Z	}
+2026-06-14T18:49:20.521Z	获取季度列表失败: B [Error]: Dynamic server usage: Route /api/tmdb/seasons couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:20.522Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:20.523Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+2026-06-14T18:49:20.523Z	    at o (/opt/buildhome/repo/.next/server/app/api/admin/web-live/route.js:1:4098)
+2026-06-14T18:49:20.523Z	    at d (/opt/buildhome/repo/.next/server/app/api/tmdb/seasons/route.js:1:1368)
+2026-06-14T18:49:20.524Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:20.524Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:20.524Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:20.524Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:20.525Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+2026-06-14T18:49:20.525Z	    at ProxyTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854) {
+2026-06-14T18:49:20.526Z	  description: "Route /api/tmdb/seasons couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:20.526Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:20.527Z	}
+2026-06-14T18:49:20.793Z	TMDB搜索失败: B [Error]: Dynamic server usage: Route /api/tmdb/search couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:20.793Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:20.793Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+2026-06-14T18:49:20.793Z	    at o (/opt/buildhome/repo/.next/server/app/api/admin/web-live/route.js:1:4098)
+2026-06-14T18:49:20.793Z	    at d (/opt/buildhome/repo/.next/server/app/api/tmdb/search/route.js:1:1365)
+2026-06-14T18:49:20.793Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:20.793Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:20.793Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:20.793Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:20.793Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+2026-06-14T18:49:20.793Z	    at ProxyTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854) {
+2026-06-14T18:49:20.793Z	  description: "Route /api/tmdb/search couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:20.793Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:20.793Z	}
+2026-06-14T18:49:20.844Z	TMDB视频获取失败: B [Error]: Dynamic server usage: Route /api/tmdb/videos couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:20.845Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:20.846Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+2026-06-14T18:49:20.846Z	    at o (/opt/buildhome/repo/.next/server/app/api/admin/web-live/route.js:1:4098)
+2026-06-14T18:49:20.846Z	    at c (/opt/buildhome/repo/.next/server/app/api/tmdb/videos/route.js:1:1371)
+2026-06-14T18:49:20.846Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:20.847Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:20.847Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:20.849Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:20.849Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+2026-06-14T18:49:20.849Z	    at ProxyTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854) {
+2026-06-14T18:49:20.849Z	  description: "Route /api/tmdb/videos couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:20.849Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:20.850Z	}
+2026-06-14T18:49:20.850Z	   Generating static pages (201/269) 
+2026-06-14T18:49:21.560Z	代理 m3u8 失败: B [Error]: Dynamic server usage: Route /api/proxy-m3u8 couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:21.560Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:21.560Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+2026-06-14T18:49:21.560Z	    at d (/opt/buildhome/repo/.next/server/app/api/proxy-m3u8/route.js:1:1429)
+2026-06-14T18:49:21.560Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:21.560Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:21.562Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:21.562Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:21.562Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+2026-06-14T18:49:21.563Z	    at ProxyTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854)
+2026-06-14T18:49:21.563Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:122:103 {
+2026-06-14T18:49:21.563Z	  description: "Route /api/proxy-m3u8 couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:21.563Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:21.565Z	}
+2026-06-14T18:49:21.775Z	获取TVBox订阅token失败: B [Error]: Dynamic server usage: Route /api/user/tvbox-token couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:21.775Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:21.775Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+2026-06-14T18:49:21.775Z	    at o (/opt/buildhome/repo/.next/server/app/api/admin/web-live/route.js:1:4098)
+2026-06-14T18:49:21.775Z	    at c (/opt/buildhome/repo/.next/server/app/api/user/tvbox-token/route.js:1:1365)
+2026-06-14T18:49:21.775Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:21.775Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:21.775Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:21.775Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:21.775Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+2026-06-14T18:49:21.775Z	    at ProxyTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854) {
+2026-06-14T18:49:21.775Z	  description: "Route /api/user/tvbox-token couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:21.775Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:21.775Z	}
+2026-06-14T18:49:22.082Z	小雅搜索失败: B [Error]: Dynamic server usage: Route /api/xiaoya/search couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+2026-06-14T18:49:22.084Z	    at V (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21778)
+2026-06-14T18:49:22.084Z	    at Object.get (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29465)
+2026-06-14T18:49:22.085Z	    at o (/opt/buildhome/repo/.next/server/app/api/admin/web-live/route.js:1:4098)
+2026-06-14T18:49:22.085Z	    at m (/opt/buildhome/repo/.next/server/app/api/web-live/proxy/[filename]/route.js:1:5908)
+2026-06-14T18:49:22.085Z	    at d (/opt/buildhome/repo/.next/server/app/api/xiaoya/search/route.js:1:1377)
+2026-06-14T18:49:22.086Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:38417
+2026-06-14T18:49:22.086Z	    at /opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+2026-06-14T18:49:22.086Z	    at NoopContextManager.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+2026-06-14T18:49:22.087Z	    at ContextAPI.with (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+2026-06-14T18:49:22.087Z	    at NoopTracer.startActiveSpan (/opt/buildhome/repo/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093) {
+2026-06-14T18:49:22.087Z	  description: "Route /api/xiaoya/search couldn't be rendered statically because it used `request.headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+2026-06-14T18:49:22.089Z	  digest: 'DYNAMIC_SERVER_USAGE'
+2026-06-14T18:49:22.089Z	}
+2026-06-14T18:49:24.026Z	 ✓ Generating static pages (269/269)
+2026-06-14T18:49:24.141Z	   Finalizing page optimization ...
+2026-06-14T18:49:24.141Z	   Collecting build traces ...
+2026-06-14T18:49:28.982Z	
+2026-06-14T18:49:29.017Z	Route (app)                                                                  Size     First Load JS
+2026-06-14T18:49:29.018Z	┌ ƒ /                                                                        14.6 kB         362 kB
+2026-06-14T18:49:29.018Z	├ ƒ /_not-found                                                              878 B          88.8 kB
+2026-06-14T18:49:29.019Z	├ ƒ /admin                                                                   90.3 kB         438 kB
+2026-06-14T18:49:29.019Z	├ ƒ /advanced-recommendation                                                 3.89 kB         347 kB
+2026-06-14T18:49:29.019Z	├ ƒ /api/acg/acgrip                                                          0 B                0 B
+2026-06-14T18:49:29.020Z	├ ƒ /api/acg/dmhy                                                            0 B                0 B
+2026-06-14T18:49:29.020Z	├ ƒ /api/acg/download                                                        0 B                0 B
+2026-06-14T18:49:29.020Z	├ ƒ /api/acg/mikan                                                           0 B                0 B
+2026-06-14T18:49:29.020Z	├ ƒ /api/ad-filter                                                           0 B                0 B
+2026-06-14T18:49:29.020Z	├ ƒ /api/admin/ai                                                            0 B                0 B
+2026-06-14T18:49:29.020Z	├ ƒ /api/admin/anime-subscription                                            0 B                0 B
+2026-06-14T18:49:29.021Z	├ ƒ /api/admin/anime-subscription/[id]                                       0 B                0 B
+2026-06-14T18:49:29.021Z	├ ƒ /api/admin/anime-subscription/[id]/check                                 0 B                0 B
+2026-06-14T18:49:29.021Z	├ ƒ /api/admin/anime-subscription/toggle                                     0 B                0 B
+2026-06-14T18:49:29.021Z	├ ƒ /api/admin/category                                                      0 B                0 B
+2026-06-14T18:49:29.022Z	├ ƒ /api/admin/config                                                        0 B                0 B
+2026-06-14T18:49:29.024Z	├ ƒ /api/admin/config_file                                                   0 B                0 B
+2026-06-14T18:49:29.024Z	├ ƒ /api/admin/config_subscription/fetch                                     0 B                0 B
+2026-06-14T18:49:29.024Z	├ ƒ /api/admin/data_migration/export                                         0 B                0 B
+2026-06-14T18:49:29.024Z	├ ƒ /api/admin/data_migration/import                                         0 B                0 B
+2026-06-14T18:49:29.024Z	├ ƒ /api/admin/data_migration/progress                                       0 B                0 B
+2026-06-14T18:49:29.024Z	├ ƒ /api/admin/email                                                         0 B                0 B
+2026-06-14T18:49:29.024Z	├ ƒ /api/admin/emby                                                          0 B                0 B
+2026-06-14T18:49:29.024Z	├ ƒ /api/admin/emby/export                                                   0 B                0 B
+2026-06-14T18:49:29.024Z	├ ƒ /api/admin/emby/import                                                   0 B                0 B
+2026-06-14T18:49:29.024Z	├ ƒ /api/admin/legado-subscriptions/[id]                                     0 B                0 B
+2026-06-14T18:49:29.024Z	├ ƒ /api/admin/legado-subscriptions/[id]/refresh                             0 B                0 B
+2026-06-14T18:49:29.024Z	├ ƒ /api/admin/legado-subscriptions/import                                   0 B                0 B
+2026-06-14T18:49:29.024Z	├ ƒ /api/admin/live                                                          0 B                0 B
+2026-06-14T18:49:29.024Z	├ ƒ /api/admin/live/refresh                                                  0 B                0 B
+2026-06-14T18:49:29.024Z	├ ƒ /api/admin/migrate-users                                                 0 B                0 B
+2026-06-14T18:49:29.025Z	├ ƒ /api/admin/music                                                         0 B                0 B
+2026-06-14T18:49:29.026Z	├ ƒ /api/admin/netdisk                                                       0 B                0 B
+2026-06-14T18:49:29.026Z	├ ƒ /api/admin/oidc-discover                                                 0 B                0 B
+2026-06-14T18:49:29.026Z	├ ƒ /api/admin/opds                                                          0 B                0 B
+2026-06-14T18:49:29.026Z	├ ƒ /api/admin/openlist                                                      0 B                0 B
+2026-06-14T18:49:29.026Z	├ ƒ /api/admin/reload                                                        0 B                0 B
+2026-06-14T18:49:29.026Z	├ ƒ /api/admin/reset                                                         0 B                0 B
+2026-06-14T18:49:29.026Z	├ ƒ /api/admin/site                                                          0 B                0 B
+2026-06-14T18:49:29.026Z	├ ƒ /api/admin/source                                                        0 B                0 B
+2026-06-14T18:49:29.026Z	├ ƒ /api/admin/source-script                                                 0 B                0 B
+2026-06-14T18:49:29.027Z	├ ƒ /api/admin/source/validate                                               0 B                0 B
+2026-06-14T18:49:29.027Z	├ ƒ /api/admin/suwayomi                                                      0 B                0 B
+2026-06-14T18:49:29.027Z	├ ƒ /api/admin/theme                                                         0 B                0 B
+2026-06-14T18:49:29.027Z	├ ƒ /api/admin/user                                                          0 B                0 B
+2026-06-14T18:49:29.027Z	├ ƒ /api/admin/user-devices                                                  0 B                0 B
+2026-06-14T18:49:29.027Z	├ ƒ /api/admin/users                                                         0 B                0 B
+2026-06-14T18:49:29.027Z	├ ƒ /api/admin/web-live                                                      0 B                0 B
+2026-06-14T18:49:29.027Z	├ ƒ /api/admin/xiaoya                                                        0 B                0 B
+2026-06-14T18:49:29.027Z	├ ƒ /api/advanced-recommendation/sources                                     0 B                0 B
+2026-06-14T18:49:29.027Z	├ ƒ /api/advanced-recommendation/videos                                      0 B                0 B
+2026-06-14T18:49:29.027Z	├ ƒ /api/ai-comments                                                         0 B                0 B
+2026-06-14T18:49:29.027Z	├ ƒ /api/ai/chat                                                             0 B                0 B
+2026-06-14T18:49:29.027Z	├ ƒ /api/auth/devices                                                        0 B                0 B
+2026-06-14T18:49:29.027Z	├ ƒ /api/auth/oidc/callback                                                  0 B                0 B
+2026-06-14T18:49:29.027Z	├ ƒ /api/auth/oidc/complete-register                                         0 B                0 B
+2026-06-14T18:49:29.027Z	├ ƒ /api/auth/oidc/login                                                     0 B                0 B
+2026-06-14T18:49:29.028Z	├ ƒ /api/auth/oidc/session-info                                              0 B                0 B
+2026-06-14T18:49:29.028Z	├ ƒ /api/auth/qr/cancel                                                      0 B                0 B
+2026-06-14T18:49:29.028Z	├ ƒ /api/auth/qr/confirm                                                     0 B                0 B
+2026-06-14T18:49:29.028Z	├ ƒ /api/auth/qr/create                                                      0 B                0 B
+2026-06-14T18:49:29.028Z	├ ƒ /api/auth/qr/image                                                       0 B                0 B
+2026-06-14T18:49:29.028Z	├ ƒ /api/auth/qr/status                                                      0 B                0 B
+2026-06-14T18:49:29.028Z	├ ƒ /api/auth/refresh                                                        0 B                0 B
+2026-06-14T18:49:29.028Z	├ ○ /api/bangumi/calendar                                                    0 B                0 B
+2026-06-14T18:49:29.028Z	├ ƒ /api/bangumi/subject                                                     0 B                0 B
+2026-06-14T18:49:29.028Z	├ ƒ /api/bangumi/v0/subjects/[id]                                            0 B                0 B
+2026-06-14T18:49:29.028Z	├ ƒ /api/books/catalog                                                       0 B                0 B
+2026-06-14T18:49:29.028Z	├ ƒ /api/books/detail                                                        0 B                0 B
+2026-06-14T18:49:29.028Z	├ ƒ /api/books/file                                                          0 B                0 B
+2026-06-14T18:49:29.028Z	├ ƒ /api/books/history                                                       0 B                0 B
+2026-06-14T18:49:29.028Z	├ ƒ /api/books/image                                                         0 B                0 B
+2026-06-14T18:49:29.028Z	├ ƒ /api/books/read/chapter                                                  0 B                0 B
+2026-06-14T18:49:29.028Z	├ ƒ /api/books/read/chapters                                                 0 B                0 B
+2026-06-14T18:49:29.028Z	├ ƒ /api/books/read/manifest                                                 0 B                0 B
+2026-06-14T18:49:29.028Z	├ ƒ /api/books/search                                                        0 B                0 B
+2026-06-14T18:49:29.028Z	├ ƒ /api/books/search/ws                                                     0 B                0 B
+2026-06-14T18:49:29.028Z	├ ƒ /api/books/shelf                                                         0 B                0 B
+2026-06-14T18:49:29.028Z	├ ƒ /api/books/sources                                                       0 B                0 B
+2026-06-14T18:49:29.028Z	├ ƒ /api/books/tts/synthesize                                                0 B                0 B
+2026-06-14T18:49:29.029Z	├ ƒ /api/books/tts/voices                                                    0 B                0 B
+2026-06-14T18:49:29.029Z	├ ƒ /api/change-password                                                     0 B                0 B
+2026-06-14T18:49:29.029Z	├ ƒ /api/cms-proxy                                                           0 B                0 B
+2026-06-14T18:49:29.029Z	├ ƒ /api/cron/[password]                                                     0 B                0 B
+2026-06-14T18:49:29.029Z	├ ƒ /api/danmaku-filter                                                      0 B                0 B
+2026-06-14T18:49:29.029Z	├ ƒ /api/danmaku/comment                                                     0 B                0 B
+2026-06-14T18:49:29.029Z	├ ƒ /api/danmaku/episodes                                                    0 B                0 B
+2026-06-14T18:49:29.029Z	├ ƒ /api/danmaku/match                                                       0 B                0 B
+2026-06-14T18:49:29.029Z	├ ƒ /api/danmaku/search                                                      0 B                0 B
+2026-06-14T18:49:29.029Z	├ ƒ /api/detail                                                              0 B                0 B
+2026-06-14T18:49:29.029Z	├ ƒ /api/douban                                                              0 B                0 B
+2026-06-14T18:49:29.029Z	├ ƒ /api/douban-comments                                                     0 B                0 B
+2026-06-14T18:49:29.029Z	├ ƒ /api/douban-recommendations                                              0 B                0 B
+2026-06-14T18:49:29.029Z	├ ƒ /api/douban/categories                                                   0 B                0 B
+2026-06-14T18:49:29.029Z	├ ƒ /api/douban/detail                                                       0 B                0 B
+2026-06-14T18:49:29.029Z	├ ƒ /api/douban/recommends                                                   0 B                0 B
+2026-06-14T18:49:29.030Z	├ ƒ /api/douban/search                                                       0 B                0 B
+2026-06-14T18:49:29.030Z	├ ƒ /api/duanju/categories                                                   0 B                0 B
+2026-06-14T18:49:29.030Z	├ ƒ /api/duanju/recommends                                                   0 B                0 B
+2026-06-14T18:49:29.030Z	├ ƒ /api/duanju/sources                                                      0 B                0 B
+2026-06-14T18:49:29.030Z	├ ƒ /api/duanju/videos                                                       0 B                0 B
+2026-06-14T18:49:29.030Z	├ ƒ /api/emby/cms-proxy/[token]                                              0 B                0 B
+2026-06-14T18:49:29.030Z	├ ƒ /api/emby/detail                                                         0 B                0 B
+2026-06-14T18:49:29.030Z	├ ƒ /api/emby/image/[token]/[itemId]                                         0 B                0 B
+2026-06-14T18:49:29.030Z	├ ƒ /api/emby/list                                                           0 B                0 B
+2026-06-14T18:49:29.031Z	├ ƒ /api/emby/play/[token]/[filename]                                        0 B                0 B
+2026-06-14T18:49:29.031Z	├ ƒ /api/emby/sources                                                        0 B                0 B
+2026-06-14T18:49:29.031Z	├ ƒ /api/emby/views                                                          0 B                0 B
+2026-06-14T18:49:29.031Z	├ ƒ /api/favorites                                                           0 B                0 B
+2026-06-14T18:49:29.031Z	├ ƒ /api/image-proxy                                                         0 B                0 B
+2026-06-14T18:49:29.031Z	├ ƒ /api/live/channels                                                       0 B                0 B
+2026-06-14T18:49:29.031Z	├ ƒ /api/live/epg                                                            0 B                0 B
+2026-06-14T18:49:29.031Z	├ ƒ /api/live/epg/download                                                   0 B                0 B
+2026-06-14T18:49:29.031Z	├ ƒ /api/live/precheck                                                       0 B                0 B
+2026-06-14T18:49:29.031Z	├ ƒ /api/live/sources                                                        0 B                0 B
+2026-06-14T18:49:29.031Z	├ ƒ /api/login                                                               0 B                0 B
+2026-06-14T18:49:29.031Z	├ ƒ /api/logout                                                              0 B                0 B
+2026-06-14T18:49:29.031Z	├ ƒ /api/manga/detail                                                        0 B                0 B
+2026-06-14T18:49:29.031Z	├ ƒ /api/manga/history                                                       0 B                0 B
+2026-06-14T18:49:29.031Z	├ ƒ /api/manga/image                                                         0 B                0 B
+2026-06-14T18:49:29.031Z	├ ƒ /api/manga/pages                                                         0 B                0 B
+2026-06-14T18:49:29.031Z	├ ƒ /api/manga/recommend                                                     0 B                0 B
+2026-06-14T18:49:29.031Z	├ ƒ /api/manga/search                                                        0 B                0 B
+2026-06-14T18:49:29.032Z	├ ƒ /api/manga/search/ws                                                     0 B                0 B
+2026-06-14T18:49:29.032Z	├ ƒ /api/manga/shelf                                                         0 B                0 B
+2026-06-14T18:49:29.032Z	├ ƒ /api/manga/sources                                                       0 B                0 B
+2026-06-14T18:49:29.032Z	├ ƒ /api/movie-requests                                                      0 B                0 B
+2026-06-14T18:49:29.032Z	├ ƒ /api/movie-requests/[id]                                                 0 B                0 B
+2026-06-14T18:49:29.032Z	├ ƒ /api/music                                                               0 B                0 B
+2026-06-14T18:49:29.032Z	├ ƒ /api/music/audio-proxy                                                   0 B                0 B
+2026-06-14T18:49:29.032Z	├ ƒ /api/music/playlists                                                     0 B                0 B
+2026-06-14T18:49:29.032Z	├ ƒ /api/music/playlists/songs                                               0 B                0 B
+2026-06-14T18:49:29.032Z	├ ƒ /api/music/playrecords                                                   0 B                0 B
+2026-06-14T18:49:29.032Z	├ ƒ /api/music/proxy                                                         0 B                0 B
+2026-06-14T18:49:29.032Z	├ ƒ /api/music/v2/discovery/album-songs                                      0 B                0 B
+2026-06-14T18:49:29.032Z	├ ƒ /api/music/v2/discovery/artist-songs                                     0 B                0 B
+2026-06-14T18:49:29.032Z	├ ƒ /api/music/v2/discovery/board-songs                                      0 B                0 B
+2026-06-14T18:49:29.032Z	├ ƒ /api/music/v2/discovery/boards                                           0 B                0 B
+2026-06-14T18:49:29.032Z	├ ƒ /api/music/v2/discovery/hot-search                                       0 B                0 B
+2026-06-14T18:49:29.033Z	├ ƒ /api/music/v2/discovery/songlist-detail                                  0 B                0 B
+2026-06-14T18:49:29.033Z	├ ƒ /api/music/v2/discovery/songlist-tags                                    0 B                0 B
+2026-06-14T18:49:29.033Z	├ ƒ /api/music/v2/discovery/songlists                                        0 B                0 B
+2026-06-14T18:49:29.033Z	├ ƒ /api/music/v2/history                                                    0 B                0 B
+2026-06-14T18:49:29.033Z	├ ƒ /api/music/v2/lyric                                                      0 B                0 B
+2026-06-14T18:49:29.033Z	├ ƒ /api/music/v2/play                                                       0 B                0 B
+2026-06-14T18:49:29.033Z	├ ƒ /api/music/v2/playlists                                                  0 B                0 B
+2026-06-14T18:49:29.033Z	├ ƒ /api/music/v2/playlists/[playlistId]                                     0 B                0 B
+2026-06-14T18:49:29.033Z	├ ƒ /api/music/v2/playlists/[playlistId]/songs                               0 B                0 B
+2026-06-14T18:49:29.033Z	├ ƒ /api/music/v2/search                                                     0 B                0 B
+2026-06-14T18:49:29.033Z	├ ƒ /api/music/v2/stream                                                     0 B                0 B
+2026-06-14T18:49:29.033Z	├ ƒ /api/netdisk/115/instant-play                                            0 B                0 B
+2026-06-14T18:49:29.033Z	├ ƒ /api/netdisk/115/play                                                    0 B                0 B
+2026-06-14T18:49:29.033Z	├ ƒ /api/netdisk/123/instant-play                                            0 B                0 B
+2026-06-14T18:49:29.033Z	├ ƒ /api/netdisk/123/play                                                    0 B                0 B
+2026-06-14T18:49:29.034Z	├ ƒ /api/netdisk/baidu/instant-play                                          0 B                0 B
+2026-06-14T18:49:29.034Z	├ ƒ /api/netdisk/baidu/play                                                  0 B                0 B
+2026-06-14T18:49:29.034Z	├ ƒ /api/netdisk/baidu/proxy                                                 0 B                0 B
+2026-06-14T18:49:29.034Z	├ ƒ /api/netdisk/check/cancel                                                0 B                0 B
+2026-06-14T18:49:29.034Z	├ ƒ /api/netdisk/check/start                                                 0 B                0 B
+2026-06-14T18:49:29.034Z	├ ƒ /api/netdisk/check/task                                                  0 B                0 B
+2026-06-14T18:49:29.034Z	├ ƒ /api/netdisk/mobile/instant-play                                         0 B                0 B
+2026-06-14T18:49:29.034Z	├ ƒ /api/netdisk/mobile/play                                                 0 B                0 B
+2026-06-14T18:49:29.034Z	├ ƒ /api/netdisk/quark/instant-play                                          0 B                0 B
+2026-06-14T18:49:29.034Z	├ ƒ /api/netdisk/quark/play                                                  0 B                0 B
+2026-06-14T18:49:29.034Z	├ ƒ /api/netdisk/quark/proxy                                                 0 B                0 B
+2026-06-14T18:49:29.034Z	├ ƒ /api/netdisk/quark/transfer                                              0 B                0 B
+2026-06-14T18:49:29.035Z	├ ƒ /api/netdisk/tianyi/instant-play                                         0 B                0 B
+2026-06-14T18:49:29.035Z	├ ƒ /api/netdisk/tianyi/play                                                 0 B                0 B
+2026-06-14T18:49:29.035Z	├ ƒ /api/netdisk/uc/instant-play                                             0 B                0 B
+2026-06-14T18:49:29.035Z	├ ƒ /api/netdisk/uc/play                                                     0 B                0 B
+2026-06-14T18:49:29.035Z	├ ƒ /api/netdisk/uc/proxy                                                    0 B                0 B
+2026-06-14T18:49:29.035Z	├ ƒ /api/notifications                                                       0 B                0 B
+2026-06-14T18:49:29.035Z	├ ƒ /api/notifications/push                                                  0 B                0 B
+2026-06-14T18:49:29.035Z	├ ƒ /api/offline-download                                                    0 B                0 B
+2026-06-14T18:49:29.035Z	├ ƒ /api/offline-download/local                                              0 B                0 B
+2026-06-14T18:49:29.035Z	├ ƒ /api/offline-download/local/[source]/[videoId]/[episodeIndex]/[...file]  0 B                0 B
+2026-06-14T18:49:29.035Z	├ ƒ /api/openlist/check                                                      0 B                0 B
+2026-06-14T18:49:29.035Z	├ ƒ /api/openlist/cms-proxy/[token]                                          0 B                0 B
+2026-06-14T18:49:29.035Z	├ ƒ /api/openlist/correct                                                    0 B                0 B
+2026-06-14T18:49:29.035Z	├ ƒ /api/openlist/delete                                                     0 B                0 B
+2026-06-14T18:49:29.035Z	├ ƒ /api/openlist/detail                                                     0 B                0 B
+2026-06-14T18:49:29.035Z	├ ƒ /api/openlist/list                                                       0 B                0 B
+2026-06-14T18:49:29.035Z	├ ƒ /api/openlist/play                                                       0 B                0 B
+2026-06-14T18:49:29.035Z	├ ƒ /api/openlist/play/[token]                                               0 B                0 B
+2026-06-14T18:49:29.035Z	├ ƒ /api/openlist/refresh                                                    0 B                0 B
+2026-06-14T18:49:29.036Z	├ ƒ /api/openlist/refresh-video                                              0 B                0 B
+2026-06-14T18:49:29.036Z	├ ƒ /api/openlist/scan-progress                                              0 B                0 B
+2026-06-14T18:49:29.036Z	├ ƒ /api/pansou/search                                                       0 B                0 B
+2026-06-14T18:49:29.036Z	├ ƒ /api/playrecords                                                         0 B                0 B
+2026-06-14T18:49:29.036Z	├ ƒ /api/proxy-m3u8                                                          0 B                0 B
+2026-06-14T18:49:29.036Z	├ ƒ /api/proxy/key                                                           0 B                0 B
+2026-06-14T18:49:29.036Z	├ ƒ /api/proxy/logo                                                          0 B                0 B
+2026-06-14T18:49:29.036Z	├ ƒ /api/proxy/m3u8                                                          0 B                0 B
+2026-06-14T18:49:29.036Z	├ ƒ /api/proxy/segment                                                       0 B                0 B
+2026-06-14T18:49:29.036Z	├ ƒ /api/proxy/vod/key                                                       0 B                0 B
+2026-06-14T18:49:29.036Z	├ ƒ /api/proxy/vod/m3u8                                                      0 B                0 B
+2026-06-14T18:49:29.036Z	├ ƒ /api/proxy/vod/segment                                                   0 B                0 B
+2026-06-14T18:49:29.036Z	├ ƒ /api/register                                                            0 B                0 B
+2026-06-14T18:49:29.036Z	├ ƒ /api/search                                                              0 B                0 B
+2026-06-14T18:49:29.036Z	├ ƒ /api/search/one                                                          0 B                0 B
+2026-06-14T18:49:29.036Z	├ ƒ /api/search/resources                                                    0 B                0 B
+2026-06-14T18:49:29.036Z	├ ƒ /api/search/suggestions                                                  0 B                0 B
+2026-06-14T18:49:29.036Z	├ ƒ /api/search/ws                                                           0 B                0 B
+2026-06-14T18:49:29.036Z	├ ƒ /api/searchhistory                                                       0 B                0 B
+2026-06-14T18:49:29.036Z	├ ƒ /api/server-config                                                       0 B                0 B
+2026-06-14T18:49:29.036Z	├ ƒ /api/skipconfigs                                                         0 B                0 B
+2026-06-14T18:49:29.036Z	├ ƒ /api/source-detail                                                       0 B                0 B
+2026-06-14T18:49:29.036Z	├ ƒ /api/source-script/play                                                  0 B                0 B
+2026-06-14T18:49:29.036Z	├ ƒ /api/source-search/categories                                            0 B                0 B
+2026-06-14T18:49:29.037Z	├ ƒ /api/source-search/search                                                0 B                0 B
+2026-06-14T18:49:29.037Z	├ ƒ /api/source-search/sources                                               0 B                0 B
+2026-06-14T18:49:29.037Z	├ ƒ /api/source-search/videos                                                0 B                0 B
+2026-06-14T18:49:29.037Z	├ ƒ /api/theme/css                                                           0 B                0 B
+2026-06-14T18:49:29.037Z	├ ƒ /api/tmdb-details                                                        0 B                0 B
+2026-06-14T18:49:29.037Z	├ ƒ /api/tmdb-recommendations                                                0 B                0 B
+2026-06-14T18:49:29.037Z	├ ƒ /api/tmdb/credits                                                        0 B                0 B
+2026-06-14T18:49:29.037Z	├ ƒ /api/tmdb/detail                                                         0 B                0 B
+2026-06-14T18:49:29.037Z	├ ƒ /api/tmdb/episodes                                                       0 B                0 B
+2026-06-14T18:49:29.037Z	├ ƒ /api/tmdb/images                                                         0 B                0 B
+2026-06-14T18:49:29.037Z	├ ƒ /api/tmdb/search                                                         0 B                0 B
+2026-06-14T18:49:29.037Z	├ ƒ /api/tmdb/seasons                                                        0 B                0 B
+2026-06-14T18:49:29.037Z	├ ƒ /api/tmdb/trending                                                       0 B                0 B
+2026-06-14T18:49:29.037Z	├ ƒ /api/tmdb/upcoming                                                       0 B                0 B
+2026-06-14T18:49:29.037Z	├ ƒ /api/tmdb/videos                                                         0 B                0 B
+2026-06-14T18:49:29.037Z	├ ƒ /api/tv-remote/devices                                                   0 B                0 B
+2026-06-14T18:49:29.037Z	├ ƒ /api/tv-remote/key                                                       0 B                0 B
+2026-06-14T18:49:29.037Z	├ ƒ /api/tv-remote/text                                                      0 B                0 B
+2026-06-14T18:49:29.037Z	├ ƒ /api/tvbox/config                                                        0 B                0 B
+2026-06-14T18:49:29.037Z	├ ƒ /api/tvbox/subscribe                                                     0 B                0 B
+2026-06-14T18:49:29.037Z	├ ƒ /api/user/email-settings                                                 0 B                0 B
+2026-06-14T18:49:29.037Z	├ ƒ /api/user/tvbox-token                                                    0 B                0 B
+2026-06-14T18:49:29.037Z	├ ƒ /api/user/tvbox-token/reset                                              0 B                0 B
+2026-06-14T18:49:29.037Z	├ ƒ /api/video-proxy                                                         0 B                0 B
+2026-06-14T18:49:29.037Z	├ ƒ /api/watch-room-auth                                                     0 B                0 B
+2026-06-14T18:49:29.037Z	├ ƒ /api/web-live/proxy/[filename]                                           0 B                0 B
+2026-06-14T18:49:29.037Z	├ ƒ /api/web-live/sources                                                    0 B                0 B
+2026-06-14T18:49:29.038Z	├ ƒ /api/web-live/stream                                                     0 B                0 B
+2026-06-14T18:49:29.038Z	├ ƒ /api/xiaoya/browse                                                       0 B                0 B
+2026-06-14T18:49:29.038Z	├ ƒ /api/xiaoya/play                                                         0 B                0 B
+2026-06-14T18:49:29.038Z	├ ƒ /api/xiaoya/search                                                       0 B                0 B
+2026-06-14T18:49:29.038Z	├ ƒ /books                                                                   3.12 kB         100 kB
+2026-06-14T18:49:29.038Z	├ ƒ /books/catalog                                                           4.78 kB         102 kB
+2026-06-14T18:49:29.038Z	├ ƒ /books/detail                                                            6.14 kB         109 kB
+2026-06-14T18:49:29.038Z	├ ƒ /books/history                                                           6.95 kB         109 kB
+2026-06-14T18:49:29.038Z	├ ƒ /books/read                                                              23.8 kB         117 kB
+2026-06-14T18:49:29.038Z	├ ƒ /books/search                                                            6.21 kB         103 kB
+2026-06-14T18:49:29.038Z	├ ƒ /books/shelf                                                             3.76 kB         106 kB
+2026-06-14T18:49:29.038Z	├ ƒ /douban                                                                  8.39 kB         356 kB
+2026-06-14T18:49:29.039Z	├ ƒ /duanju                                                                  3.19 kB         347 kB
+2026-06-14T18:49:29.039Z	├ ƒ /live                                                                    18.9 kB         362 kB
+2026-06-14T18:49:29.039Z	├ ƒ /login                                                                   7.47 kB        95.4 kB
+2026-06-14T18:49:29.039Z	├ ƒ /manga                                                                   5.42 kB         149 kB
+2026-06-14T18:49:29.039Z	├ ƒ /manga/detail                                                            4.14 kB         148 kB
+2026-06-14T18:49:29.039Z	├ ƒ /manga/history                                                           3.19 kB         148 kB
+2026-06-14T18:49:29.039Z	├ ƒ /manga/read                                                              6.79 kB         151 kB
+2026-06-14T18:49:29.039Z	├ ƒ /manga/search                                                            5.03 kB         149 kB
+2026-06-14T18:49:29.039Z	├ ƒ /manga/shelf                                                             3.13 kB         147 kB
+2026-06-14T18:49:29.039Z	├ ƒ /movie-request                                                           4.12 kB         348 kB
+2026-06-14T18:49:29.039Z	├ ƒ /music                                                                   145 B            88 kB
+2026-06-14T18:49:29.039Z	├ ƒ /music/my-playlists                                                      3.14 kB          91 kB
+2026-06-14T18:49:29.039Z	├ ƒ /music/rankings                                                          3.29 kB        91.2 kB
+2026-06-14T18:49:29.039Z	├ ƒ /music/rankings/[source]/[playlistId]                                    3.09 kB          91 kB
+2026-06-14T18:49:29.039Z	├ ƒ /music/search                                                            7.05 kB          95 kB
+2026-06-14T18:49:29.039Z	├ ƒ /music/songlists                                                         4.28 kB        92.2 kB
+2026-06-14T18:49:29.039Z	├ ƒ /music/songlists/[source]/[playlistId]                                   3.02 kB        90.9 kB
+2026-06-14T18:49:29.039Z	├ ƒ /oidc-register                                                           4.8 kB         92.7 kB
+2026-06-14T18:49:29.039Z	├ ƒ /play                                                                    73.7 kB         471 kB
+2026-06-14T18:49:29.039Z	├ ƒ /private-library                                                         7.89 kB         351 kB
+2026-06-14T18:49:29.039Z	├ ƒ /qr-login                                                                1.99 kB        99.1 kB
+2026-06-14T18:49:29.040Z	├ ƒ /register                                                                7.05 kB          95 kB
+2026-06-14T18:49:29.040Z	├ ƒ /search                                                                  16.8 kB         366 kB
+2026-06-14T18:49:29.040Z	├ ƒ /source-search                                                           4.34 kB         348 kB
+2026-06-14T18:49:29.040Z	├ ƒ /special                                                                 1.65 kB        98.7 kB
+2026-06-14T18:49:29.040Z	├ ƒ /tv                                                                      2.5 kB          154 kB
+2026-06-14T18:49:29.040Z	├ ƒ /tv/anime                                                                3.01 kB         149 kB
+2026-06-14T18:49:29.040Z	├ ƒ /tv/detail                                                               6.84 kB         149 kB
+2026-06-14T18:49:29.042Z	├ ƒ /tv/live                                                                 6.05 kB         112 kB
+2026-06-14T18:49:29.043Z	├ ƒ /tv/live/play                                                            10.7 kB         108 kB
+2026-06-14T18:49:29.043Z	├ ƒ /tv/login                                                                3.96 kB         105 kB
+2026-06-14T18:49:29.043Z	├ ƒ /tv/me                                                                   5.1 kB          106 kB
+2026-06-14T18:49:29.043Z	├ ƒ /tv/movie                                                                1.83 kB         148 kB
+2026-06-14T18:49:29.043Z	├ ƒ /tv/play                                                                 13.3 kB         118 kB
+2026-06-14T18:49:29.043Z	├ ƒ /tv/private                                                              3.35 kB         149 kB
+2026-06-14T18:49:29.043Z	├ ƒ /tv/search                                                               5.75 kB         154 kB
+2026-06-14T18:49:29.043Z	├ ƒ /tv/series                                                               1.83 kB         148 kB
+2026-06-14T18:49:29.043Z	├ ƒ /tv/variety                                                              1.83 kB         148 kB
+2026-06-14T18:49:29.043Z	├ ƒ /warning                                                                 145 B            88 kB
+2026-06-14T18:49:29.043Z	├ ƒ /watch-room                                                              6.95 kB         350 kB
+2026-06-14T18:49:29.043Z	├ ƒ /watch-room/music                                                        7.8 kB          114 kB
+2026-06-14T18:49:29.043Z	├ ƒ /watch-room/screen                                                       5.56 kB         121 kB
+2026-06-14T18:49:29.043Z	└ ƒ /web-live                                                                7 kB            351 kB
+2026-06-14T18:49:29.049Z	+ First Load JS shared by all                                                87.9 kB
+2026-06-14T18:49:29.049Z	  ├ chunks/3493-dbf642b526ce4502.js                                          31.9 kB
+2026-06-14T18:49:29.049Z	  ├ chunks/95b29f1a-8cc22ed74550b05b.js                                      53.6 kB
+2026-06-14T18:49:29.049Z	  └ other shared chunks (total)                                              2.37 kB
+2026-06-14T18:49:29.049Z	
+2026-06-14T18:49:29.049Z	
+2026-06-14T18:49:29.049Z	ƒ Middleware                                                                 185 kB
+2026-06-14T18:49:29.049Z	
+2026-06-14T18:49:29.050Z	○  (Static)   prerendered as static content
+2026-06-14T18:49:29.050Z	ƒ  (Dynamic)  server-rendered on demand
+2026-06-14T18:49:29.050Z	
+2026-06-14T18:49:29.090Z	
+2026-06-14T18:49:29.090Z	> moontv@0.1.0 postbuild /opt/buildhome/repo
+2026-06-14T18:49:29.090Z	> echo 'Build completed - sitemap generation disabled'
+2026-06-14T18:49:29.090Z	
+2026-06-14T18:49:29.092Z	Build completed - sitemap generation disabled
+2026-06-14T18:49:29.108Z	Success: Build command completed
+2026-06-14T18:49:29.429Z	Executing user deploy command: npx wrangler deploy
+2026-06-14T18:49:35.170Z	sh: 1: wrangler: not found
+2026-06-14T18:49:35.206Z	Failed: error occurred while running deploy command
