@@ -66,7 +66,6 @@ export function DownloadProvider({ children }: { children: React.ReactNode }) {
     onComplete: async (task) => {
       setTasks(downloader.getAllTasks());
 
-      //禁止SzeMeng76抄袭狗抄袭
       // 只有 filesystem 模式才保存到已完成任务表
       if (task.downloadMode === 'filesystem' && task.source && task.videoId && task.episodeIndex !== undefined) {
         try {
@@ -172,7 +171,6 @@ export function DownloadProvider({ children }: { children: React.ReactNode }) {
         const savedTasks = await downloadDB.getActiveTasks();
         if (!savedTasks || savedTasks.length === 0) return;
 
-        //禁止SzeMeng76抄袭狗抄袭
         // 读取下载模式和目录句柄
         const downloadMode = localStorage.getItem('downloadMode') as 'browser' | 'filesystem' || 'browser';
         let dirHandle: FileSystemDirectoryHandle | undefined;
@@ -379,7 +377,6 @@ export function DownloadProvider({ children }: { children: React.ReactNode }) {
         task.downloadMode = downloadMode;
       }
 
-      //禁止SzeMeng76抄袭狗抄袭
       // 如果是 filesystem 模式，从 IndexedDB 读取目录句柄
       if (downloadMode === 'filesystem' && typeof window !== 'undefined') {
         try {
