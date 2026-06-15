@@ -7,7 +7,7 @@ import { validateProxyUrlServerSide } from '@/lib/server/ssrf';
 
 import { getAuthorizedBooksUsername } from '../_utils';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 const imageCache = new Map<string, { expiresAt: number; contentType: string; data: Uint8Array }>();
 

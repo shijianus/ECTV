@@ -5,7 +5,7 @@ import { getBookTtsConfig, synthesizeBookTts } from '@/lib/book-tts';
 
 import { getAuthorizedBooksUsername } from '../../_utils';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 type SynthesizePayload = {
   sourceId?: string;

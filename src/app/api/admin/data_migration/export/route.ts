@@ -2,8 +2,6 @@ export const dynamic = 'force-dynamic';
 /* eslint-disable @typescript-eslint/no-explicit-any,no-console */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { promisify } from 'util';
-import { gzip } from 'zlib';
 
 import { getAuthInfoFromCookie } from '@/lib/auth';
 import { SimpleCrypto } from '@/lib/crypto';
@@ -13,7 +11,48 @@ import { updateProgress, clearProgress } from '@/lib/data-migration-progress';
 
 export const runtime = 'edge';
 
-const gzipAsync = promisify(gzip);
+/**
+ * 使用 CompressionStream 进行 gzip 压缩 (Edge 运行时兼容)
+ */
+async function gzipAsync(data: string): Promise<Uint8Array> {
+  const encoder = new TextEncoder();
+  const uint8Data = encoder.encode(data);
+  const stream = new ReadableStream({
+    start(controller) {
+      controller.enqueue(uint8Data);
+      controller.close();
+    },
+  });
+  const compressionStream = new CompressionStream('gzip');
+  const compressedStream = stream.pipeThrough(compressionStream);
+  const reader = compressedStream.getReader();
+  const chunks: Uint8Array[] = [];
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    chunks.push(value);
+  }
+  const totalLength = chunks.reduce((acc, chunk) => acc + chunk.length, 0);
+  const result = new Uint8Array(totalLength);
+  let offset = 0;
+  for (const chunk of chunks) {
+    result.set(chunk, offset);
+    offset += chunk.length;
+  }
+  return result;
+}
+
+/**
+ * 将 Uint8Array 转换为 Base64
+ */
+function uint8ArrayToBase64(uint8: Uint8Array): string {
+  let binary = '';
+  const len = uint8.byteLength;
+  for (let i = 0; i < len; i++) {
+    binary += String.fromCharCode(uint8[i]);
+  }
+  return btoa(binary);
+}
 
 export async function POST(req: NextRequest) {
   try {
@@ -198,12 +237,12 @@ export async function POST(req: NextRequest) {
 
     // 使用提供的密码加密压缩后的数据
     updateProgress(username, 'export', 'encrypting', exportedCount, exportedCount, '正在加密数据...');
-    const encryptedData = SimpleCrypto.encrypt(compressedData.toString('base64'), password);
+    const encryptedData = SimpleCrypto.encrypt(uint8ArrayToBase64(compressedData), password);
 
     // 生成文件名
     const now = new Date();
     const timestamp = `${now.getFullYear()}${String(now.getMonth() + 1).padStart(2, '0')}${String(now.getDate()).padStart(2, '0')}-${String(now.getHours()).padStart(2, '0')}${String(now.getMinutes()).padStart(2, '0')}${String(now.getSeconds()).padStart(2, '0')}`;
-    const filename = \`ectv-backup-${timestamp}.dat\`;
+    const filename = `ectv-backup-${timestamp}.dat`;
 
     // 清除进度信息
     updateProgress(username, 'export', 'completed', exportedCount, exportedCount, '导出完成！');

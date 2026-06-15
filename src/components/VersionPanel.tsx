@@ -559,4 +559,3 @@ export const VersionPanel: React.FC<VersionPanelProps> = ({
 
   return createPortal(versionPanelContent, document.body);
 };
-};

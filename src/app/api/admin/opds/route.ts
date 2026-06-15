@@ -7,7 +7,7 @@ import { db } from '@/lib/db';
 import { legadoClient } from '@/lib/legado.client';
 import { opdsClient } from '@/lib/opds.client';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 interface TestSourceInput {
   id?: string;

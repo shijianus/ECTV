@@ -7,7 +7,7 @@ import { getConfig } from '@/lib/config';
 import { requireFeaturePermission } from '@/lib/permissions';
 import { OpenListClient } from '@/lib/openlist.client';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 // 获取 OpenList 客户端
 async function getOpenListClient(): Promise<OpenListClient | null> {

@@ -1,5 +1,5 @@
 export const dynamic = 'force-dynamic';
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 import crypto from 'crypto';
 import { NextRequest, NextResponse } from 'next/server';
 

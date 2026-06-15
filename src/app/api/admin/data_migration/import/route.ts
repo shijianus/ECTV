@@ -2,8 +2,6 @@ export const dynamic = 'force-dynamic';
 /* eslint-disable @typescript-eslint/no-explicit-any,no-console */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { promisify } from 'util';
-import { gunzip } from 'zlib';
 
 import { getAuthInfoFromCookie } from '@/lib/auth';
 import { configSelfCheck, setCachedConfig } from '@/lib/config';
@@ -13,7 +11,47 @@ import { updateProgress, clearProgress } from '@/lib/data-migration-progress';
 
 export const runtime = 'edge';
 
-const gunzipAsync = promisify(gunzip);
+/**
+ * 使用 DecompressionStream 进行 gzip 解压 (Edge 运行时兼容)
+ */
+async function gunzipAsync(data: Uint8Array): Promise<string> {
+  const stream = new ReadableStream({
+    start(controller) {
+      controller.enqueue(data);
+      controller.close();
+    },
+  });
+  const decompressionStream = new DecompressionStream('gzip');
+  const decompressedStream = stream.pipeThrough(decompressionStream);
+  const reader = decompressedStream.getReader();
+  const chunks: Uint8Array[] = [];
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    chunks.push(value);
+  }
+  const totalLength = chunks.reduce((acc, chunk) => acc + chunk.length, 0);
+  const result = new Uint8Array(totalLength);
+  let offset = 0;
+  for (const chunk of chunks) {
+    result.set(chunk, offset);
+    offset += chunk.length;
+  }
+  return new TextDecoder().decode(result);
+}
+
+/**
+ * 将 Base64 转换为 Uint8Array
+ */
+function base64ToUint8Array(base64: string): Uint8Array {
+  const binaryString = atob(base64);
+  const len = binaryString.length;
+  const bytes = new Uint8Array(len);
+  for (let i = 0; i < len; i++) {
+    bytes[i] = binaryString.charCodeAt(i);
+  }
+  return bytes;
+}
 
 export async function POST(req: NextRequest) {
   try {
@@ -64,9 +102,8 @@ export async function POST(req: NextRequest) {
     }
 
     // 解压缩数据
-    const compressedBuffer = Buffer.from(decryptedData, 'base64');
-    const decompressedBuffer = await gunzipAsync(compressedBuffer);
-    const decompressedData = decompressedBuffer.toString();
+    const compressedData = base64ToUint8Array(decryptedData);
+    const decompressedData = await gunzipAsync(compressedData);
 
     // 解析JSON数据
     let importData: any;

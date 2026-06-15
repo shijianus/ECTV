@@ -8,7 +8,7 @@ import { getAuthInfoFromCookie } from '@/lib/auth';
 import { db } from '@/lib/db';
 import { requireFeaturePermission } from '@/lib/permissions';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 // GET - 获取用户的所有歌单
 export async function GET(request: NextRequest) {
