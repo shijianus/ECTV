@@ -104,39 +104,67 @@ function getD1Adapter(): any {
 
   // 生产环境：Cloudflare Workers/Pages
   if (isCloudflare) {
-    // 创建一个懒加载的适配器，延迟到实际使用时才获取 D1 绑定
+    // 延迟初始化 Cloudflare D1 适配器
     let cachedAdapter: any = null;
 
-    return new Proxy(
-      {},
-      {
-        get(target, prop) {
-          // 懒加载：第一次访问时才获取真实的 D1 适配器
-          if (!cachedAdapter) {
-            try {
-              const {
-                getCloudflareContext,
-              } = require('@opennextjs/cloudflare');
-              const { env } = getCloudflareContext();
+    const getAdapter = async () => {
+      if (!cachedAdapter) {
+        try {
+          const { getCloudflareContext } = require('@opennextjs/cloudflare');
+          // 关键修复：使用 async 模式避免在顶层作用域或静态路由中报错
+          const { env } = await getCloudflareContext({ async: true });
 
-              if (!env.DB) {
-                throw new Error(
-                  'D1 database binding (DB) not found in Cloudflare environment'
-                );
-              }
-
-              console.log('Using Cloudflare D1 database');
-              cachedAdapter = new CloudflareD1Adapter(env.DB);
-            } catch (error) {
-              console.error('Failed to initialize Cloudflare D1:', error);
-              throw error;
-            }
+          if (!env.DB) {
+            throw new Error(
+              'D1 database binding (DB) not found in Cloudflare environment'
+            );
           }
 
-          return cachedAdapter[prop];
-        },
+          console.log('Using Cloudflare D1 database (Async Initialized)');
+          cachedAdapter = new CloudflareD1Adapter(env.DB);
+        } catch (error) {
+          console.error('Failed to initialize Cloudflare D1 (Async):', error);
+          throw error;
+        }
       }
-    );
+      return cachedAdapter;
+    };
+
+    return {
+      prepare(query: string) {
+        let params: any[] = [];
+        return {
+          query,
+          get params() { return params; },
+          bind(...values: any[]) {
+            params = values;
+            return this;
+          },
+          async first(colName?: string) {
+            const adapter = await getAdapter();
+            const stmt = adapter.prepare(query).bind(...params);
+            return stmt.first(colName);
+          },
+          async run() {
+            const adapter = await getAdapter();
+            const stmt = adapter.prepare(query).bind(...params);
+            return stmt.run();
+          },
+          async all() {
+            const adapter = await getAdapter();
+            const stmt = adapter.prepare(query).bind(...params);
+            return stmt.all();
+          }
+        };
+      },
+      async batch(statements: any[]) {
+        const adapter = await getAdapter();
+        const realStatements = statements.map((stmt: any) => 
+          adapter.prepare(stmt.query).bind(...(stmt.params || []))
+        );
+        return adapter.batch(realStatements);
+      }
+    };
   }
 
   // 开发环境：better-sqlite3
@@ -175,10 +203,17 @@ export function generateStorageKey(source: string, id: string): string {
 
 // 导出便捷方法
 export class DbManager {
-  private storage: IStorage;
+  private _storage: IStorage | null = null;
 
   constructor() {
-    this.storage = getStorage();
+    // 延迟初始化，避免在顶层作用域触发 getCloudflareContext
+  }
+
+  private get storage(): IStorage {
+    if (!this._storage) {
+      this._storage = getStorage();
+    }
+    return this._storage;
   }
 
   // 播放记录相关方法

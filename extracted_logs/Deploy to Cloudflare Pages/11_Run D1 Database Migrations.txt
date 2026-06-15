@@ -1,0 +1,357 @@
+﻿2026-06-15T11:17:16.5613687Z ##[group]Run STORAGE_TYPE="***"
+2026-06-15T11:17:16.5614084Z [36;1mSTORAGE_TYPE="***"[0m
+2026-06-15T11:17:16.5614362Z [36;1m[0m
+2026-06-15T11:17:16.5614624Z [36;1mif [ "$STORAGE_TYPE" != "***" ]; then[0m
+2026-06-15T11:17:16.5615103Z [36;1m  echo "Storage type is not *** (current: $STORAGE_TYPE), skipping D1 migrations"[0m
+2026-06-15T11:17:16.5615550Z [36;1m  exit 0[0m
+2026-06-15T11:17:16.5615787Z [36;1mfi[0m
+2026-06-15T11:17:16.5616009Z [36;1m[0m
+2026-06-15T11:17:16.5616319Z [36;1mif [ -z "***" ]; then[0m
+2026-06-15T11:17:16.5616668Z [36;1m  echo "D1_DATABASE_ID not set, skipping migrations"[0m
+2026-06-15T11:17:16.5617029Z [36;1m  exit 0[0m
+2026-06-15T11:17:16.5617264Z [36;1mfi[0m
+2026-06-15T11:17:16.5617483Z [36;1m[0m
+2026-06-15T11:17:16.5617743Z [36;1mecho "Running D1 database migrations..."[0m
+2026-06-15T11:17:16.5618069Z [36;1m[0m
+2026-06-15T11:17:16.5618337Z [36;1mfor migration_file in ./migrations/*.sql; do[0m
+2026-06-15T11:17:16.5618692Z [36;1m  if [ -f "$migration_file" ]; then[0m
+2026-06-15T11:17:16.5619140Z [36;1m    echo "Executing migration: $(basename $migration_file)"[0m
+2026-06-15T11:17:16.5619862Z [36;1m    wrangler *** execute moontvplus --remote --file="$migration_file" || echo "⚠️ Migration may have been skipped (already applied)"[0m
+2026-06-15T11:17:16.5620498Z [36;1m  fi[0m
+2026-06-15T11:17:16.5620732Z [36;1mdone[0m
+2026-06-15T11:17:16.5620959Z [36;1m[0m
+2026-06-15T11:17:16.5621200Z [36;1mecho "✅ Migrations completed"[0m
+2026-06-15T11:17:16.5653294Z shell: /usr/bin/bash -e {0}
+2026-06-15T11:17:16.5653593Z env:
+2026-06-15T11:17:16.5653889Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-06-15T11:17:16.5654251Z   BUILD_TARGET: cloudflare
+2026-06-15T11:17:16.5654525Z   NODE_ENV: production
+2026-06-15T11:17:16.5654810Z   NEXT_PUBLIC_STORAGE_TYPE: ***
+2026-06-15T11:17:16.5655105Z   NEXT_PUBLIC_SITE_NAME: ***
+2026-06-15T11:17:16.5655386Z   NEXT_PUBLIC_SEARCH_MAX_PAGE: 
+2026-06-15T11:17:16.5655690Z   NEXT_PUBLIC_DOUBAN_PROXY_TYPE: 
+2026-06-15T11:17:16.5656009Z   NEXT_PUBLIC_DOUBAN_PROXY: 
+2026-06-15T11:17:16.5656303Z   NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE: 
+2026-06-15T11:17:16.5656624Z   NEXT_PUBLIC_DOUBAN_IMAGE_PROXY: 
+2026-06-15T11:17:16.5656929Z   NEXT_PUBLIC_DISABLE_YELLOW_FILTER: 
+2026-06-15T11:17:16.5657229Z   NEXT_PUBLIC_FLUID_SEARCH: 
+2026-06-15T11:17:16.5657508Z   NEXT_PUBLIC_PROXY_M3U8_TOKEN: 
+2026-06-15T11:17:16.5657814Z   NEXT_PUBLIC_DANMAKU_CACHE_EXPIRE_MINUTES: 
+2026-06-15T11:17:16.5658147Z   NEXT_PUBLIC_VOICE_CHAT_STRATEGY: 
+2026-06-15T11:17:16.5658451Z   NEXT_PUBLIC_ENABLE_OFFLINE_DOWNLOAD: 
+2026-06-15T11:17:16.5658787Z   NEXT_PUBLIC_ENABLE_SOURCE_SEARCH: ***
+2026-06-15T11:17:16.5659093Z   USERNAME: ***
+2026-06-15T11:17:16.5659353Z   PASSWORD: ***
+2026-06-15T11:17:16.5659580Z   UPSTASH_URL: 
+2026-06-15T11:17:16.5659809Z   UPSTASH_TOKEN: 
+2026-06-15T11:17:16.5660092Z   TMDB_API_KEY: ***
+2026-06-15T11:17:16.5660370Z   TMDB_PROXY: ***
+2026-06-15T11:17:16.5660617Z   TMDB_REVERSE_PROXY: 
+2026-06-15T11:17:16.5660874Z   DANMAKU_API_BASE: 
+2026-06-15T11:17:16.5661135Z   DANMAKU_API_TOKEN: 
+2026-06-15T11:17:16.5661669Z   ANNOUNCEMENT: 
+2026-06-15T11:17:16.5661927Z   CRON_PASSWORD: 
+2026-06-15T11:17:16.5662161Z   SITE_BASE: 
+2026-06-15T11:17:16.5662386Z   REDIS_URL: 
+2026-06-15T11:17:16.5662617Z   KVROCKS_URL: 
+2026-06-15T11:17:16.5662843Z   INIT_CONFIG: 
+2026-06-15T11:17:16.5663085Z   CONFIG_SUBSCRIPTION_URL: 
+2026-06-15T11:17:16.5663374Z   ENABLE_TVBOX_SUBSCRIBE: 
+2026-06-15T11:17:16.5663652Z   TVBOX_SUBSCRIBE_TOKEN: 
+2026-06-15T11:17:16.5663929Z   WATCH_ROOM_ENABLED: ***
+2026-06-15T11:17:16.5664203Z   WATCH_ROOM_EXTERNAL_SERVER_AUTH: 
+2026-06-15T11:17:16.5664514Z   WATCH_ROOM_EXTERNAL_SERVER_URL: 
+2026-06-15T11:17:16.5664806Z   WATCH_ROOM_SERVER_TYPE: 
+2026-06-15T11:17:16.5665220Z   CLOUDFLARE_API_TOKEN: ***
+2026-06-15T11:17:16.5665552Z   CLOUDFLARE_ACCOUNT_ID: ***
+2026-06-15T11:17:16.5665825Z ##[endgroup]
+2026-06-15T11:17:16.5719074Z Running D1 database migrations...
+2026-06-15T11:17:16.5733227Z Executing migration: 001_initial_schema.sql
+2026-06-15T11:17:17.4540323Z 
+2026-06-15T11:17:17.4541690Z  ⛅️ wrangler 4.60.0 (update available 4.100.0)
+2026-06-15T11:17:17.4542743Z ──────────────────────────────────────────────
+2026-06-15T11:17:17.4543494Z Resource location: remote 
+2026-06-15T11:17:17.4543852Z 
+2026-06-15T11:17:17.5165823Z [33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1m⚠️ This process may take some time, during which your D1 database will be unavailable to serve queries.[0m
+2026-06-15T11:17:17.5166927Z 
+2026-06-15T11:17:17.5166941Z 
+2026-06-15T11:17:17.5178556Z 🌀 Executing on remote database moontvplus (***):
+2026-06-15T11:17:17.5180059Z 🌀 To execute on your local development database, remove the --remote flag from your wrangler command.
+2026-06-15T11:17:17.5211234Z Note: if the execution fails to complete, your DB will return to its original state and you can safely retry.
+2026-06-15T11:17:17.5217398Z ├ Checking if file needs uploading
+2026-06-15T11:17:17.5923620Z │
+2026-06-15T11:17:17.5932186Z 
+2026-06-15T11:17:17.5948771Z [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mA request to the Cloudflare API (/accounts/***/***/database/***/import) failed.[0m
+2026-06-15T11:17:17.5949322Z 
+2026-06-15T11:17:17.5949500Z   Authentication error [code: 10000]
+2026-06-15T11:17:17.5949728Z 
+2026-06-15T11:17:17.5949917Z 
+2026-06-15T11:17:17.5950968Z 📎 It looks like you are authenticating Wrangler via a custom API token set in an environment variable.
+2026-06-15T11:17:17.5952615Z Please ensure it has the correct permissions for this operation.
+2026-06-15T11:17:17.5953309Z 
+2026-06-15T11:17:17.5953785Z Getting User settings...
+2026-06-15T11:17:18.3094207Z 👋 You are logged in with an User API Token, associated with the email rubahcruba@gmail.com.
+2026-06-15T11:17:18.3095289Z ℹ️  The API Token is read from the CLOUDFLARE_API_TOKEN environment variable.
+2026-06-15T11:17:18.3134302Z ┌────────────────────────────────┬──────────────────────────────────┐
+2026-06-15T11:17:18.3135670Z │ Account Name                   │ Account ID                       │
+2026-06-15T11:17:18.3137087Z ├────────────────────────────────┼──────────────────────────────────┤
+2026-06-15T11:17:18.3138294Z │ Rubahcruba@gmail.com's Account │ *** │
+2026-06-15T11:17:18.3139354Z └────────────────────────────────┴──────────────────────────────────┘
+2026-06-15T11:17:18.3140626Z 🔓 To see token permissions visit https://dash.cloudflare.com/profile/api-tokens.
+2026-06-15T11:17:18.4761055Z 🎢 Membership roles in "Rubahcruba@gmail.com's Account": Contact account super admin to change your permissions.
+2026-06-15T11:17:18.4762559Z - Super Administrator - All Privileges
+2026-06-15T11:17:18.4872320Z 🪵  Logs were written to "/home/runner/.config/.wrangler/logs/wrangler-2026-06-15_11-17-17_052.log"
+2026-06-15T11:17:18.5092146Z ⚠️ Migration may have been skipped (already applied)
+2026-06-15T11:17:18.5105806Z Executing migration: 002_add_music_play_records.sql
+2026-06-15T11:17:19.2046081Z 
+2026-06-15T11:17:19.2047020Z  ⛅️ wrangler 4.60.0 (update available 4.100.0)
+2026-06-15T11:17:19.2047710Z ──────────────────────────────────────────────
+2026-06-15T11:17:19.2050136Z Resource location: remote 
+2026-06-15T11:17:19.2050389Z 
+2026-06-15T11:17:19.2676851Z [33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1m⚠️ This process may take some time, during which your D1 database will be unavailable to serve queries.[0m
+2026-06-15T11:17:19.2677941Z 
+2026-06-15T11:17:19.2677958Z 
+2026-06-15T11:17:19.2691799Z 🌀 Executing on remote database moontvplus (***):
+2026-06-15T11:17:19.2693399Z 🌀 To execute on your local development database, remove the --remote flag from your wrangler command.
+2026-06-15T11:17:19.2825729Z Note: if the execution fails to complete, your DB will return to its original state and you can safely retry.
+2026-06-15T11:17:19.2831134Z ├ Checking if file needs uploading
+2026-06-15T11:17:19.3283162Z │
+2026-06-15T11:17:19.3291861Z 
+2026-06-15T11:17:19.3306103Z [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mA request to the Cloudflare API (/accounts/***/***/database/***/import) failed.[0m
+2026-06-15T11:17:19.3307830Z 
+2026-06-15T11:17:19.3308151Z   Authentication error [code: 10000]
+2026-06-15T11:17:19.3308567Z 
+2026-06-15T11:17:19.3308581Z 
+2026-06-15T11:17:19.3323431Z 📎 It looks like you are authenticating Wrangler via a custom API token set in an environment variable.
+2026-06-15T11:17:19.3324909Z Please ensure it has the correct permissions for this operation.
+2026-06-15T11:17:19.3327029Z 
+2026-06-15T11:17:19.3327942Z Getting User settings...
+2026-06-15T11:17:19.6820182Z 👋 You are logged in with an User API Token, associated with the email rubahcruba@gmail.com.
+2026-06-15T11:17:19.6821831Z ℹ️  The API Token is read from the CLOUDFLARE_API_TOKEN environment variable.
+2026-06-15T11:17:19.6859902Z ┌────────────────────────────────┬──────────────────────────────────┐
+2026-06-15T11:17:19.6861095Z │ Account Name                   │ Account ID                       │
+2026-06-15T11:17:19.6862572Z ├────────────────────────────────┼──────────────────────────────────┤
+2026-06-15T11:17:19.6863728Z │ Rubahcruba@gmail.com's Account │ *** │
+2026-06-15T11:17:19.6864888Z └────────────────────────────────┴──────────────────────────────────┘
+2026-06-15T11:17:19.6866158Z 🔓 To see token permissions visit https://dash.cloudflare.com/profile/api-tokens.
+2026-06-15T11:17:19.9503186Z 🎢 Membership roles in "Rubahcruba@gmail.com's Account": Contact account super admin to change your permissions.
+2026-06-15T11:17:19.9504460Z - Super Administrator - All Privileges
+2026-06-15T11:17:19.9607434Z 🪵  Logs were written to "/home/runner/.config/.wrangler/logs/wrangler-2026-06-15_11-17-18_986.log"
+2026-06-15T11:17:19.9791291Z ⚠️ Migration may have been skipped (already applied)
+2026-06-15T11:17:19.9805795Z Executing migration: 003_add_new_episodes_to_play_records.sql
+2026-06-15T11:17:20.6600713Z 
+2026-06-15T11:17:20.6602029Z  ⛅️ wrangler 4.60.0 (update available 4.100.0)
+2026-06-15T11:17:20.6603044Z ──────────────────────────────────────────────
+2026-06-15T11:17:20.6605973Z Resource location: remote 
+2026-06-15T11:17:20.6606353Z 
+2026-06-15T11:17:20.7245666Z [33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1m⚠️ This process may take some time, during which your D1 database will be unavailable to serve queries.[0m
+2026-06-15T11:17:20.7246299Z 
+2026-06-15T11:17:20.7246309Z 
+2026-06-15T11:17:20.7260923Z 🌀 Executing on remote database moontvplus (***):
+2026-06-15T11:17:20.7262843Z 🌀 To execute on your local development database, remove the --remote flag from your wrangler command.
+2026-06-15T11:17:20.7396110Z Note: if the execution fails to complete, your DB will return to its original state and you can safely retry.
+2026-06-15T11:17:20.7401907Z ├ Checking if file needs uploading
+2026-06-15T11:17:20.8232637Z │
+2026-06-15T11:17:20.8244300Z 
+2026-06-15T11:17:20.8262572Z [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mA request to the Cloudflare API (/accounts/***/***/database/***/import) failed.[0m
+2026-06-15T11:17:20.8264430Z 📎 It looks like you are authenticating Wrangler via a custom API token set in an environment variable.
+2026-06-15T11:17:20.8266160Z Please ensure it has the correct permissions for this operation.
+2026-06-15T11:17:20.8266911Z 
+2026-06-15T11:17:20.8267149Z Getting User settings...
+2026-06-15T11:17:20.8267828Z 
+2026-06-15T11:17:20.8268167Z   Authentication error [code: 10000]
+2026-06-15T11:17:20.8268570Z 
+2026-06-15T11:17:20.8268584Z 
+2026-06-15T11:17:21.1633140Z 👋 You are logged in with an User API Token, associated with the email rubahcruba@gmail.com.
+2026-06-15T11:17:21.1634246Z ℹ️  The API Token is read from the CLOUDFLARE_API_TOKEN environment variable.
+2026-06-15T11:17:21.1671748Z ┌────────────────────────────────┬──────────────────────────────────┐
+2026-06-15T11:17:21.1672732Z │ Account Name                   │ Account ID                       │
+2026-06-15T11:17:21.1673770Z ├────────────────────────────────┼──────────────────────────────────┤
+2026-06-15T11:17:21.1674697Z │ Rubahcruba@gmail.com's Account │ *** │
+2026-06-15T11:17:21.1675384Z └────────────────────────────────┴──────────────────────────────────┘
+2026-06-15T11:17:21.1676950Z 🔓 To see token permissions visit https://dash.cloudflare.com/profile/api-tokens.
+2026-06-15T11:17:21.2697388Z 🎢 Membership roles in "Rubahcruba@gmail.com's Account": Contact account super admin to change your permissions.
+2026-06-15T11:17:21.2698366Z - Super Administrator - All Privileges
+2026-06-15T11:17:21.2783256Z 🪵  Logs were written to "/home/runner/.config/.wrangler/logs/wrangler-2026-06-15_11-17-20_446.log"
+2026-06-15T11:17:21.2957328Z ⚠️ Migration may have been skipped (already applied)
+2026-06-15T11:17:21.2970598Z Executing migration: 004_add_tvbox_subscribe_token.sql
+2026-06-15T11:17:21.9934033Z 
+2026-06-15T11:17:21.9935000Z  ⛅️ wrangler 4.60.0 (update available 4.100.0)
+2026-06-15T11:17:21.9935646Z ──────────────────────────────────────────────
+2026-06-15T11:17:21.9939010Z Resource location: remote 
+2026-06-15T11:17:21.9939393Z 
+2026-06-15T11:17:22.0577198Z [33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1m⚠️ This process may take some time, during which your D1 database will be unavailable to serve queries.[0m
+2026-06-15T11:17:22.0578470Z 
+2026-06-15T11:17:22.0578492Z 
+2026-06-15T11:17:22.0590394Z 🌀 Executing on remote database moontvplus (***):
+2026-06-15T11:17:22.0592520Z 🌀 To execute on your local development database, remove the --remote flag from your wrangler command.
+2026-06-15T11:17:22.0722856Z Note: if the execution fails to complete, your DB will return to its original state and you can safely retry.
+2026-06-15T11:17:22.0728504Z ├ Checking if file needs uploading
+2026-06-15T11:17:22.1194974Z │
+2026-06-15T11:17:22.1203922Z 
+2026-06-15T11:17:22.1220476Z [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mA request to the Cloudflare API (/accounts/***/***/database/***/import) failed.[0m
+2026-06-15T11:17:22.1221719Z 
+2026-06-15T11:17:22.1222038Z   Authentication error [code: 10000]
+2026-06-15T11:17:22.1222451Z 
+2026-06-15T11:17:22.1222464Z 
+2026-06-15T11:17:22.1223494Z 📎 It looks like you are authenticating Wrangler via a custom API token set in an environment variable.
+2026-06-15T11:17:22.1224847Z Please ensure it has the correct permissions for this operation.
+2026-06-15T11:17:22.1225397Z 
+2026-06-15T11:17:22.1225647Z Getting User settings...
+2026-06-15T11:17:22.6715841Z 👋 You are logged in with an User API Token, associated with the email rubahcruba@gmail.com.
+2026-06-15T11:17:22.6716734Z ℹ️  The API Token is read from the CLOUDFLARE_API_TOKEN environment variable.
+2026-06-15T11:17:22.6754769Z ┌────────────────────────────────┬──────────────────────────────────┐
+2026-06-15T11:17:22.6755404Z │ Account Name                   │ Account ID                       │
+2026-06-15T11:17:22.6756001Z ├────────────────────────────────┼──────────────────────────────────┤
+2026-06-15T11:17:22.6756982Z │ Rubahcruba@gmail.com's Account │ *** │
+2026-06-15T11:17:22.6757550Z └────────────────────────────────┴──────────────────────────────────┘
+2026-06-15T11:17:22.6758600Z 🔓 To see token permissions visit https://dash.cloudflare.com/profile/api-tokens.
+2026-06-15T11:17:22.7700648Z 🎢 Membership roles in "Rubahcruba@gmail.com's Account": Contact account super admin to change your permissions.
+2026-06-15T11:17:22.7702450Z - Super Administrator - All Privileges
+2026-06-15T11:17:22.7782963Z 🪵  Logs were written to "/home/runner/.config/.wrangler/logs/wrangler-2026-06-15_11-17-21_768.log"
+2026-06-15T11:17:22.7959251Z ⚠️ Migration may have been skipped (already applied)
+2026-06-15T11:17:22.7973593Z Executing migration: 005_music_v2.sql
+2026-06-15T11:17:23.4995020Z 
+2026-06-15T11:17:23.4996108Z  ⛅️ wrangler 4.60.0 (update available 4.100.0)
+2026-06-15T11:17:23.4996843Z ──────────────────────────────────────────────
+2026-06-15T11:17:23.5000236Z Resource location: remote 
+2026-06-15T11:17:23.5000664Z 
+2026-06-15T11:17:23.5652780Z [33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1m⚠️ This process may take some time, during which your D1 database will be unavailable to serve queries.[0m
+2026-06-15T11:17:23.5653924Z 
+2026-06-15T11:17:23.5653944Z 
+2026-06-15T11:17:23.5668212Z 🌀 Executing on remote database moontvplus (***):
+2026-06-15T11:17:23.5669804Z 🌀 To execute on your local development database, remove the --remote flag from your wrangler command.
+2026-06-15T11:17:23.5805166Z Note: if the execution fails to complete, your DB will return to its original state and you can safely retry.
+2026-06-15T11:17:23.5810970Z ├ Checking if file needs uploading
+2026-06-15T11:17:23.6285592Z │
+2026-06-15T11:17:23.6295113Z 
+2026-06-15T11:17:23.6313659Z [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mA request to the Cloudflare API (/accounts/***/***/database/***/import) failed.[0m
+2026-06-15T11:17:23.6314976Z 
+2026-06-15T11:17:23.6315659Z   Authentication error [code: 10000]
+2026-06-15T11:17:23.6316101Z 
+2026-06-15T11:17:23.6316115Z 
+2026-06-15T11:17:23.6317384Z 📎 It looks like you are authenticating Wrangler via a custom API token set in an environment variable.
+2026-06-15T11:17:23.6318688Z Please ensure it has the correct permissions for this operation.
+2026-06-15T11:17:23.6319213Z 
+2026-06-15T11:17:23.6319459Z Getting User settings...
+2026-06-15T11:17:23.9668384Z 👋 You are logged in with an User API Token, associated with the email rubahcruba@gmail.com.
+2026-06-15T11:17:23.9669863Z ℹ️  The API Token is read from the CLOUDFLARE_API_TOKEN environment variable.
+2026-06-15T11:17:23.9709322Z ┌────────────────────────────────┬──────────────────────────────────┐
+2026-06-15T11:17:23.9710737Z │ Account Name                   │ Account ID                       │
+2026-06-15T11:17:23.9712541Z ├────────────────────────────────┼──────────────────────────────────┤
+2026-06-15T11:17:23.9713676Z │ Rubahcruba@gmail.com's Account │ *** │
+2026-06-15T11:17:23.9714508Z └────────────────────────────────┴──────────────────────────────────┘
+2026-06-15T11:17:23.9715796Z 🔓 To see token permissions visit https://dash.cloudflare.com/profile/api-tokens.
+2026-06-15T11:17:24.0745231Z 🎢 Membership roles in "Rubahcruba@gmail.com's Account": Contact account super admin to change your permissions.
+2026-06-15T11:17:24.0746839Z - Super Administrator - All Privileges
+2026-06-15T11:17:24.0824934Z 🪵  Logs were written to "/home/runner/.config/.wrangler/logs/wrangler-2026-06-15_11-17-23_273.log"
+2026-06-15T11:17:24.0999057Z ⚠️ Migration may have been skipped (already applied)
+2026-06-15T11:17:24.1013494Z Executing migration: 006_manga.sql
+2026-06-15T11:17:24.7896737Z 
+2026-06-15T11:17:24.7897962Z  ⛅️ wrangler 4.60.0 (update available 4.100.0)
+2026-06-15T11:17:24.7898601Z ──────────────────────────────────────────────
+2026-06-15T11:17:24.7902690Z Resource location: remote 
+2026-06-15T11:17:24.7902958Z 
+2026-06-15T11:17:24.8549396Z [33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1m⚠️ This process may take some time, during which your D1 database will be unavailable to serve queries.[0m
+2026-06-15T11:17:24.8550502Z 
+2026-06-15T11:17:24.8550521Z 
+2026-06-15T11:17:24.8562428Z 🌀 Executing on remote database moontvplus (***):
+2026-06-15T11:17:24.8563630Z 🌀 To execute on your local development database, remove the --remote flag from your wrangler command.
+2026-06-15T11:17:24.8695487Z Note: if the execution fails to complete, your DB will return to its original state and you can safely retry.
+2026-06-15T11:17:24.8701003Z ├ Checking if file needs uploading
+2026-06-15T11:17:24.9174283Z │
+2026-06-15T11:17:24.9186202Z 
+2026-06-15T11:17:24.9203497Z [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mA request to the Cloudflare API (/accounts/***/***/database/***/import) failed.[0m
+2026-06-15T11:17:24.9204430Z 
+2026-06-15T11:17:24.9204716Z   Authentication error [code: 10000]
+2026-06-15T11:17:24.9205080Z 
+2026-06-15T11:17:24.9205090Z 
+2026-06-15T11:17:24.9207543Z 📎 It looks like you are authenticating Wrangler via a custom API token set in an environment variable.
+2026-06-15T11:17:24.9209187Z Please ensure it has the correct permissions for this operation.
+2026-06-15T11:17:24.9209675Z 
+2026-06-15T11:17:24.9209834Z Getting User settings...
+2026-06-15T11:17:25.2590522Z 👋 You are logged in with an User API Token, associated with the email rubahcruba@gmail.com.
+2026-06-15T11:17:25.2592348Z ℹ️  The API Token is read from the CLOUDFLARE_API_TOKEN environment variable.
+2026-06-15T11:17:25.2630963Z ┌────────────────────────────────┬──────────────────────────────────┐
+2026-06-15T11:17:25.2632463Z │ Account Name                   │ Account ID                       │
+2026-06-15T11:17:25.2633797Z ├────────────────────────────────┼──────────────────────────────────┤
+2026-06-15T11:17:25.2635141Z │ Rubahcruba@gmail.com's Account │ *** │
+2026-06-15T11:17:25.2636297Z └────────────────────────────────┴──────────────────────────────────┘
+2026-06-15T11:17:25.2637554Z 🔓 To see token permissions visit https://dash.cloudflare.com/profile/api-tokens.
+2026-06-15T11:17:25.4029574Z 🎢 Membership roles in "Rubahcruba@gmail.com's Account": Contact account super admin to change your permissions.
+2026-06-15T11:17:25.4030847Z - Super Administrator - All Privileges
+2026-06-15T11:17:25.4117868Z 🪵  Logs were written to "/home/runner/.config/.wrangler/logs/wrangler-2026-06-15_11-17-24_575.log"
+2026-06-15T11:17:25.4286789Z ⚠️ Migration may have been skipped (already applied)
+2026-06-15T11:17:25.4300141Z Executing migration: 007_books.sql
+2026-06-15T11:17:26.1307632Z 
+2026-06-15T11:17:26.1308714Z  ⛅️ wrangler 4.60.0 (update available 4.100.0)
+2026-06-15T11:17:26.1309773Z ──────────────────────────────────────────────
+2026-06-15T11:17:26.1313282Z Resource location: remote 
+2026-06-15T11:17:26.1313668Z 
+2026-06-15T11:17:26.1963822Z [33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1m⚠️ This process may take some time, during which your D1 database will be unavailable to serve queries.[0m
+2026-06-15T11:17:26.1964482Z 
+2026-06-15T11:17:26.1964491Z 
+2026-06-15T11:17:26.1978323Z 🌀 Executing on remote database moontvplus (***):
+2026-06-15T11:17:26.1980040Z 🌀 To execute on your local development database, remove the --remote flag from your wrangler command.
+2026-06-15T11:17:26.2113422Z Note: if the execution fails to complete, your DB will return to its original state and you can safely retry.
+2026-06-15T11:17:26.2118429Z ├ Checking if file needs uploading
+2026-06-15T11:17:26.2669895Z │
+2026-06-15T11:17:26.2681685Z 
+2026-06-15T11:17:26.2698543Z [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mA request to the Cloudflare API (/accounts/***/***/database/***/import) failed.[0m
+2026-06-15T11:17:26.2699383Z 
+2026-06-15T11:17:26.2699567Z   Authentication error [code: 10000]
+2026-06-15T11:17:26.2699797Z 
+2026-06-15T11:17:26.2699802Z 
+2026-06-15T11:17:26.2701004Z 📎 It looks like you are authenticating Wrangler via a custom API token set in an environment variable.
+2026-06-15T11:17:26.2702805Z Please ensure it has the correct permissions for this operation.
+2026-06-15T11:17:26.2703491Z 
+2026-06-15T11:17:26.2703638Z Getting User settings...
+2026-06-15T11:17:26.5835774Z 👋 You are logged in with an User API Token, associated with the email rubahcruba@gmail.com.
+2026-06-15T11:17:26.5836735Z ℹ️  The API Token is read from the CLOUDFLARE_API_TOKEN environment variable.
+2026-06-15T11:17:26.5875454Z ┌────────────────────────────────┬──────────────────────────────────┐
+2026-06-15T11:17:26.5876129Z │ Account Name                   │ Account ID                       │
+2026-06-15T11:17:26.5876733Z ├────────────────────────────────┼──────────────────────────────────┤
+2026-06-15T11:17:26.5877816Z │ Rubahcruba@gmail.com's Account │ *** │
+2026-06-15T11:17:26.5878785Z └────────────────────────────────┴──────────────────────────────────┘
+2026-06-15T11:17:26.5879957Z 🔓 To see token permissions visit https://dash.cloudflare.com/profile/api-tokens.
+2026-06-15T11:17:27.3859332Z 🎢 Membership roles in "Rubahcruba@gmail.com's Account": Contact account super admin to change your permissions.
+2026-06-15T11:17:27.3860512Z - Super Administrator - All Privileges
+2026-06-15T11:17:27.3969867Z 🪵  Logs were written to "/home/runner/.config/.wrangler/logs/wrangler-2026-06-15_11-17-25_907.log"
+2026-06-15T11:17:27.4140835Z ⚠️ Migration may have been skipped (already applied)
+2026-06-15T11:17:27.4155204Z Executing migration: 008_web_push_notifications.sql
+2026-06-15T11:17:28.1192976Z 
+2026-06-15T11:17:28.1194555Z  ⛅️ wrangler 4.60.0 (update available 4.100.0)
+2026-06-15T11:17:28.1195619Z ──────────────────────────────────────────────
+2026-06-15T11:17:28.1199309Z Resource location: remote 
+2026-06-15T11:17:28.1199709Z 
+2026-06-15T11:17:28.1854032Z [33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1m⚠️ This process may take some time, during which your D1 database will be unavailable to serve queries.[0m
+2026-06-15T11:17:28.1854699Z 
+2026-06-15T11:17:28.1854709Z 
+2026-06-15T11:17:28.1865867Z 🌀 Executing on remote database moontvplus (***):
+2026-06-15T11:17:28.1869096Z 🌀 To execute on your local development database, remove the --remote flag from your wrangler command.
+2026-06-15T11:17:28.2007559Z Note: if the execution fails to complete, your DB will return to its original state and you can safely retry.
+2026-06-15T11:17:28.2014398Z ├ Checking if file needs uploading
+2026-06-15T11:17:28.2449995Z │
+2026-06-15T11:17:28.2464015Z 
+2026-06-15T11:17:28.2489126Z [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mA request to the Cloudflare API (/accounts/***/***/database/***/import) failed.[0m
+2026-06-15T11:17:28.2492871Z 📎 It looks like you are authenticating Wrangler via a custom API token set in an environment variable.
+2026-06-15T11:17:28.2495137Z Please ensure it has the correct permissions for this operation.
+2026-06-15T11:17:28.2495877Z 
+2026-06-15T11:17:28.2496336Z Getting User settings...
+2026-06-15T11:17:28.2521779Z 
+2026-06-15T11:17:28.2542592Z   Authentication error [code: 10000]
+2026-06-15T11:17:28.2571979Z 
+2026-06-15T11:17:28.2572310Z 
+2026-06-15T11:17:28.6021950Z 👋 You are logged in with an User API Token, associated with the email rubahcruba@gmail.com.
+2026-06-15T11:17:28.6023467Z ℹ️  The API Token is read from the CLOUDFLARE_API_TOKEN environment variable.
+2026-06-15T11:17:28.6062604Z ┌────────────────────────────────┬──────────────────────────────────┐
+2026-06-15T11:17:28.6063919Z │ Account Name                   │ Account ID                       │
+2026-06-15T11:17:28.6065208Z ├────────────────────────────────┼──────────────────────────────────┤
+2026-06-15T11:17:28.6066612Z │ Rubahcruba@gmail.com's Account │ *** │
+2026-06-15T11:17:28.6067772Z └────────────────────────────────┴──────────────────────────────────┘
+2026-06-15T11:17:28.6068968Z 🔓 To see token permissions visit https://dash.cloudflare.com/profile/api-tokens.
+2026-06-15T11:17:28.8675850Z 🎢 Membership roles in "Rubahcruba@gmail.com's Account": Contact account super admin to change your permissions.
+2026-06-15T11:17:28.8677059Z - Super Administrator - All Privileges
+2026-06-15T11:17:28.8756677Z 🪵  Logs were written to "/home/runner/.config/.wrangler/logs/wrangler-2026-06-15_11-17-27_895.log"
+2026-06-15T11:17:28.8947784Z ⚠️ Migration may have been skipped (already applied)
+2026-06-15T11:17:28.8948655Z ✅ Migrations completed

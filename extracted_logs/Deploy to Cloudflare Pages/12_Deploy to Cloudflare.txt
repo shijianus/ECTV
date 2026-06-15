@@ -1,0 +1,213 @@
+﻿2026-06-15T11:17:28.9003909Z ##[group]Run cloudflare/wrangler-action@v3
+2026-06-15T11:17:28.9004255Z with:
+2026-06-15T11:17:28.9004613Z   apiToken: ***
+2026-06-15T11:17:28.9004892Z   accountId: ***
+2026-06-15T11:17:28.9005158Z   command: deploy
+2026-06-15T11:17:28.9005410Z   packageManager: pnpm
+2026-06-15T11:17:28.9005680Z   wranglerVersion: 4.60.0
+2026-06-15T11:17:28.9005947Z   quiet: ***
+2026-06-15T11:17:28.9006166Z env:
+2026-06-15T11:17:28.9006444Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-06-15T11:17:28.9006799Z   BUILD_TARGET: cloudflare
+2026-06-15T11:17:28.9007067Z   NODE_ENV: production
+2026-06-15T11:17:28.9007334Z   NEXT_PUBLIC_STORAGE_TYPE: ***
+2026-06-15T11:17:28.9007627Z   NEXT_PUBLIC_SITE_NAME: ***
+2026-06-15T11:17:28.9007907Z   NEXT_PUBLIC_SEARCH_MAX_PAGE: 
+2026-06-15T11:17:28.9008195Z   NEXT_PUBLIC_DOUBAN_PROXY_TYPE: 
+2026-06-15T11:17:28.9008483Z   NEXT_PUBLIC_DOUBAN_PROXY: 
+2026-06-15T11:17:28.9008770Z   NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE: 
+2026-06-15T11:17:28.9009086Z   NEXT_PUBLIC_DOUBAN_IMAGE_PROXY: 
+2026-06-15T11:17:28.9009430Z   NEXT_PUBLIC_DISABLE_YELLOW_FILTER: 
+2026-06-15T11:17:28.9009737Z   NEXT_PUBLIC_FLUID_SEARCH: 
+2026-06-15T11:17:28.9010009Z   NEXT_PUBLIC_PROXY_M3U8_TOKEN: 
+2026-06-15T11:17:28.9010515Z   NEXT_PUBLIC_DANMAKU_CACHE_EXPIRE_MINUTES: 
+2026-06-15T11:17:28.9010844Z   NEXT_PUBLIC_VOICE_CHAT_STRATEGY: 
+2026-06-15T11:17:28.9011146Z   NEXT_PUBLIC_ENABLE_OFFLINE_DOWNLOAD: 
+2026-06-15T11:17:28.9012336Z   NEXT_PUBLIC_ENABLE_SOURCE_SEARCH: ***
+2026-06-15T11:17:28.9012688Z   USERNAME: ***
+2026-06-15T11:17:28.9012943Z   PASSWORD: ***
+2026-06-15T11:17:28.9013179Z   UPSTASH_URL: 
+2026-06-15T11:17:28.9013408Z   UPSTASH_TOKEN: 
+2026-06-15T11:17:28.9013687Z   TMDB_API_KEY: ***
+2026-06-15T11:17:28.9013960Z   TMDB_PROXY: ***
+2026-06-15T11:17:28.9014207Z   TMDB_REVERSE_PROXY: 
+2026-06-15T11:17:28.9014462Z   DANMAKU_API_BASE: 
+2026-06-15T11:17:28.9014711Z   DANMAKU_API_TOKEN: 
+2026-06-15T11:17:28.9014963Z   ANNOUNCEMENT: 
+2026-06-15T11:17:28.9015199Z   CRON_PASSWORD: 
+2026-06-15T11:17:28.9015432Z   SITE_BASE: 
+2026-06-15T11:17:28.9015670Z   REDIS_URL: 
+2026-06-15T11:17:28.9015900Z   KVROCKS_URL: 
+2026-06-15T11:17:28.9016129Z   INIT_CONFIG: 
+2026-06-15T11:17:28.9016367Z   CONFIG_SUBSCRIPTION_URL: 
+2026-06-15T11:17:28.9016653Z   ENABLE_TVBOX_SUBSCRIBE: 
+2026-06-15T11:17:28.9016926Z   TVBOX_SUBSCRIBE_TOKEN: 
+2026-06-15T11:17:28.9017198Z   WATCH_ROOM_ENABLED: ***
+2026-06-15T11:17:28.9017518Z   WATCH_ROOM_EXTERNAL_SERVER_AUTH: 
+2026-06-15T11:17:28.9017827Z   WATCH_ROOM_EXTERNAL_SERVER_URL: 
+2026-06-15T11:17:28.9018119Z   WATCH_ROOM_SERVER_TYPE: 
+2026-06-15T11:17:28.9018379Z ##[endgroup]
+2026-06-15T11:17:29.0003301Z ##[group]🔍 Checking for existing Wrangler installation
+2026-06-15T11:17:29.0056434Z [command]/home/runner/setup-pnpm/node_modules/.bin/pnpm exec wrangler --version
+2026-06-15T11:17:29.9799135Z 4.60.0
+2026-06-15T11:17:30.0841314Z ✅ Using Wrangler 4.60.0
+2026-06-15T11:17:30.0842908Z ##[endgroup]
+2026-06-15T11:17:30.0843668Z ##[endgroup]
+2026-06-15T11:17:30.0846682Z ##[group]🚀 Running Wrangler Commands
+2026-06-15T11:17:30.0870140Z [command]/home/runner/setup-pnpm/node_modules/.bin/pnpm exec wrangler deploy
+2026-06-15T11:17:31.0307677Z 
+2026-06-15T11:17:31.0309514Z Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+2026-06-15T11:17:31.0602297Z 
+2026-06-15T11:17:31.0603554Z  ⛅️ wrangler 4.60.0 (update available 4.100.0)
+2026-06-15T11:17:31.0604319Z ──────────────────────────────────────────────
+2026-06-15T11:17:33.0963271Z [33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mUsing direct eval with a bundler is not recommended and may cause problems[0m [direct-eval]
+2026-06-15T11:17:33.0964047Z 
+2026-06-15T11:17:33.0964757Z     .open-next/server-functions/default/handler.mjs:3800:81976:
+2026-06-15T11:17:33.0966106Z [37m      3800 │ ...egex,replacement)}try{result=[32meval[37m(result)}catch(err){console....
+2026-06-15T11:17:33.0967142Z            ╵                                 [32m~~~~[0m
+2026-06-15T11:17:33.0967998Z 
+2026-06-15T11:17:33.0968726Z   You can read more about direct eval and bundling here: [4mhttps://esbuild.github.io/link/direct-eval[0m
+2026-06-15T11:17:33.0969198Z 
+2026-06-15T11:17:33.0969206Z 
+2026-06-15T11:17:33.0969923Z [33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mUsing direct eval with a bundler is not recommended and may cause problems[0m [direct-eval]
+2026-06-15T11:17:33.0970432Z 
+2026-06-15T11:17:33.0970678Z     .open-next/server-functions/default/handler.mjs:3800:83464:
+2026-06-15T11:17:33.0971718Z [37m      3800 │ ...orm;else try{let transformFn=[32meval[37m(`(${config.transform})`);da...
+2026-06-15T11:17:33.0972365Z            ╵                                 [32m~~~~[0m
+2026-06-15T11:17:33.0972600Z 
+2026-06-15T11:17:33.0973080Z   You can read more about direct eval and bundling here: [4mhttps://esbuild.github.io/link/direct-eval[0m
+2026-06-15T11:17:33.0973508Z 
+2026-06-15T11:17:33.0973514Z 
+2026-06-15T11:17:33.1185850Z 🌀 Building list of assets...
+2026-06-15T11:17:33.1271260Z ✨ Read 215 files from the assets directory /home/runner/work/***/***/.open-next/assets
+2026-06-15T11:17:33.2741099Z 🌀 Starting asset upload...
+2026-06-15T11:17:36.3391699Z 🌀 Found 146 new or modified static assets to upload. Proceeding with upload...
+2026-06-15T11:17:36.3400231Z + /BUILD_ID
+2026-06-15T11:17:36.3412970Z + /_next/static/chunks/app/music/page-6f7653db3a425d2b.js
+2026-06-15T11:17:36.3413873Z + /_next/static/chunks/pages/_error-85b817c4d94ba0d2.js
+2026-06-15T11:17:36.3414660Z + /_next/static/chunks/main-app-ed75f2d32aef5443.js
+2026-06-15T11:17:36.3415298Z + /players/potplayer.png
+2026-06-15T11:17:36.3416020Z + /_next/static/chunks/app/_not-found/page-e4193ceb66cb375c.js
+2026-06-15T11:17:36.3416695Z + /players/nplayer.png
+2026-06-15T11:17:36.3417384Z + /_next/static/chunks/app/tv/series/page-9e45da5ce642a943.js
+2026-06-15T11:17:36.3418258Z + /_next/static/chunks/app/qr-login/page-cba0ce6c16b7d7db.js
+2026-06-15T11:17:36.3419072Z + /_next/static/chunks/app/tv/page-161ce6f328ddbdda.js
+2026-06-15T11:17:36.3419918Z + /_next/static/chunks/app/tv/anime/page-15f314b8555df1f5.js
+2026-06-15T11:17:36.3420785Z + /_next/static/chunks/app/manga/shelf/page-c480b526d3890e02.js
+2026-06-15T11:17:36.3421805Z + /_next/static/chunks/4269-e***9b65c598d6c16.js
+2026-06-15T11:17:36.3422622Z + /_next/static/chunks/app/tv/private/page-0c9c9c735ca45829.js
+2026-06-15T11:17:36.3423405Z + /_next/static/chunks/850-bd0de1ec8ec09e8d.js
+2026-06-15T11:17:36.3424092Z + /_next/static/media/df0a9ae256c0569c-s.woff2
+2026-06-15T11:17:36.3424663Z + /players/mpv.png
+2026-06-15T11:17:36.3425346Z + /_next/static/chunks/app/books/shelf/page-0554947123b61310.js
+2026-06-15T11:17:36.3426219Z + /_next/static/chunks/app/oidc-register/page-4878ca472332fac8.js
+2026-06-15T11:17:36.3426784Z + /_next/static/chunks/app/movie-request/page-0d628064738c4c8b.js
+2026-06-15T11:17:36.3427262Z + /_next/static/chunks/1498-267fded4f39e***24.js
+2026-06-15T11:17:36.3427691Z + /_next/static/chunks/3582-db3ceae27880741d.js
+2026-06-15T11:17:36.3428050Z + /icons/OrionTV.png
+2026-06-15T11:17:36.3428468Z + /_next/static/chunks/app/tv/search/page-6a3beac41a2db2b5.js
+2026-06-15T11:17:36.3428866Z + /icons/microsoft.png
+2026-06-15T11:17:36.3429283Z + /_next/static/chunks/app/tv/live/page-97686baf6***d01fb.js
+2026-06-15T11:17:36.3429731Z + /_next/static/media/19cfc7226ec3afaa-s.woff2
+2026-06-15T11:17:36.3430181Z + /_next/static/chunks/app/login/page-a757f80efe68821c.js
+2026-06-15T11:17:36.3430692Z + /_next/static/chunks/app/books/search/page-2da6ce3c2e1f2ed5.js
+2026-06-15T11:17:36.3431219Z + /_next/static/chunks/app/music/search/page-7b2467b2aca003c8.js
+2026-06-15T11:17:36.3432003Z + /_next/static/media/ba9851c3c22cd980-s.woff2
+2026-06-15T11:17:36.3432418Z + /_next/static/chunks/7196-fb939a27cc4aceb6.js
+2026-06-15T11:17:36.3432912Z + /_next/static/chunks/app/web-live/page-a08f6702e7ae3936.js
+2026-06-15T11:17:36.3433408Z + /_next/static/chunks/app/douban/page-77ba5ded8650d0e9.js
+2026-06-15T11:17:36.3433793Z + /icons/icon-192x192.png
+2026-06-15T11:17:36.3434771Z + /_next/static/chunks/104-9bb9ab846c43a4aa.js
+2026-06-15T11:17:36.3435351Z + /_next/static/chunks/app/layout-3970cf389107c425.js
+2026-06-15T11:17:36.3435920Z + /_next/static/chunks/app/live/page-2de67015f487a4dd.js
+2026-06-15T11:17:36.3436421Z + /_next/static/chunks/app/books/read/page-6ed27cf4a666015a.js
+2026-06-15T11:17:36.3436961Z + /_next/static/chunks/app/music/layout-8f4327e4d44b49f0.js
+2026-06-15T11:17:36.3437410Z + /_next/static/chunks/3493-dbf642b526ce4502.js
+2026-06-15T11:17:36.3437751Z + /icons/q/irena.png
+2026-06-15T11:17:36.3438105Z + /_next/static/chunks/b7979814.5e40691f2f4244e1.js
+2026-06-15T11:17:36.3438531Z + /_next/static/chunks/95b29f1a-8cc22ed74550b05b.js
+2026-06-15T11:17:36.3438885Z + /icons/icon-512x512.png
+2026-06-15T11:17:36.3439182Z + /tvbox/custom_spider.jar
+2026-06-15T11:17:36.3439692Z + /_next/static/chunks/1380-e67806576130a176.js
+2026-06-15T11:17:36.3440368Z + /_next/static/chunks/109bbf2b.982c330a18335a00.js
+2026-06-15T11:17:36.3440776Z + /screenshot1.png
+2026-06-15T11:17:36.3441247Z + /robots.txt
+2026-06-15T11:17:36.3442115Z + /_next/static/chunks/app/warning/page-f90541b5292a617e.js
+2026-06-15T11:17:36.3442917Z + /_next/static/chunks/pages/_app-b92e2a0a71f93668.js
+2026-06-15T11:17:36.3443488Z + /icons/gitlab.png
+2026-06-15T11:17:36.3443840Z + /_next/static/chunks/8910.495839a730***b980.js
+2026-06-15T11:17:36.3444183Z + /players/vlc.png
+2026-06-15T11:17:36.3444573Z + /_next/static/chunks/app/special/page-ff8b155da1a54350.js
+2026-06-15T11:17:36.3445083Z + /_next/static/chunks/app/tv/variety/page-cf27668f740dbb98.js
+2026-06-15T11:17:36.3445565Z + /_next/static/chunks/app/tv/layout-782a487189706e60.js
+2026-06-15T11:17:36.3445990Z + /_next/static/chunks/5638-3aa3250c95832df2.js
+2026-06-15T11:17:36.3446319Z + /icons/github.png
+2026-06-15T11:17:36.3446849Z + /_next/static/chunks/app/music/songlists/[source]/[playlistId]/page-85aac509082dd57b.js
+2026-06-15T11:17:36.3447691Z + /_next/static/chunks/app/music/rankings/[source]/[playlistId]/page-188dce9baf70ff94.js
+2026-06-15T11:17:36.3448422Z + /_next/static/chunks/9494-17940bdc417f0696.js
+2026-06-15T11:17:36.3449113Z + /_next/static/chunks/app/music/rankings/page-fb913b61a65defae.js
+2026-06-15T11:17:36.3449756Z + /_next/static/chunks/app/advanced-recommendation/page-ca4c60bc0565f2c0.js
+2026-06-15T11:17:36.3450749Z + /_next/static/chunks/app/books/page-173e9da14b7b54ed.js
+2026-06-15T11:17:36.3451806Z + /_next/static/chunks/2750-4f68aa8b26437fcf.js
+2026-06-15T11:17:36.3452399Z + /_next/static/chunks/7452-fb9b1cc88ea312d3.js
+2026-06-15T11:17:36.3453136Z + /_next/static/chunks/app/music/songlists/page-907c885dad2bbcbc.js
+2026-06-15T11:17:36.3453905Z + /_next/static/chunks/app/manga/detail/page-5fb670e5d76135c5.js
+2026-06-15T11:17:36.3454837Z + /_next/static/chunks/app/manga/search/page-7ae1e70bd271562e.js
+2026-06-15T11:17:36.3455561Z + /_next/static/chunks/app/manga/page-117bafbea28960***.js
+2026-06-15T11:17:36.3456081Z + /_next/static/chunks/app/books/catalog/page-8c7230c463d6f6ab.js
+2026-06-15T11:17:36.3456545Z + /_next/static/chunks/9143-2fcef6c20232aee2.js
+2026-06-15T11:17:36.3456963Z + /_next/static/chunks/8089-6994d0ddaf88bbbc.js
+2026-06-15T11:17:36.3457576Z + /_next/static/chunks/app/tv/detail/page-28ad2d4e309d20ed.js
+2026-06-15T11:17:36.3458621Z + /_next/static/chunks/app/books/detail/page-4a05f06d8a5c4eea.js
+2026-06-15T11:17:36.3459490Z + /_next/static/chunks/app/manga/read/page-94ed9498907b8685.js
+2026-06-15T11:17:36.3460410Z + /_next/static/chunks/app/books/history/page-90f591af392982d2.js
+2026-06-15T11:17:36.3461323Z + /_next/static/chunks/5731-dcde643d4c7c7425.js
+2026-06-15T11:17:36.3472321Z + /_next/static/chunks/5102-e5eb80832de0587a.js
+2026-06-15T11:17:36.3473250Z + /_next/static/chunks/app/watch-room/page-1129179265a35c7e.js
+2026-06-15T11:17:36.3474037Z + /icons/linuxdo.png
+2026-06-15T11:17:36.3474714Z + /_next/static/chunks/app/tv/play/page-1aa37f897f6f34dd.js
+2026-06-15T11:17:36.3475197Z + /_next/static/chunks/8233.b12506bc36d7e73f.js
+2026-06-15T11:17:36.3475882Z + /_next/static/chunks/app/search/page-68ccfde7a0c50b36.js
+2026-06-15T11:17:36.3476548Z + /_next/static/chunks/7478-3f37b60cf7492f2d.js
+2026-06-15T11:17:36.3477131Z + /icons/q/renako.png
+2026-06-15T11:17:36.3477756Z + /_next/static/chunks/e260694f-554a81f109622a77.js
+2026-06-15T11:17:36.3478355Z + /icons/icon-384x384.png
+2026-06-15T11:17:36.3478976Z + /_next/static/chunks/8043-5cf64c74d06e4e38.js
+2026-06-15T11:17:36.3479544Z + /_next/static/chunks/27151b01.275b3d2f9b61a72c.js
+2026-06-15T11:17:36.3480049Z + /_next/static/chunks/2012.3ad397c0e0f1ac49.js
+2026-06-15T11:17:36.3480692Z + /_next/static/css/e3852fa95fc95db6.css
+2026-06-15T11:17:36.3481190Z + /_next/static/chunks/app/play/page-b131418374252554.js
+2026-06-15T11:17:36.3482218Z + /_next/static/chunks/app/admin/page-5ce21370a84cbc86.js
+2026-06-15T11:17:36.3483066Z + /_next/static/chunks/b426f651.a2601def00bb2b18.js
+2026-06-15T11:17:36.3483753Z + /screenshot2.png
+2026-06-15T11:17:36.3484248Z + /_next/static/8Q1cAo9gBAqes0ZMMpL9F/_ssgManifest.js
+2026-06-15T11:17:36.3485004Z + /_next/static/8Q1cAo9gBAqes0ZMMpL9F/_buildManifest.js
+2026-06-15T11:17:36.3485807Z    (truncating changed assets log, set `WRANGLER_LOG=debug` environment variable to see full diff)
+2026-06-15T11:17:38.5869642Z Uploaded 48 of 146 assets
+2026-06-15T11:17:38.7975242Z Uploaded 97 of 146 assets
+2026-06-15T11:17:39.3645586Z Uploaded 146 of 146 assets
+2026-06-15T11:17:39.3646710Z ✨ Success! Uploaded 146 files (3.02 sec)
+2026-06-15T11:17:39.3647007Z 
+2026-06-15T11:17:39.5992462Z Total Upload: 10944.70 KiB / gzip: 2487.06 KiB
+2026-06-15T11:17:42.4572830Z Worker Startup Time: 22 ms
+2026-06-15T11:17:42.4573376Z Your Worker has access to the following bindings:
+2026-06-15T11:17:42.4573976Z Binding                                                                        Resource                  
+2026-06-15T11:17:42.4574642Z env.DB (moontvplus)                                                            D1 Database               
+2026-06-15T11:17:42.4575293Z env.ASSETS                                                                     Assets                    
+2026-06-15T11:17:42.4584788Z env.NODE_ENV ("production")                                                    Environment Variable      
+2026-06-15T11:17:42.4586350Z env.BUILD_TARGET ("cloudflare")                                                Environment Variable      
+2026-06-15T11:17:42.4587949Z env.NEXT_PUBLIC_STORAGE_TYPE ("***")                                            Environment Variable      
+2026-06-15T11:17:42.4589110Z env.NEXT_PUBLIC_SITE_NAME ("***")                                             Environment Variable      
+2026-06-15T11:17:42.4590076Z env.NEXT_PUBLIC_ENABLE_SOURCE_SEARCH ("***")                                  Environment Variable      
+2026-06-15T11:17:42.4590851Z env.USERNAME ("***")                                                     Environment Variable      
+2026-06-15T11:17:42.4591806Z env.PASSWORD ("***")                                                Environment Variable      
+2026-06-15T11:17:42.4592572Z env.TMDB_API_KEY ("***")                          Environment Variable      
+2026-06-15T11:17:42.4593298Z env.TMDB_PROXY ("***")                                       Environment Variable      
+2026-06-15T11:17:42.4593998Z env.WATCH_ROOM_ENABLED ("***")                                               Environment Variable      
+2026-06-15T11:17:42.4594352Z 
+2026-06-15T11:17:42.4604404Z Uploaded moontv-plus (11.13 sec)
+2026-06-15T11:17:42.9122756Z Deployed moontv-plus triggers (0.45 sec)
+2026-06-15T11:17:42.9123767Z   https://moontv-plus.rubahcruba.workers.dev
+2026-06-15T11:17:42.9124707Z Current Version ID: 8a25a4c8-f554-4063-a905-2457af33bf51
+2026-06-15T11:17:42.9867429Z ##[endgroup]
+2026-06-15T11:17:42.9868230Z 🏁 Wrangler Action completed
