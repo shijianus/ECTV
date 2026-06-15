@@ -4968,13 +4968,13 @@ export const UserMenu: React.FC = () => {
           {/* 应用列表 */}
           <div className='flex-1 overflow-y-auto p-6'>
             <div className='grid gap-6 md:grid-cols-1'>
-              {/* MoonTVPlus-PC 客户端 */}
+              {/* ECTV-PC 客户端 */}
               <div className='bg-gray-50 dark:bg-gray-800 rounded-lg p-5 border border-gray-200 dark:border-gray-700'>
                 <div className='flex items-start gap-4'>
                   <div className='flex-shrink-0 relative'>
                     <img
                       src='/logo.png'
-                      alt='MoonTVPlus-PC'
+                      alt='ECTV-PC'
                       className='w-16 h-16 rounded-xl object-cover'
                     />
                     <div className='absolute -bottom-1 -right-1 w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center shadow-lg'>
@@ -4983,7 +4983,7 @@ export const UserMenu: React.FC = () => {
                   </div>
                   <div className='flex-1 min-w-0'>
                     <h4 className='text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2'>
-                      MoonTVPlus-PC客户端
+                      ECTV-PC客户端
                     </h4>
                     <p className='text-sm text-gray-600 dark:text-gray-400 mb-3'>
                       专为Windows开发的客户端，完美支持私人影库mkv视频
