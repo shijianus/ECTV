@@ -70,7 +70,7 @@ public class MainActivity extends Activity {
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
             settings.setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
         }
-        settings.setUserAgentString(settings.getUserAgentString() + " MoonTVPlusAndroidTV WebView");
+        settings.setUserAgentString(settings.getUserAgentString() + " ECTVAndroidTV WebView");
 
         webView.setWebViewClient(new WebViewClient() {
             @Override

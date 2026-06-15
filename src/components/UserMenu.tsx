@@ -4989,7 +4989,7 @@ export const UserMenu: React.FC = () => {
                       专为Windows开发的客户端，完美支持私人影库mkv视频
                     </p>
                     <a
-                      href='https://github.com/mtvpls/MoonTVPlus-PC/releases'
+                      href='https://github.com/shijianus/ECTV-PC/releases'
                       target='_blank'
                       rel='noopener noreferrer'
                       className='inline-flex items-center gap-2 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white text-sm font-medium rounded-lg transition-colors'
@@ -5024,7 +5024,7 @@ export const UserMenu: React.FC = () => {
                     </p>
                     <div className='flex flex-wrap gap-2'>
                       <a
-                        href='https://github.com/mtvpls/Selene-Build/releases'
+                        href='https://github.com/shijianus/Selene-Build/releases'
                         target='_blank'
                         rel='noopener noreferrer'
                         className='inline-flex items-center gap-2 px-4 py-2 bg-green-500 hover:bg-green-600 text-white text-sm font-medium rounded-lg transition-colors'
@@ -5092,7 +5092,7 @@ export const UserMenu: React.FC = () => {
                       视频提供转码播放能力，可解析内封字幕并解决部分视频无音频问题，但通常需要较高的本机性能配置。
                     </p>
                     <a
-                      href='https://github.com/mtvpls/moontvplus-transcoder/tags'
+                      href='https://github.com/shijianus/ectv-transcoder/tags'
                       target='_blank'
                       rel='noopener noreferrer'
                       className='inline-flex items-center gap-2 px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white text-sm font-medium rounded-lg transition-colors'
@@ -5322,4 +5322,6 @@ export const UserMenu: React.FC = () => {
     </>
   );
 };
+
+;
 

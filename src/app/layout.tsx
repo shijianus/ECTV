@@ -57,7 +57,7 @@ export default async function RootLayout({
   let siteName = process.env.NEXT_PUBLIC_SITE_NAME || 'ECTV';
   let announcement =
     process.env.ANNOUNCEMENT ||
-    '本网站仅提供影视信息搜索服务，所有内容均来自第三方网站。本站不存储任何视频资源，不对任何内容的准确性、合法性、完整性负责。';
+    '免责声明：本网站仅作为影视信息聚合工具，所有视频内容均由互联网第三方接口自动抓取或由用户自行配置，本站不存储、不制作任何视频资源。用户使用本站即代表同意自行承担因观看、传播相关内容而可能引起的任何法律风险。本站不对内容的准确性、合法性负责，如有侵权请联系第三方数据源删除。';
 
   let doubanProxyType =
     process.env.NEXT_PUBLIC_DOUBAN_PROXY_TYPE || 'cmliussss-cdn-tencent';

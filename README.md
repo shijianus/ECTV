@@ -90,9 +90,9 @@
 
 本项目**支持 Docker、Vercel、Netlify 和 Cloudflare Workers 平台** 部署。
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/mtvpls/MoonTVPlus)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/shijianus/ECTV)
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/mtvpls/MoonTVPlus)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/shijianus/ECTV)
 
 **一键部署到 Zeabur**
 
@@ -100,7 +100,7 @@
 
 **一键部署到 Render**
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/mtvpls/MoonTVPlus)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/shijianus/ECTV)
 
 
 
@@ -203,7 +203,7 @@ on:
 ```yml
 services:
   moontv-core:
-    image: ghcr.io/mtvpls/moontvplus:latest
+    image: ghcr.io/shijianus/ectv:latest
     container_name: moontv-core
     restart: on-failure
     ports:
@@ -238,7 +238,7 @@ volumes:
 ```yml
 services:
   moontv-core:
-    image: ghcr.io/mtvpls/moontvplus:latest
+    image: ghcr.io/shijianus/ectv:latest
     container_name: moontv-core
     restart: on-failure
     ports:
@@ -258,7 +258,7 @@ services:
 ```yml
 services:
   moontv-core:
-    image: ghcr.io/mtvpls/moontvplus:latest
+    image: ghcr.io/shijianus/ectv:latest
     container_name: moontv-core
     restart: on-failure
     ports:
@@ -295,7 +295,7 @@ networks:
 ```yml
 services:
   moontv-core:
-    image: ghcr.io/mtvpls/moontvplus:latest
+    image: ghcr.io/shijianus/ectv:latest
     container_name: moontv-core
     restart: on-failure
     ports:
@@ -310,14 +310,14 @@ services:
 
 #### Lite 镜像说明
 
-`ghcr.io/mtvpls/moontvplus-lite:latest` 为更小的镜像，但不支持启动内置观影室服务，也不支持 SQLite（`NEXT_PUBLIC_STORAGE_TYPE=d1`）自动初始化方案。
+`ghcr.io/shijianus/ectv-lite:latest` 为更小的镜像，但不支持启动内置观影室服务，也不支持 SQLite（`NEXT_PUBLIC_STORAGE_TYPE=d1`）自动初始化方案。
 
 示例：
 
 ```yml
 services:
   moontv-core:
-    image: ghcr.io/mtvpls/moontvplus-lite:latest
+    image: ghcr.io/shijianus/ectv-lite:latest
     container_name: moontv-core
     restart: on-failure
     ports:
@@ -585,4 +585,4 @@ NEXT_PUBLIC_VOICE_CHAT_STRATEGY 选项解释：
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=mtvpls/moontvplus&type=Date)](https://www.star-history.com/#mtvpls/moontvplus&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=shijianus/ectv&type=Date)](https://www.star-history.com/#shijianus/ectv&Date)

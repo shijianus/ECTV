@@ -1,6 +1,6 @@
-# MoonTVPlus Android TV
+# ECTV Android TV
 
-这是一个极简 Android TV WebView 壳工程，用于打开 MoonTVPlus Web TV 页面。
+这是一个极简 Android TV WebView 壳工程，用于打开 ECTV Web TV 页面。
 
 ## 构建参数
 
@@ -28,7 +28,7 @@ BASE_URL 去掉末尾 / 后 + /tv
 - 允许 HTTP 明文访问
 - 允许 HTTPS 页面加载 HTTP 视频/图片等混合内容
 - 使用 `public/logo.png` 作为图标来源
-- `webview` 版本 User-Agent 追加 `MoonTVPlusAndroidTV WebView`
+- `webview` 版本 User-Agent 追加 `ECTVAndroidTV WebView`
 
 ## 本地构建
 

@@ -40,8 +40,8 @@ async function generateSignature(
 function getDeviceInfo(userAgent: string): string {
   const ua = userAgent.toLowerCase();
 
-  // 检查是否为 MoonTVPlus APP
-  if (ua.includes('moontvplus')) {
+  // 检查是否为 ECTV APP
+  if (ua.includes('ectv') || ua.includes('moontvplus')) {
     return 'ECTV APP';
   }
 
