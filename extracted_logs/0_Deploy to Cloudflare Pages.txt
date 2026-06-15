@@ -1,0 +1,655 @@
+﻿2026-06-14T19:42:46.0992695Z Current runner version: '2.335.1'
+2026-06-14T19:42:46.1029720Z ##[group]Runner Image Provisioner
+2026-06-14T19:42:46.1031147Z Hosted Compute Agent
+2026-06-14T19:42:46.1032462Z Version: 20260527.539
+2026-06-14T19:42:46.1033688Z Commit: a891dd388383b896fa6ac04a82c0b75cec981078
+2026-06-14T19:42:46.1035213Z Build Date: 2026-05-27T21:39:57Z
+2026-06-14T19:42:46.1036687Z Worker ID: {591a55e3-a718-4288-a886-f5b8f61cef7e}
+2026-06-14T19:42:46.1038223Z Azure Region: eastus
+2026-06-14T19:42:46.1039261Z ##[endgroup]
+2026-06-14T19:42:46.1042093Z ##[group]Operating System
+2026-06-14T19:42:46.1043507Z Ubuntu
+2026-06-14T19:42:46.1044622Z 24.04.4
+2026-06-14T19:42:46.1045727Z LTS
+2026-06-14T19:42:46.1046857Z ##[endgroup]
+2026-06-14T19:42:46.1048014Z ##[group]Runner Image
+2026-06-14T19:42:46.1049255Z Image: ubuntu-24.04
+2026-06-14T19:42:46.1050552Z Version: 20260607.184.1
+2026-06-14T19:42:46.1052826Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260607.184/images/ubuntu/Ubuntu2404-Readme.md
+2026-06-14T19:42:46.1056068Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260607.184
+2026-06-14T19:42:46.1058099Z ##[endgroup]
+2026-06-14T19:42:46.1060479Z ##[group]GITHUB_TOKEN Permissions
+2026-06-14T19:42:46.1063923Z Contents: read
+2026-06-14T19:42:46.1065162Z Deployments: write
+2026-06-14T19:42:46.1066658Z Metadata: read
+2026-06-14T19:42:46.1067957Z ##[endgroup]
+2026-06-14T19:42:46.1071314Z Secret source: Actions
+2026-06-14T19:42:46.1072770Z Prepare workflow directory
+2026-06-14T19:42:46.1547419Z Prepare all required actions
+2026-06-14T19:42:46.1603627Z Getting action download info
+2026-06-14T19:42:46.3504762Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381a***6eb***3914f8d5)
+2026-06-14T19:42:46.4197606Z Download action repository 'pnpm/action-setup@v4' (SHA:b906affcce14559a***aafd4ab0e942779e9f58b1)
+2026-06-14T19:42:46.6031914Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642***e84afbd3f7d6820020)
+2026-06-14T19:42:46.7034648Z Download action repository 'cloudflare/wrangler-action@v3' (SHA:9acf94ace14e7dc412b076f2c5c20b8ce93c79cd)
+2026-06-14T19:42:46.8951879Z Complete job name: Deploy to Cloudflare Pages
+2026-06-14T19:42:46.9705578Z ##[group]Run actions/checkout@v4
+2026-06-14T19:42:46.9706539Z with:
+2026-06-14T19:42:46.9707138Z   repository: ***/MoonTVPlus
+2026-06-14T19:42:46.9711594Z   token: ***
+2026-06-14T19:42:46.9712128Z   ssh-strict: ***
+2026-06-14T19:42:46.9712649Z   ssh-user: git
+2026-06-14T19:42:46.9713194Z   persist-credentials: ***
+2026-06-14T19:42:46.9713757Z   clean: ***
+2026-06-14T19:42:46.9714297Z   sparse-checkout-cone-mode: ***
+2026-06-14T19:42:46.9714884Z   fetch-depth: 1
+2026-06-14T19:42:46.9715547Z   fetch-tags: ***
+2026-06-14T19:42:46.9716082Z   show-progress: ***
+2026-06-14T19:42:46.9716613Z   lfs: ***
+2026-06-14T19:42:46.9717101Z   submodules: ***
+2026-06-14T19:42:46.9717628Z   set-safe-directory: ***
+2026-06-14T19:42:46.9718460Z ##[endgroup]
+2026-06-14T19:42:47.0859102Z Syncing repository: ***/MoonTVPlus
+2026-06-14T19:42:47.0861229Z ##[group]Getting Git version info
+2026-06-14T19:42:47.0862076Z Working directory is '/home/runner/work/MoonTVPlus/MoonTVPlus'
+2026-06-14T19:42:47.0863380Z [command]/usr/bin/git version
+2026-06-14T19:42:47.0921333Z git version 2.54.0
+2026-06-14T19:42:47.0946183Z ##[endgroup]
+2026-06-14T19:42:47.0961305Z Temporarily overriding HOME='/home/runner/work/_temp/ce7c6a8c-12e1-4679-aab4-aa2dabaf7891' before making global git config changes
+2026-06-14T19:42:47.0963681Z Adding repository directory to the temporary git global config as a safe directory
+2026-06-14T19:42:47.0977252Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/MoonTVPlus/MoonTVPlus
+2026-06-14T19:42:47.1025589Z Deleting the contents of '/home/runner/work/MoonTVPlus/MoonTVPlus'
+2026-06-14T19:42:47.1030268Z ##[group]Initializing the repository
+2026-06-14T19:42:47.1035229Z [command]/usr/bin/git init /home/runner/work/MoonTVPlus/MoonTVPlus
+2026-06-14T19:42:47.1113200Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-06-14T19:42:47.1116106Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-06-14T19:42:47.1118128Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-06-14T19:42:47.1119769Z hint: call:
+2026-06-14T19:42:47.1120724Z hint:
+2026-06-14T19:42:47.1121861Z hint: 	git config --global init.defaultBranch <name>
+2026-06-14T19:42:47.1123146Z hint:
+2026-06-14T19:42:47.1124448Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-06-14T19:42:47.1126547Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-06-14T19:42:47.1128030Z hint:
+2026-06-14T19:42:47.1128973Z hint: 	git branch -m <name>
+2026-06-14T19:42:47.1130079Z hint:
+2026-06-14T19:42:47.1131585Z hint: Disable this message with "git config set advice.defaultBranchName ***"
+2026-06-14T19:42:47.1134178Z Initialized empty Git repository in /home/runner/work/MoonTVPlus/MoonTVPlus/.git/
+2026-06-14T19:42:47.1138490Z [command]/usr/bin/git remote add origin https://github.com/***/MoonTVPlus
+2026-06-14T19:42:47.1172517Z ##[endgroup]
+2026-06-14T19:42:47.1173988Z ##[group]Disabling automatic garbage collection
+2026-06-14T19:42:47.1177504Z [command]/usr/bin/git config --local gc.auto 0
+2026-06-14T19:42:47.1212652Z ##[endgroup]
+2026-06-14T19:42:47.1214577Z ##[group]Setting up auth
+2026-06-14T19:42:47.1220216Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-06-14T19:42:47.1267955Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-06-14T19:42:47.1613497Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-06-14T19:42:47.1646598Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-06-14T19:42:47.1889882Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-06-14T19:42:47.1923374Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-06-14T19:42:47.2170703Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-06-14T19:42:47.2208059Z ##[endgroup]
+2026-06-14T19:42:47.2209365Z ##[group]Fetching the repository
+2026-06-14T19:42:47.2218317Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4aa8bd980fc547cdd60c82dadaa2203e142d0c69:refs/remotes/origin/main
+2026-06-14T19:42:47.9128275Z From https://github.com/***/MoonTVPlus
+2026-06-14T19:42:47.9130308Z  * [new ref]         4aa8bd980fc547cdd60c82dadaa2203e142d0c69 -> origin/main
+2026-06-14T19:42:47.9163683Z ##[endgroup]
+2026-06-14T19:42:47.9165213Z ##[group]Determining the checkout info
+2026-06-14T19:42:47.9167261Z ##[endgroup]
+2026-06-14T19:42:47.9172245Z [command]/usr/bin/git sparse-checkout disable
+2026-06-14T19:42:47.9217752Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-06-14T19:42:47.9248746Z ##[group]Checking out the ref
+2026-06-14T19:42:47.9252794Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-06-14T19:42:48.0389842Z Switched to a new branch 'main'
+2026-06-14T19:42:48.0394009Z branch 'main' set up to track 'origin/main'.
+2026-06-14T19:42:48.0409201Z ##[endgroup]
+2026-06-14T19:42:48.0451034Z [command]/usr/bin/git log -1 --format=%H
+2026-06-14T19:42:48.0474883Z 4aa8bd980fc547cdd60c82dadaa2203e142d0c69
+2026-06-14T19:42:48.0770734Z ##[group]Run pnpm/action-setup@v4
+2026-06-14T19:42:48.0772150Z with:
+2026-06-14T19:42:48.0773211Z   dest: ~/setup-pnpm
+2026-06-14T19:42:48.0774363Z   run_install: null
+2026-06-14T19:42:48.0775695Z   cache: ***
+2026-06-14T19:42:48.0776860Z   cache_dependency_path: pnpm-lock.yaml
+2026-06-14T19:42:48.0778517Z   package_json_file: package.json
+2026-06-14T19:42:48.0779851Z   standalone: ***
+2026-06-14T19:42:48.0780981Z ##[endgroup]
+2026-06-14T19:42:48.2258936Z ##[group]Running self-installer...
+2026-06-14T19:42:48.7652087Z Progress: resolved 1, reused 0, downloaded 0, added 0
+2026-06-14T19:42:48.7760783Z Packages: +1
+2026-06-14T19:42:48.7761277Z +
+2026-06-14T19:42:49.1623470Z Progress: resolved 1, reused 0, downloaded 1, added 1, done
+2026-06-14T19:42:49.1893698Z 
+2026-06-14T19:42:49.1895171Z dependencies:
+2026-06-14T19:42:49.1895957Z + pnpm 10.14.0 (11.6.0 is available)
+2026-06-14T19:42:49.1896362Z 
+2026-06-14T19:42:49.1924201Z Done in 795ms
+2026-06-14T19:42:49.2094634Z ##[endgroup]
+2026-06-14T19:42:49.2098686Z Installation Completed!
+2026-06-14T19:42:49.2317471Z ##[group]Run actions/setup-node@v4
+2026-06-14T19:42:49.2317878Z with:
+2026-06-14T19:42:49.2318189Z   node-version: 24
+2026-06-14T19:42:49.2318519Z   cache: pnpm
+2026-06-14T19:42:49.2318871Z   always-auth: ***
+2026-06-14T19:42:49.2319227Z   check-latest: ***
+2026-06-14T19:42:49.2322075Z   token: ***
+2026-06-14T19:42:49.2322373Z env:
+2026-06-14T19:42:49.2322768Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-06-14T19:42:49.2323191Z ##[endgroup]
+2026-06-14T19:42:49.4106500Z Found in cache @ /opt/hostedtoolcache/node/24.16.0/x64
+2026-06-14T19:42:49.4113258Z ##[group]Environment details
+2026-06-14T19:42:49.7481881Z node: v24.16.0
+2026-06-14T19:42:49.7482406Z npm: 11.13.0
+2026-06-14T19:42:49.7482775Z yarn: 1.22.22
+2026-06-14T19:42:49.7483748Z ##[endgroup]
+2026-06-14T19:42:49.7505694Z [command]/home/runner/setup-pnpm/node_modules/.bin/pnpm store path --silent
+2026-06-14T19:42:50.1220307Z /home/runner/setup-pnpm/node_modules/.bin/store/v10
+2026-06-14T19:42:50.2411576Z Cache hit for: node-cache-Linux-x64-pnpm-a6269e09e844afc19c11480ac7e7f8dd27860b90a450d6b61613d52bf60e9027
+2026-06-14T19:42:51.3222786Z Received 268435456 of 341507084 (78.6%), 249.5 MBs/sec
+2026-06-14T19:42:51.5565676Z Received 341507084 of 341507084 (100.0%), 258.3 MBs/sec
+2026-06-14T19:42:51.5566800Z Cache Size: ~326 MB (341507084 B)
+2026-06-14T19:42:51.5609244Z [command]/usr/bin/tar -xf /home/runner/work/_temp/30df612e-f7fc-4d5f-b4c4-bf919c44bdf5/cache.tzst -P -C /home/runner/work/MoonTVPlus/MoonTVPlus --use-compress-program unzstd
+2026-06-14T19:42:55.5859760Z Cache restored successfully
+2026-06-14T19:42:56.0724998Z Cache restored from key: node-cache-Linux-x64-pnpm-a6269e09e844afc19c11480ac7e7f8dd27860b90a450d6b61613d52bf60e9027
+2026-06-14T19:42:56.0905755Z ##[group]Run pnpm install --frozen-lockfile
+2026-06-14T19:42:56.0906279Z [36;1mpnpm install --frozen-lockfile[0m
+2026-06-14T19:42:56.1054627Z shell: /usr/bin/bash -e {0}
+2026-06-14T19:42:56.1054959Z env:
+2026-06-14T19:42:56.1055562Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-06-14T19:42:56.1055972Z ##[endgroup]
+2026-06-14T19:42:56.4604863Z Lockfile is up to date, resolution step is skipped
+2026-06-14T19:42:56.5575547Z Progress: resolved 1, reused 0, downloaded 0, added 0
+2026-06-14T19:42:56.7172729Z Packages: +1776
+2026-06-14T19:42:56.7173644Z ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-06-14T19:42:57.5616533Z Progress: resolved 1776, reused 1776, downloaded 0, added 11
+2026-06-14T19:42:58.5592439Z Progress: resolved 1776, reused 1776, downloaded 0, added 175
+2026-06-14T19:42:59.5592360Z Progress: resolved 1776, reused 1776, downloaded 0, added 603
+2026-06-14T19:43:00.4747173Z Progress: resolved 1776, reused 1776, downloaded 0, added 1776, done
+2026-06-14T19:43:01.1406089Z 
+2026-06-14T19:43:01.1407018Z dependencies:
+2026-06-14T19:43:01.1407542Z + @dnd-kit/core 6.3.1
+2026-06-14T19:43:01.1408074Z + @dnd-kit/modifiers 9.0.0
+2026-06-14T19:43:01.1408602Z + @dnd-kit/sortable 10.0.0
+2026-06-14T19:43:01.1409111Z + @dnd-kit/utilities 3.2.2
+2026-06-14T19:43:01.1409596Z + @headlessui/react 2.2.9
+2026-06-14T19:43:01.1410115Z + @heroicons/react 2.2.0
+2026-06-14T19:43:01.1410601Z + @types/crypto-js 4.2.2
+2026-06-14T19:43:01.1411072Z + @types/nprogress 0.2.3
+2026-06-14T19:43:01.1412102Z + @types/qrcode 1.5.6
+2026-06-14T19:43:01.1412516Z + @upstash/redis 1.36.0
+2026-06-14T19:43:01.1412977Z + @vercel/postgres 0.10.0
+2026-06-14T19:43:01.1413447Z + @vidstack/react 1.12.13
+2026-06-14T19:43:01.1413830Z + @xmldom/xmldom 0.9.10
+2026-06-14T19:43:01.1414129Z + anime4k-webgpu 1.0.0
+2026-06-14T19:43:01.1414545Z + artplayer 5.4.0
+2026-06-14T19:43:01.1415094Z + artplayer-plugin-auto-thumbnail 1.1.0
+2026-06-14T19:43:01.1415949Z + artplayer-plugin-danmuku 5.2.0
+2026-06-14T19:43:01.1416529Z + better-sqlite3 12.6.2
+2026-06-14T19:43:01.1416972Z + bs58 6.0.0
+2026-06-14T19:43:01.1417357Z + cheerio 1.1.2
+2026-06-14T19:43:01.1417735Z + clsx 2.1.1
+2026-06-14T19:43:01.1418123Z + crypto-js 4.2.0
+2026-06-14T19:43:01.1418600Z + edge-tts-universal 1.4.0
+2026-06-14T19:43:01.1419041Z + flv.js 1.6.2
+2026-06-14T19:43:01.1419483Z + framer-motion 12.23.26
+2026-06-14T19:43:01.1419874Z + he 1.2.0
+2026-06-14T19:43:01.1420128Z + hls.js 1.6.15
+2026-06-14T19:43:01.1420415Z + https-proxy-agent 7.0.6
+2026-06-14T19:43:01.1420741Z + lucide-react 0.438.0
+2026-06-14T19:43:01.1421031Z + media-icons 1.1.5
+2026-06-14T19:43:01.1421295Z + mux.js 6.3.0
+2026-06-14T19:43:01.1421538Z + nanoid 5.1.6
+2026-06-14T19:43:01.1421771Z + next 14.2.35
+2026-06-14T19:43:01.1422015Z + next-pwa 5.6.0
+2026-06-14T19:43:01.1422284Z + next-themes 0.4.6
+2026-06-14T19:43:01.1422553Z + node-fetch 2.7.0
+2026-06-14T19:43:01.1422816Z + nodemailer 7.0.12
+2026-06-14T19:43:01.1423084Z + nprogress 0.2.0
+2026-06-14T19:43:01.1423365Z + opencc-js 1.0.5
+2026-06-14T19:43:01.1423644Z + parse-torrent-name 0.5.4
+2026-06-14T19:43:01.1423927Z + qrcode 1.5.4
+2026-06-14T19:43:01.1424167Z + react 18.3.1
+2026-06-14T19:43:01.1424424Z + react-dom 18.3.1
+2026-06-14T19:43:01.1424701Z + react-icons 5.5.0
+2026-06-14T19:43:01.1425132Z + react-markdown 10.1.0
+2026-06-14T19:43:01.1425731Z + redis 4.7.1
+2026-06-14T19:43:01.1426129Z + server-only 0.0.1
+2026-06-14T19:43:01.1426523Z + sharp 0.34.5
+2026-06-14T19:43:01.1426930Z + socket.io 4.8.3
+2026-06-14T19:43:01.1427376Z + socket.io-client 4.8.3
+2026-06-14T19:43:01.1427850Z + swiper 11.2.10
+2026-06-14T19:43:01.1428309Z + tailwind-merge 2.6.0
+2026-06-14T19:43:01.1428798Z + vidstack 0.6.15
+2026-06-14T19:43:01.1429220Z + xml2js 0.6.2
+2026-06-14T19:43:01.1429499Z + xpath 0.0.34
+2026-06-14T19:43:01.1429871Z + zod 3.25.76
+2026-06-14T19:43:01.1430110Z 
+2026-06-14T19:43:01.1430274Z devDependencies:
+2026-06-14T19:43:01.1430809Z + @opennextjs/cloudflare 1.15.1
+2026-06-14T19:43:01.1431339Z + @svgr/webpack 8.1.0
+2026-06-14T19:43:01.1432182Z + @tailwindcss/forms 0.5.11
+2026-06-14T19:43:01.1432750Z + @tailwindcss/typography 0.5.19
+2026-06-14T19:43:01.1433321Z + @testing-library/jest-dom 5.17.0
+2026-06-14T19:43:01.1433876Z + @testing-library/react 15.0.7
+2026-06-14T19:43:01.1434466Z + @types/better-sqlite3 7.6.13
+2026-06-14T19:43:01.1435005Z + @types/bs58 5.0.0
+2026-06-14T19:43:01.1435768Z + @types/he 1.2.3
+2026-06-14T19:43:01.1436274Z + @types/node 24.0.3
+2026-06-14T19:43:01.1436786Z + @types/node-fetch 2.6.13
+2026-06-14T19:43:01.1437349Z + @types/nodemailer 7.0.5
+2026-06-14T19:43:01.1437886Z + @types/pg 8.16.0
+2026-06-14T19:43:01.1438406Z + @types/react 18.3.27
+2026-06-14T19:43:01.1438899Z + @types/react-dom 19.2.3
+2026-06-14T19:43:01.1439413Z + @types/testing-library__jest-dom 5.14.9
+2026-06-14T19:43:01.1439947Z + @types/xml2js 0.4.14
+2026-06-14T19:43:01.1440470Z + @typescript-eslint/eslint-plugin 5.62.0
+2026-06-14T19:43:01.1441074Z + @typescript-eslint/parser 5.62.0
+2026-06-14T19:43:01.1441619Z + autoprefixer 10.4.23
+2026-06-14T19:43:01.1442065Z + eslint 8.57.1
+2026-06-14T19:43:01.1442515Z + eslint-config-next 14.2.35
+2026-06-14T19:43:01.1443072Z + eslint-config-prettier 8.10.2
+2026-06-14T19:43:01.1443658Z + eslint-plugin-simple-import-sort 7.0.0
+2026-06-14T19:43:01.1444274Z + eslint-plugin-unused-imports 2.0.0
+2026-06-14T19:43:01.1444726Z + jest 27.5.1
+2026-06-14T19:43:01.1445111Z + next-router-mock 0.9.13
+2026-06-14T19:43:01.1445737Z + postcss 8.5.6
+2026-06-14T19:43:01.1446128Z + prettier 2.8.8
+2026-06-14T19:43:01.1446576Z + prettier-plugin-tailwindcss 0.5.14
+2026-06-14T19:43:01.1447407Z + tailwindcss 3.4.19
+2026-06-14T19:43:01.1447870Z + typescript 4.9.5
+2026-06-14T19:43:01.1448296Z + vercel 50.4.10
+2026-06-14T19:43:01.1448769Z + webpack-obfuscator 3.6.0
+2026-06-14T19:43:01.1449053Z 
+2026-06-14T19:43:01.1651235Z Done in 5s using pnpm v10.14.0
+2026-06-14T19:43:01.2197482Z ##[group]Run echo "BUILD_TARGET=cloudflare" >> $GITHUB_ENV
+2026-06-14T19:43:01.2198046Z [36;1mecho "BUILD_TARGET=cloudflare" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2198472Z [36;1mecho "NODE_ENV=production" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2198910Z [36;1mecho "NEXT_PUBLIC_STORAGE_TYPE=***" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2199350Z [36;1mecho "NEXT_PUBLIC_SITE_NAME=***" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2199765Z [36;1mecho "NEXT_PUBLIC_SEARCH_MAX_PAGE=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2200186Z [36;1mecho "NEXT_PUBLIC_DOUBAN_PROXY_TYPE=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2200612Z [36;1mecho "NEXT_PUBLIC_DOUBAN_PROXY=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2201069Z [36;1mecho "NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2201524Z [36;1mecho "NEXT_PUBLIC_DOUBAN_IMAGE_PROXY=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2201960Z [36;1mecho "NEXT_PUBLIC_DISABLE_YELLOW_FILTER=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2202407Z [36;1mecho "NEXT_PUBLIC_FLUID_SEARCH=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2202815Z [36;1mecho "NEXT_PUBLIC_PROXY_M3U8_TOKEN=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2203271Z [36;1mecho "NEXT_PUBLIC_DANMAKU_CACHE_EXPIRE_MINUTES=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2203751Z [36;1mecho "NEXT_PUBLIC_VOICE_CHAT_STRATEGY=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2204200Z [36;1mecho "NEXT_PUBLIC_ENABLE_OFFLINE_DOWNLOAD=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2204673Z [36;1mecho "NEXT_PUBLIC_ENABLE_SOURCE_SEARCH=***" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2205090Z [36;1mecho "USERNAME=***" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2205720Z [36;1mecho "***" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2206074Z [36;1mecho "UPSTASH_URL=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2206424Z [36;1mecho "UPSTASH_TOKEN=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2206877Z [36;1mecho "TMDB_API_KEY=***" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2207306Z [36;1mecho "TMDB_PROXY=***" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2207675Z [36;1mecho "TMDB_REVERSE_PROXY=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2208062Z [36;1mecho "DANMAKU_API_BASE=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2208437Z [36;1mecho "DANMAKU_API_TOKEN=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2208802Z [36;1mecho "ANNOUNCEMENT=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2209154Z [36;1mecho "CRON_PASSWORD=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2209501Z [36;1mecho "SITE_BASE=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2209839Z [36;1mecho "REDIS_URL=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2210170Z [36;1mecho "KVROCKS_URL=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2210507Z [36;1mecho "INIT_CONFIG=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2210873Z [36;1mecho "CONFIG_SUBSCRIPTION_URL=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2211283Z [36;1mecho "ENABLE_TVBOX_SUBSCRIBE=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2211672Z [36;1mecho "TVBOX_SUBSCRIBE_TOKEN=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2212068Z [36;1mecho "WATCH_ROOM_ENABLED=***" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2212469Z [36;1mecho "WATCH_ROOM_EXTERNAL_SERVER_AUTH=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2212912Z [36;1mecho "WATCH_ROOM_EXTERNAL_SERVER_URL=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2213320Z [36;1mecho "WATCH_ROOM_SERVER_TYPE=" >> $GITHUB_ENV[0m
+2026-06-14T19:43:01.2248290Z shell: /usr/bin/bash -e {0}
+2026-06-14T19:43:01.2248597Z env:
+2026-06-14T19:43:01.2248911Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-06-14T19:43:01.2249281Z ##[endgroup]
+2026-06-14T19:43:01.2363125Z ##[group]Run STORAGE_TYPE="***"
+2026-06-14T19:43:01.2363508Z [36;1mSTORAGE_TYPE="***"[0m
+2026-06-14T19:43:01.2363803Z [36;1m[0m
+2026-06-14T19:43:01.2364087Z [36;1mif [ "$STORAGE_TYPE" != "***" ]; then[0m
+2026-06-14T19:43:01.2364804Z [36;1m  echo "Storage type is not *** (current: $STORAGE_TYPE), removing D1 database configuration"[0m
+2026-06-14T19:43:01.2365797Z [36;1m  # Remove the entire [[***_databases]] section including the comment[0m
+2026-06-14T19:43:01.2366342Z [36;1m  sed -i '/^# D1 数据库绑定$/,/^database_id = .*$/d' wrangler.toml[0m
+2026-06-14T19:43:01.2366838Z [36;1m  # Also remove any remaining [[***_databases]] block[0m
+2026-06-14T19:43:01.2367510Z [36;1m  sed -i '/^\[\[***_databases\]\]$/,/^$/{ /^\[\[***_databases\]\]$/d; /^binding = /d; /^database_name = /d; /^database_id = /d; }' wrangler.toml[0m
+2026-06-14T19:43:01.2368150Z [36;1m  echo "D1 configuration removed from wrangler.toml"[0m
+2026-06-14T19:43:01.2368608Z [36;1melif [ -n "***" ]; then[0m
+2026-06-14T19:43:01.2369153Z [36;1m  sed -i 's/REPLACE_WITH_YOUR_D1_DATABASE_ID/***/g' wrangler.toml[0m
+2026-06-14T19:43:01.2369617Z [36;1m  echo "D1 Database ID replaced successfully"[0m
+2026-06-14T19:43:01.2369969Z [36;1melse[0m
+2026-06-14T19:43:01.2370348Z [36;1m  echo "⚠️ Storage type is *** but D1_DATABASE_ID secret not set"[0m
+2026-06-14T19:43:01.2370766Z [36;1m  exit 1[0m
+2026-06-14T19:43:01.2371022Z [36;1mfi[0m
+2026-06-14T19:43:01.2403118Z shell: /usr/bin/bash -e {0}
+2026-06-14T19:43:01.2403434Z env:
+2026-06-14T19:43:01.2403748Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-06-14T19:43:01.2404125Z   BUILD_TARGET: cloudflare
+2026-06-14T19:43:01.2404427Z   NODE_ENV: production
+2026-06-14T19:43:01.2404743Z   NEXT_PUBLIC_STORAGE_TYPE: ***
+2026-06-14T19:43:01.2405066Z   NEXT_PUBLIC_SITE_NAME: ***
+2026-06-14T19:43:01.2405505Z   NEXT_PUBLIC_SEARCH_MAX_PAGE: 
+2026-06-14T19:43:01.2405808Z   NEXT_PUBLIC_DOUBAN_PROXY_TYPE: 
+2026-06-14T19:43:01.2406116Z   NEXT_PUBLIC_DOUBAN_PROXY: 
+2026-06-14T19:43:01.2406457Z   NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE: 
+2026-06-14T19:43:01.2406790Z   NEXT_PUBLIC_DOUBAN_IMAGE_PROXY: 
+2026-06-14T19:43:01.2407109Z   NEXT_PUBLIC_DISABLE_YELLOW_FILTER: 
+2026-06-14T19:43:01.2407424Z   NEXT_PUBLIC_FLUID_SEARCH: 
+2026-06-14T19:43:01.2407717Z   NEXT_PUBLIC_PROXY_M3U8_TOKEN: 
+2026-06-14T19:43:01.2408037Z   NEXT_PUBLIC_DANMAKU_CACHE_EXPIRE_MINUTES: 
+2026-06-14T19:43:01.2408382Z   NEXT_PUBLIC_VOICE_CHAT_STRATEGY: 
+2026-06-14T19:43:01.2408700Z   NEXT_PUBLIC_ENABLE_OFFLINE_DOWNLOAD: 
+2026-06-14T19:43:01.2409038Z   NEXT_PUBLIC_ENABLE_SOURCE_SEARCH: ***
+2026-06-14T19:43:01.2409346Z   USERNAME: ***
+2026-06-14T19:43:01.2409607Z   PASSWORD: ***
+2026-06-14T19:43:01.2409851Z   UPSTASH_URL: 
+2026-06-14T19:43:01.2410090Z   UPSTASH_TOKEN: 
+2026-06-14T19:43:01.2410384Z   TMDB_API_KEY: ***
+2026-06-14T19:43:01.2410669Z   TMDB_PROXY: ***
+2026-06-14T19:43:01.2410920Z   TMDB_REVERSE_PROXY: 
+2026-06-14T19:43:01.2411185Z   DANMAKU_API_BASE: 
+2026-06-14T19:43:01.2411444Z   DANMAKU_API_TOKEN: 
+2026-06-14T19:43:01.2411714Z   ANNOUNCEMENT: 
+2026-06-14T19:43:01.2411953Z   CRON_PASSWORD: 
+2026-06-14T19:43:01.2412314Z   SITE_BASE: 
+2026-06-14T19:43:01.2412593Z   REDIS_URL: 
+2026-06-14T19:43:01.2412828Z   KVROCKS_URL: 
+2026-06-14T19:43:01.2413068Z   INIT_CONFIG: 
+2026-06-14T19:43:01.2413317Z   CONFIG_SUBSCRIPTION_URL: 
+2026-06-14T19:43:01.2413606Z   ENABLE_TVBOX_SUBSCRIBE: 
+2026-06-14T19:43:01.2413909Z   TVBOX_SUBSCRIBE_TOKEN: 
+2026-06-14T19:43:01.2414205Z   WATCH_ROOM_ENABLED: ***
+2026-06-14T19:43:01.2414510Z   WATCH_ROOM_EXTERNAL_SERVER_AUTH: 
+2026-06-14T19:43:01.2414831Z   WATCH_ROOM_EXTERNAL_SERVER_URL: 
+2026-06-14T19:43:01.2415170Z   WATCH_ROOM_SERVER_TYPE: 
+2026-06-14T19:43:01.2415573Z ##[endgroup]
+2026-06-14T19:43:01.2491516Z D1 Database ID replaced successfully
+2026-06-14T19:43:01.2522664Z ##[group]Run # Function to append variable to wrangler.toml if it has a value
+2026-06-14T19:43:01.2523290Z [36;1m# Function to append variable to wrangler.toml if it has a value[0m
+2026-06-14T19:43:01.2523722Z [36;1mappend_var() {[0m
+2026-06-14T19:43:01.2524019Z [36;1m  local var_name=$1[0m
+2026-06-14T19:43:01.2524319Z [36;1m  local var_value=$2[0m
+2026-06-14T19:43:01.2524623Z [36;1m  if [ -n "$var_value" ]; then[0m
+2026-06-14T19:43:01.2525170Z [36;1m    echo "$var_name = \"$var_value\"" >> wrangler.toml[0m
+2026-06-14T19:43:01.2525717Z [36;1m  fi[0m
+2026-06-14T19:43:01.2525962Z [36;1m}[0m
+2026-06-14T19:43:01.2526189Z [36;1m[0m
+2026-06-14T19:43:01.2526492Z [36;1m# Append all environment variables to wrangler.toml[0m
+2026-06-14T19:43:01.2526934Z [36;1mappend_var "NEXT_PUBLIC_STORAGE_TYPE" "***"[0m
+2026-06-14T19:43:01.2527347Z [36;1mappend_var "NEXT_PUBLIC_SITE_NAME" "***"[0m
+2026-06-14T19:43:01.2527734Z [36;1mappend_var "NEXT_PUBLIC_SEARCH_MAX_PAGE" ""[0m
+2026-06-14T19:43:01.2528165Z [36;1mappend_var "NEXT_PUBLIC_DOUBAN_PROXY_TYPE" ""[0m
+2026-06-14T19:43:01.2528570Z [36;1mappend_var "NEXT_PUBLIC_DOUBAN_PROXY" ""[0m
+2026-06-14T19:43:01.2528983Z [36;1mappend_var "NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE" ""[0m
+2026-06-14T19:43:01.2529405Z [36;1mappend_var "NEXT_PUBLIC_DOUBAN_IMAGE_PROXY" ""[0m
+2026-06-14T19:43:01.2529813Z [36;1mappend_var "NEXT_PUBLIC_DISABLE_YELLOW_FILTER" ""[0m
+2026-06-14T19:43:01.2530204Z [36;1mappend_var "NEXT_PUBLIC_FLUID_SEARCH" ""[0m
+2026-06-14T19:43:01.2530582Z [36;1mappend_var "NEXT_PUBLIC_PROXY_M3U8_TOKEN" ""[0m
+2026-06-14T19:43:01.2531017Z [36;1mappend_var "NEXT_PUBLIC_DANMAKU_CACHE_EXPIRE_MINUTES" ""[0m
+2026-06-14T19:43:01.2531462Z [36;1mappend_var "NEXT_PUBLIC_VOICE_CHAT_STRATEGY" ""[0m
+2026-06-14T19:43:01.2531884Z [36;1mappend_var "NEXT_PUBLIC_ENABLE_OFFLINE_DOWNLOAD" ""[0m
+2026-06-14T19:43:01.2532322Z [36;1mappend_var "NEXT_PUBLIC_ENABLE_SOURCE_SEARCH" "***"[0m
+2026-06-14T19:43:01.2532724Z [36;1mappend_var "USERNAME" "***"[0m
+2026-06-14T19:43:01.2533096Z [36;1mappend_var "PASSWORD" "***"[0m
+2026-06-14T19:43:01.2533415Z [36;1mappend_var "UPSTASH_URL" ""[0m
+2026-06-14T19:43:01.2533731Z [36;1mappend_var "UPSTASH_TOKEN" ""[0m
+2026-06-14T19:43:01.2534143Z [36;1mappend_var "TMDB_API_KEY" "***"[0m
+2026-06-14T19:43:01.2534536Z [36;1mappend_var "TMDB_PROXY" "***"[0m
+2026-06-14T19:43:01.2534864Z [36;1mappend_var "TMDB_REVERSE_PROXY" ""[0m
+2026-06-14T19:43:01.2535216Z [36;1mappend_var "DANMAKU_API_BASE" ""[0m
+2026-06-14T19:43:01.2535684Z [36;1mappend_var "DANMAKU_API_TOKEN" ""[0m
+2026-06-14T19:43:01.2536027Z [36;1mappend_var "ANNOUNCEMENT" ""[0m
+2026-06-14T19:43:01.2536346Z [36;1mappend_var "CRON_PASSWORD" ""[0m
+2026-06-14T19:43:01.2536661Z [36;1mappend_var "SITE_BASE" ""[0m
+2026-06-14T19:43:01.2536969Z [36;1mappend_var "REDIS_URL" ""[0m
+2026-06-14T19:43:01.2537266Z [36;1mappend_var "KVROCKS_URL" ""[0m
+2026-06-14T19:43:01.2537569Z [36;1mappend_var "INIT_CONFIG" ""[0m
+2026-06-14T19:43:01.2537912Z [36;1mappend_var "CONFIG_SUBSCRIPTION_URL" ""[0m
+2026-06-14T19:43:01.2538297Z [36;1mappend_var ENABLE_TVBOX_SUBSCRIBE ""[0m
+2026-06-14T19:43:01.2538664Z [36;1mappend_var TVBOX_SUBSCRIBE_TOKEN ""[0m
+2026-06-14T19:43:01.2539033Z [36;1mappend_var WATCH_ROOM_ENABLED "***"[0m
+2026-06-14T19:43:01.2539411Z [36;1mappend_var WATCH_ROOM_EXTERNAL_SERVER_AUTH ""[0m
+2026-06-14T19:43:01.2539811Z [36;1mappend_var WATCH_ROOM_EXTERNAL_SERVER_URL ""[0m
+2026-06-14T19:43:01.2540198Z [36;1mappend_var WATCH_ROOM_SERVER_TYPE ""[0m
+2026-06-14T19:43:01.2540522Z [36;1m[0m
+2026-06-14T19:43:01.2540785Z [36;1mecho "Updated wrangler.toml:"[0m
+2026-06-14T19:43:01.2541104Z [36;1mcat wrangler.toml[0m
+2026-06-14T19:43:01.2572446Z shell: /usr/bin/bash -e {0}
+2026-06-14T19:43:01.2572759Z env:
+2026-06-14T19:43:01.2573078Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-06-14T19:43:01.2573458Z   BUILD_TARGET: cloudflare
+2026-06-14T19:43:01.2573751Z   NODE_ENV: production
+2026-06-14T19:43:01.2574235Z   NEXT_PUBLIC_STORAGE_TYPE: ***
+2026-06-14T19:43:01.2574574Z   NEXT_PUBLIC_SITE_NAME: ***
+2026-06-14T19:43:01.2574864Z   NEXT_PUBLIC_SEARCH_MAX_PAGE: 
+2026-06-14T19:43:01.2575163Z   NEXT_PUBLIC_DOUBAN_PROXY_TYPE: 
+2026-06-14T19:43:01.2575594Z   NEXT_PUBLIC_DOUBAN_PROXY: 
+2026-06-14T19:43:01.2575894Z   NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE: 
+2026-06-14T19:43:01.2576225Z   NEXT_PUBLIC_DOUBAN_IMAGE_PROXY: 
+2026-06-14T19:43:01.2576543Z   NEXT_PUBLIC_DISABLE_YELLOW_FILTER: 
+2026-06-14T19:43:01.2576987Z   NEXT_PUBLIC_FLUID_SEARCH: 
+2026-06-14T19:43:01.2577274Z   NEXT_PUBLIC_PROXY_M3U8_TOKEN: 
+2026-06-14T19:43:01.2577594Z   NEXT_PUBLIC_DANMAKU_CACHE_EXPIRE_MINUTES: 
+2026-06-14T19:43:01.2577939Z   NEXT_PUBLIC_VOICE_CHAT_STRATEGY: 
+2026-06-14T19:43:01.2578257Z   NEXT_PUBLIC_ENABLE_OFFLINE_DOWNLOAD: 
+2026-06-14T19:43:01.2578593Z   NEXT_PUBLIC_ENABLE_SOURCE_SEARCH: ***
+2026-06-14T19:43:01.2578900Z   USERNAME: ***
+2026-06-14T19:43:01.2579171Z   PASSWORD: ***
+2026-06-14T19:43:01.2579421Z   UPSTASH_URL: 
+2026-06-14T19:43:01.2579661Z   UPSTASH_TOKEN: 
+2026-06-14T19:43:01.2579964Z   TMDB_API_KEY: ***
+2026-06-14T19:43:01.2580255Z   TMDB_PROXY: ***
+2026-06-14T19:43:01.2580519Z   TMDB_REVERSE_PROXY: 
+2026-06-14T19:43:01.2580790Z   DANMAKU_API_BASE: 
+2026-06-14T19:43:01.2581052Z   DANMAKU_API_TOKEN: 
+2026-06-14T19:43:01.2581313Z   ANNOUNCEMENT: 
+2026-06-14T19:43:01.2581556Z   CRON_PASSWORD: 
+2026-06-14T19:43:01.2581796Z   SITE_BASE: 
+2026-06-14T19:43:01.2582033Z   REDIS_URL: 
+2026-06-14T19:43:01.2582272Z   KVROCKS_URL: 
+2026-06-14T19:43:01.2582514Z   INIT_CONFIG: 
+2026-06-14T19:43:01.2582764Z   CONFIG_SUBSCRIPTION_URL: 
+2026-06-14T19:43:01.2583055Z   ENABLE_TVBOX_SUBSCRIBE: 
+2026-06-14T19:43:01.2583343Z   TVBOX_SUBSCRIBE_TOKEN: 
+2026-06-14T19:43:01.2583626Z   WATCH_ROOM_ENABLED: ***
+2026-06-14T19:43:01.2583904Z   WATCH_ROOM_EXTERNAL_SERVER_AUTH: 
+2026-06-14T19:43:01.2584221Z   WATCH_ROOM_EXTERNAL_SERVER_URL: 
+2026-06-14T19:43:01.2584522Z   WATCH_ROOM_SERVER_TYPE: 
+2026-06-14T19:43:01.2584795Z ##[endgroup]
+2026-06-14T19:43:01.2646225Z Updated wrangler.toml:
+2026-06-14T19:43:01.2656501Z name = "moontv-plus"
+2026-06-14T19:43:01.2656884Z compatibility_date = "2024-09-23"
+2026-06-14T19:43:01.2657333Z compatibility_flags = ["nodejs_compat"]
+2026-06-14T19:43:01.2657892Z main = ".open-next/worker.js"
+2026-06-14T19:43:01.2658376Z minify = ***
+2026-06-14T19:43:01.2658628Z 
+2026-06-14T19:43:01.2659080Z # 静态资源配置
+2026-06-14T19:43:01.2659652Z # Cloudflare Workers Assets 用于服务静态文件
+2026-06-14T19:43:01.2660134Z [assets]
+2026-06-14T19:43:01.2660797Z directory = ".open-next/assets"
+2026-06-14T19:43:01.2661194Z binding = "ASSETS"
+2026-06-14T19:43:01.2661358Z 
+2026-06-14T19:43:01.2661542Z # D1 数据库绑定
+2026-06-14T19:43:01.2661818Z [[***_databases]]
+2026-06-14T19:43:01.2662090Z binding = "DB"
+2026-06-14T19:43:01.2662383Z database_name = "moontvplus"
+2026-06-14T19:43:01.2662818Z database_id = "***"
+2026-06-14T19:43:01.2662984Z 
+2026-06-14T19:43:01.2663091Z [vars]
+2026-06-14T19:43:01.2663362Z NODE_ENV = "production"
+2026-06-14T19:43:01.2663667Z BUILD_TARGET = "cloudflare"
+2026-06-14T19:43:01.2664035Z NEXT_PUBLIC_STORAGE_TYPE = "***"
+2026-06-14T19:43:01.2664398Z NEXT_PUBLIC_SITE_NAME = "***"
+2026-06-14T19:43:01.2664774Z NEXT_PUBLIC_ENABLE_SOURCE_SEARCH = "***"
+2026-06-14T19:43:01.2665129Z USERNAME = "***"
+2026-06-14T19:43:01.2665685Z PASSWORD = "***"
+2026-06-14T19:43:01.2666092Z TMDB_API_KEY = "***"
+2026-06-14T19:43:01.2666445Z TMDB_PROXY = "***"
+2026-06-14T19:43:01.2666743Z WATCH_ROOM_ENABLED = "***"
+2026-06-14T19:43:01.2690915Z ##[group]Run pnpm run build:cloudflare
+2026-06-14T19:43:01.2691307Z [36;1mpnpm run build:cloudflare[0m
+2026-06-14T19:43:01.2723297Z shell: /usr/bin/bash -e {0}
+2026-06-14T19:43:01.2723612Z env:
+2026-06-14T19:43:01.2723925Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-06-14T19:43:01.2724304Z   BUILD_TARGET: cloudflare
+2026-06-14T19:43:01.2724595Z   NODE_ENV: production
+2026-06-14T19:43:01.2724881Z   NEXT_PUBLIC_STORAGE_TYPE: ***
+2026-06-14T19:43:01.2725196Z   NEXT_PUBLIC_SITE_NAME: ***
+2026-06-14T19:43:01.2725722Z   NEXT_PUBLIC_SEARCH_MAX_PAGE: 
+2026-06-14T19:43:01.2726029Z   NEXT_PUBLIC_DOUBAN_PROXY_TYPE: 
+2026-06-14T19:43:01.2726340Z   NEXT_PUBLIC_DOUBAN_PROXY: 
+2026-06-14T19:43:01.2726645Z   NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE: 
+2026-06-14T19:43:01.2726975Z   NEXT_PUBLIC_DOUBAN_IMAGE_PROXY: 
+2026-06-14T19:43:01.2727289Z   NEXT_PUBLIC_DISABLE_YELLOW_FILTER: 
+2026-06-14T19:43:01.2727600Z   NEXT_PUBLIC_FLUID_SEARCH: 
+2026-06-14T19:43:01.2727918Z   NEXT_PUBLIC_PROXY_M3U8_TOKEN: 
+2026-06-14T19:43:01.2728405Z   NEXT_PUBLIC_DANMAKU_CACHE_EXPIRE_MINUTES: 
+2026-06-14T19:43:01.2728746Z   NEXT_PUBLIC_VOICE_CHAT_STRATEGY: 
+2026-06-14T19:43:01.2729072Z   NEXT_PUBLIC_ENABLE_OFFLINE_DOWNLOAD: 
+2026-06-14T19:43:01.2729445Z   NEXT_PUBLIC_ENABLE_SOURCE_SEARCH: ***
+2026-06-14T19:43:01.2729751Z   USERNAME: ***
+2026-06-14T19:43:01.2730020Z   PASSWORD: ***
+2026-06-14T19:43:01.2730268Z   UPSTASH_URL: 
+2026-06-14T19:43:01.2730507Z   UPSTASH_TOKEN: 
+2026-06-14T19:43:01.2730803Z   TMDB_API_KEY: ***
+2026-06-14T19:43:01.2731092Z   TMDB_PROXY: ***
+2026-06-14T19:43:01.2731342Z   TMDB_REVERSE_PROXY: 
+2026-06-14T19:43:01.2731605Z   DANMAKU_API_BASE: 
+2026-06-14T19:43:01.2731860Z   DANMAKU_API_TOKEN: 
+2026-06-14T19:43:01.2732119Z   ANNOUNCEMENT: 
+2026-06-14T19:43:01.2732379Z   CRON_PASSWORD: 
+2026-06-14T19:43:01.2732627Z   SITE_BASE: 
+2026-06-14T19:43:01.2732860Z   REDIS_URL: 
+2026-06-14T19:43:01.2733096Z   KVROCKS_URL: 
+2026-06-14T19:43:01.2733345Z   INIT_CONFIG: 
+2026-06-14T19:43:01.2733610Z   CONFIG_SUBSCRIPTION_URL: 
+2026-06-14T19:43:01.2733910Z   ENABLE_TVBOX_SUBSCRIBE: 
+2026-06-14T19:43:01.2734211Z   TVBOX_SUBSCRIBE_TOKEN: 
+2026-06-14T19:43:01.2734497Z   WATCH_ROOM_ENABLED: ***
+2026-06-14T19:43:01.2734781Z   WATCH_ROOM_EXTERNAL_SERVER_AUTH: 
+2026-06-14T19:43:01.2735114Z   WATCH_ROOM_EXTERNAL_SERVER_URL: 
+2026-06-14T19:43:01.2735655Z   WATCH_ROOM_SERVER_TYPE: 
+2026-06-14T19:43:01.2735942Z ##[endgroup]
+2026-06-14T19:43:01.5377415Z 
+2026-06-14T19:43:01.5378328Z > moontv@0.1.0 build:cloudflare /home/runner/work/MoonTVPlus/MoonTVPlus
+2026-06-14T19:43:01.5379683Z > BUILD_TARGET=cloudflare pnpm gen:manifest && BUILD_TARGET=cloudflare npx @opennextjs/cloudflare build
+2026-06-14T19:43:01.5380418Z 
+2026-06-14T19:43:01.8105443Z 
+2026-06-14T19:43:01.8106750Z > moontv@0.1.0 gen:manifest /home/runner/work/MoonTVPlus/MoonTVPlus
+2026-06-14T19:43:01.8107382Z > node scripts/generate-manifest.js
+2026-06-14T19:43:01.8107616Z 
+2026-06-14T19:43:01.8390938Z ✅ Generated manifest.json with site name: ***
+2026-06-14T19:43:02.3060168Z npm warn Unknown env config "verify-deps-before-run". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-14T19:43:02.3062422Z npm warn Unknown env config "_jsr-registry". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-14T19:43:08.3722480Z 
+2026-06-14T19:43:08.3723801Z ┌─────────────────────────────┐
+2026-06-14T19:43:08.3724310Z │ OpenNext — Cloudflare build │
+2026-06-14T19:43:08.3724711Z └─────────────────────────────┘
+2026-06-14T19:43:08.3724901Z 
+2026-06-14T19:43:08.4464933Z App directory: /home/runner/work/MoonTVPlus/MoonTVPlus
+2026-06-14T19:43:08.4465682Z Next.js version : 14.2.35
+2026-06-14T19:43:08.4478365Z @opennextjs/cloudflare version: 1.15.1
+2026-06-14T19:43:08.4479029Z @opennextjs/aws version: 3.9.12
+2026-06-14T19:43:08.4487363Z 
+2026-06-14T19:43:08.4488013Z ┌─────────────────────────────────┐
+2026-06-14T19:43:08.4488790Z │ OpenNext — Building Next.js app │
+2026-06-14T19:43:08.4489199Z └─────────────────────────────────┘
+2026-06-14T19:43:08.4489413Z 
+2026-06-14T19:43:08.7241273Z 
+2026-06-14T19:43:08.7242110Z > moontv@0.1.0 build /home/runner/work/MoonTVPlus/MoonTVPlus
+2026-06-14T19:43:08.7242894Z > pnpm gen:manifest && next build
+2026-06-14T19:43:08.7243177Z 
+2026-06-14T19:43:08.9982222Z 
+2026-06-14T19:43:08.9982967Z > moontv@0.1.0 gen:manifest /home/runner/work/MoonTVPlus/MoonTVPlus
+2026-06-14T19:43:08.9983562Z > node scripts/generate-manifest.js
+2026-06-14T19:43:08.9983902Z 
+2026-06-14T19:43:09.0252555Z ✅ Generated manifest.json with site name: ***
+2026-06-14T19:43:09.5233606Z ⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+2026-06-14T19:43:09.5388823Z Attention: Next.js now collects completely anonymous telemetry regarding usage.
+2026-06-14T19:43:09.5389972Z This information is used to shape Next.js' roadmap and prioritize features.
+2026-06-14T19:43:09.5391483Z You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+2026-06-14T19:43:09.5392891Z https://nextjs.org/telemetry
+2026-06-14T19:43:09.5393179Z 
+2026-06-14T19:43:09.5930914Z   ▲ Next.js 14.2.35
+2026-06-14T19:43:09.5931515Z   - Experiments (use with caution):
+2026-06-14T19:43:09.5932201Z     · webpackBuildWorker
+2026-06-14T19:43:09.5932498Z 
+2026-06-14T19:43:09.6278489Z    Creating an optimized production build ...
+2026-06-14T19:43:32.3795882Z <w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (135kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+2026-06-14T19:43:32.4576655Z Failed to compile.
+2026-06-14T19:43:32.4585736Z 
+2026-06-14T19:43:32.4606146Z ./src/app/admin/page.tsx
+2026-06-14T19:43:32.4635946Z Error: 
+2026-06-14T19:43:32.4676295Z   [31mx[0m Expression expected
+2026-06-14T19:43:32.4827072Z        ,-[[36;1;4m/home/runner/work/MoonTVPlus/MoonTVPlus/src/app/admin/page.tsx[0m:17516:1]
+2026-06-14T19:43:32.4845966Z  [2m17516[0m |   );
+2026-06-14T19:43:32.4875825Z  [2m17517[0m | }
+2026-06-14T19:43:32.4915929Z  [2m17518[0m | ;
+2026-06-14T19:43:32.4935795Z  [2m17519[0m | }
+2026-06-14T19:43:32.4965855Z        : [31;1m^[0m
+2026-06-14T19:43:32.4995773Z        `----
+2026-06-14T19:43:32.5025519Z 
+2026-06-14T19:43:32.5055773Z Caused by:
+2026-06-14T19:43:32.5085788Z     Syntax Error
+2026-06-14T19:43:32.5115525Z 
+2026-06-14T19:43:32.5145866Z Import trace for requested module:
+2026-06-14T19:43:32.5175812Z ./src/app/admin/page.tsx
+2026-06-14T19:43:32.5216457Z 
+2026-06-14T19:43:32.5216623Z 
+2026-06-14T19:43:32.5217217Z > Build failed because of webpack errors
+2026-06-14T19:43:32.6533826Z  ELIFECYCLE  Command failed with exit code 1.
+2026-06-14T19:43:32.6778166Z opennextjs-cloudflare build
+2026-06-14T19:43:32.6778479Z 
+2026-06-14T19:43:32.6778677Z Build an OpenNext Cloudflare worker
+2026-06-14T19:43:32.6779037Z 
+2026-06-14T19:43:32.6779202Z Options:
+2026-06-14T19:43:32.6779814Z       --help                        Show help                          [boolean]
+2026-06-14T19:43:32.6780500Z       --version                     Show version number                [boolean]
+2026-06-14T19:43:32.6781051Z   -c, --config                      Path to Wrangler configuration file [string]
+2026-06-14T19:43:32.6781620Z       --configPath                  Path to Wrangler configuration file
+2026-06-14T19:43:32.6782125Z                                                            [deprecated] [string]
+2026-06-14T19:43:32.6782620Z   -e, --env                         Wrangler environment to use for operations
+2026-06-14T19:43:32.6783092Z                                                                         [string]
+2026-06-14T19:43:32.6783660Z   -s, --skipNextBuild, --skipBuild  Skip building the Next.js app
+2026-06-14T19:43:32.6784336Z                                                       [boolean] [default: ***]
+2026-06-14T19:43:32.6784818Z       --noMinify                    Disable worker minification
+2026-06-14T19:43:32.6785872Z                                                       [boolean] [default: ***]
+2026-06-14T19:43:32.6787071Z       --skipWranglerConfigCheck     Skip checking for a Wrangler config
+2026-06-14T19:43:32.6787929Z                                                       [boolean] [default: ***]
+2026-06-14T19:43:32.6788760Z       --openNextConfigPath          Path to the OpenNext configuration file
+2026-06-14T19:43:32.6789575Z                                                                         [string]
+2026-06-14T19:43:32.6789839Z 
+2026-06-14T19:43:32.6790070Z Error: Command failed: pnpm build
+2026-06-14T19:43:32.6790511Z     at genericNodeError (node:internal/errors:985:15)
+2026-06-14T19:43:32.6790959Z     at wrappedFn (node:internal/errors:539:14)
+2026-06-14T19:43:32.6791423Z     at checkExecSyncError (node:child_process:925:11)
+2026-06-14T19:43:32.6791843Z     at Object.execSync (node:child_process:997:15)
+2026-06-14T19:43:32.6793115Z     at buildNextjsApp (file:///home/runner/work/MoonTVPlus/MoonTVPlus/node_modules/.pnpm/@opennextjs+aws@3.9.12_next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1_/node_modules/@opennextjs/aws/dist/build/buildNextApp.js:15:8)
+2026-06-14T19:43:32.6795461Z     at build (file:///home/runner/work/MoonTVPlus/MoonTVPlus/node_modules/.pnpm/@opennextjs+cloudflare@1.15.1_next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18_717cb6cbd55da02b8be163864df0144d/node_modules/@opennextjs/cloudflare/dist/cli/build/build.js:48:9)
+2026-06-14T19:43:32.6809543Z     at async buildCommand (file:///home/runner/work/MoonTVPlus/MoonTVPlus/node_modules/.pnpm/@opennextjs+cloudflare@1.15.1_next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18_717cb6cbd55da02b8be163864df0144d/node_modules/@opennextjs/cloudflare/dist/cli/commands/build.js:21:5) {
+2026-06-14T19:43:32.6810696Z   status: 1,
+2026-06-14T19:43:32.6810964Z   signal: null,
+2026-06-14T19:43:32.6811266Z   output: [ null, null, null ],
+2026-06-14T19:43:32.6811574Z   pid: 2469,
+2026-06-14T19:43:32.6811840Z   stdout: null,
+2026-06-14T19:43:32.6812100Z   stderr: null
+2026-06-14T19:43:32.6812350Z }
+2026-06-14T19:43:32.7620614Z  ELIFECYCLE  Command failed with exit code 1.
+2026-06-14T19:43:32.7834121Z ##[error]Process completed with exit code 1.
+2026-06-14T19:43:32.7948497Z Post job cleanup.
+2026-06-14T19:43:32.9371982Z Pruning is unnecessary.
+2026-06-14T19:43:32.9515856Z Post job cleanup.
+2026-06-14T19:43:33.0501477Z [command]/usr/bin/git version
+2026-06-14T19:43:33.0538345Z git version 2.54.0
+2026-06-14T19:43:33.0579181Z Temporarily overriding HOME='/home/runner/work/_temp/f521c035-fff5-49ab-ad64-f6d88389da65' before making global git config changes
+2026-06-14T19:43:33.0580353Z Adding repository directory to the temporary git global config as a safe directory
+2026-06-14T19:43:33.0592367Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/MoonTVPlus/MoonTVPlus
+2026-06-14T19:43:33.0630050Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-06-14T19:43:33.0664380Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-06-14T19:43:33.0909143Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-06-14T19:43:33.0931333Z http.https://github.com/.extraheader
+2026-06-14T19:43:33.0943413Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-06-14T19:43:33.0975028Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-06-14T19:43:33.1212357Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-06-14T19:43:33.1244465Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-06-14T19:43:33.1600980Z Cleaning up orphan processes
+2026-06-14T19:43:33.1898214Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4, actions/setup-node@v4, pnpm/action-setup@v4. Actions will be forced to run with Node.js 24 by default starting June 16th, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=*** environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=***. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

@@ -1,0 +1,150 @@
+﻿2026-06-14T19:43:01.2690907Z ##[group]Run pnpm run build:cloudflare
+2026-06-14T19:43:01.2691303Z [36;1mpnpm run build:cloudflare[0m
+2026-06-14T19:43:01.2723292Z shell: /usr/bin/bash -e {0}
+2026-06-14T19:43:01.2723610Z env:
+2026-06-14T19:43:01.2723922Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-06-14T19:43:01.2724302Z   BUILD_TARGET: cloudflare
+2026-06-14T19:43:01.2724585Z   NODE_ENV: production
+2026-06-14T19:43:01.2724878Z   NEXT_PUBLIC_STORAGE_TYPE: ***
+2026-06-14T19:43:01.2725194Z   NEXT_PUBLIC_SITE_NAME: ***
+2026-06-14T19:43:01.2725720Z   NEXT_PUBLIC_SEARCH_MAX_PAGE: 
+2026-06-14T19:43:01.2726027Z   NEXT_PUBLIC_DOUBAN_PROXY_TYPE: 
+2026-06-14T19:43:01.2726338Z   NEXT_PUBLIC_DOUBAN_PROXY: 
+2026-06-14T19:43:01.2726643Z   NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE: 
+2026-06-14T19:43:01.2726973Z   NEXT_PUBLIC_DOUBAN_IMAGE_PROXY: 
+2026-06-14T19:43:01.2727287Z   NEXT_PUBLIC_DISABLE_YELLOW_FILTER: 
+2026-06-14T19:43:01.2727598Z   NEXT_PUBLIC_FLUID_SEARCH: 
+2026-06-14T19:43:01.2727881Z   NEXT_PUBLIC_PROXY_M3U8_TOKEN: 
+2026-06-14T19:43:01.2728396Z   NEXT_PUBLIC_DANMAKU_CACHE_EXPIRE_MINUTES: 
+2026-06-14T19:43:01.2728744Z   NEXT_PUBLIC_VOICE_CHAT_STRATEGY: 
+2026-06-14T19:43:01.2729070Z   NEXT_PUBLIC_ENABLE_OFFLINE_DOWNLOAD: 
+2026-06-14T19:43:01.2729442Z   NEXT_PUBLIC_ENABLE_SOURCE_SEARCH: ***
+2026-06-14T19:43:01.2729748Z   USERNAME: ***
+2026-06-14T19:43:01.2730019Z   PASSWORD: ***
+2026-06-14T19:43:01.2730266Z   UPSTASH_URL: 
+2026-06-14T19:43:01.2730505Z   UPSTASH_TOKEN: 
+2026-06-14T19:43:01.2730801Z   TMDB_API_KEY: ***
+2026-06-14T19:43:01.2731090Z   TMDB_PROXY: ***
+2026-06-14T19:43:01.2731339Z   TMDB_REVERSE_PROXY: 
+2026-06-14T19:43:01.2731603Z   DANMAKU_API_BASE: 
+2026-06-14T19:43:01.2731858Z   DANMAKU_API_TOKEN: 
+2026-06-14T19:43:01.2732116Z   ANNOUNCEMENT: 
+2026-06-14T19:43:01.2732377Z   CRON_PASSWORD: 
+2026-06-14T19:43:01.2732625Z   SITE_BASE: 
+2026-06-14T19:43:01.2732858Z   REDIS_URL: 
+2026-06-14T19:43:01.2733094Z   KVROCKS_URL: 
+2026-06-14T19:43:01.2733343Z   INIT_CONFIG: 
+2026-06-14T19:43:01.2733601Z   CONFIG_SUBSCRIPTION_URL: 
+2026-06-14T19:43:01.2733907Z   ENABLE_TVBOX_SUBSCRIBE: 
+2026-06-14T19:43:01.2734208Z   TVBOX_SUBSCRIBE_TOKEN: 
+2026-06-14T19:43:01.2734495Z   WATCH_ROOM_ENABLED: ***
+2026-06-14T19:43:01.2734779Z   WATCH_ROOM_EXTERNAL_SERVER_AUTH: 
+2026-06-14T19:43:01.2735110Z   WATCH_ROOM_EXTERNAL_SERVER_URL: 
+2026-06-14T19:43:01.2735652Z   WATCH_ROOM_SERVER_TYPE: 
+2026-06-14T19:43:01.2735940Z ##[endgroup]
+2026-06-14T19:43:01.5377381Z 
+2026-06-14T19:43:01.5378320Z > moontv@0.1.0 build:cloudflare /home/runner/work/MoonTVPlus/MoonTVPlus
+2026-06-14T19:43:01.5379673Z > BUILD_TARGET=cloudflare pnpm gen:manifest && BUILD_TARGET=cloudflare npx @opennextjs/cloudflare build
+2026-06-14T19:43:01.5380414Z 
+2026-06-14T19:43:01.8105256Z 
+2026-06-14T19:43:01.8106744Z > moontv@0.1.0 gen:manifest /home/runner/work/MoonTVPlus/MoonTVPlus
+2026-06-14T19:43:01.8107379Z > node scripts/generate-manifest.js
+2026-06-14T19:43:01.8107608Z 
+2026-06-14T19:43:01.8390898Z ✅ Generated manifest.json with site name: ***
+2026-06-14T19:43:02.3060056Z npm warn Unknown env config "verify-deps-before-run". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-14T19:43:02.3062400Z npm warn Unknown env config "_jsr-registry". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-14T19:43:08.3722427Z 
+2026-06-14T19:43:08.3723784Z ┌─────────────────────────────┐
+2026-06-14T19:43:08.3724307Z │ OpenNext — Cloudflare build │
+2026-06-14T19:43:08.3724709Z └─────────────────────────────┘
+2026-06-14T19:43:08.3724898Z 
+2026-06-14T19:43:08.4464891Z App directory: /home/runner/work/MoonTVPlus/MoonTVPlus
+2026-06-14T19:43:08.4465677Z Next.js version : 14.2.35
+2026-06-14T19:43:08.4478352Z @opennextjs/cloudflare version: 1.15.1
+2026-06-14T19:43:08.4479025Z @opennextjs/aws version: 3.9.12
+2026-06-14T19:43:08.4487354Z 
+2026-06-14T19:43:08.4488008Z ┌─────────────────────────────────┐
+2026-06-14T19:43:08.4488449Z │ OpenNext — Building Next.js app │
+2026-06-14T19:43:08.4489197Z └─────────────────────────────────┘
+2026-06-14T19:43:08.4489409Z 
+2026-06-14T19:43:08.7241223Z 
+2026-06-14T19:43:08.7242105Z > moontv@0.1.0 build /home/runner/work/MoonTVPlus/MoonTVPlus
+2026-06-14T19:43:08.7242889Z > pnpm gen:manifest && next build
+2026-06-14T19:43:08.7243174Z 
+2026-06-14T19:43:08.9982173Z 
+2026-06-14T19:43:08.9982963Z > moontv@0.1.0 gen:manifest /home/runner/work/MoonTVPlus/MoonTVPlus
+2026-06-14T19:43:08.9983559Z > node scripts/generate-manifest.js
+2026-06-14T19:43:08.9983898Z 
+2026-06-14T19:43:09.0252512Z ✅ Generated manifest.json with site name: ***
+2026-06-14T19:43:09.5233555Z ⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+2026-06-14T19:43:09.5388775Z Attention: Next.js now collects completely anonymous telemetry regarding usage.
+2026-06-14T19:43:09.5389965Z This information is used to shape Next.js' roadmap and prioritize features.
+2026-06-14T19:43:09.5391419Z You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+2026-06-14T19:43:09.5392886Z https://nextjs.org/telemetry
+2026-06-14T19:43:09.5393175Z 
+2026-06-14T19:43:09.5930873Z   ▲ Next.js 14.2.35
+2026-06-14T19:43:09.5931508Z   - Experiments (use with caution):
+2026-06-14T19:43:09.5932194Z     · webpackBuildWorker
+2026-06-14T19:43:09.5932492Z 
+2026-06-14T19:43:09.6278445Z    Creating an optimized production build ...
+2026-06-14T19:43:32.3795828Z <w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (135kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+2026-06-14T19:43:32.4576603Z Failed to compile.
+2026-06-14T19:43:32.4585717Z 
+2026-06-14T19:43:32.4606128Z ./src/app/admin/page.tsx
+2026-06-14T19:43:32.4635937Z Error: 
+2026-06-14T19:43:32.4676281Z   [31mx[0m Expression expected
+2026-06-14T19:43:32.4826991Z        ,-[[36;1;4m/home/runner/work/MoonTVPlus/MoonTVPlus/src/app/admin/page.tsx[0m:17516:1]
+2026-06-14T19:43:32.4845951Z  [2m17516[0m |   );
+2026-06-14T19:43:32.4875816Z  [2m17517[0m | }
+2026-06-14T19:43:32.4915913Z  [2m17518[0m | ;
+2026-06-14T19:43:32.4935786Z  [2m17519[0m | }
+2026-06-14T19:43:32.4965845Z        : [31;1m^[0m
+2026-06-14T19:43:32.4995757Z        `----
+2026-06-14T19:43:32.5025507Z 
+2026-06-14T19:43:32.5055754Z Caused by:
+2026-06-14T19:43:32.5085769Z     Syntax Error
+2026-06-14T19:43:32.5115516Z 
+2026-06-14T19:43:32.5145858Z Import trace for requested module:
+2026-06-14T19:43:32.5175804Z ./src/app/admin/page.tsx
+2026-06-14T19:43:32.5216400Z 
+2026-06-14T19:43:32.5216619Z 
+2026-06-14T19:43:32.5217210Z > Build failed because of webpack errors
+2026-06-14T19:43:32.6533783Z  ELIFECYCLE  Command failed with exit code 1.
+2026-06-14T19:43:32.6778122Z opennextjs-cloudflare build
+2026-06-14T19:43:32.6778475Z 
+2026-06-14T19:43:32.6778674Z Build an OpenNext Cloudflare worker
+2026-06-14T19:43:32.6779034Z 
+2026-06-14T19:43:32.6779199Z Options:
+2026-06-14T19:43:32.6779770Z       --help                        Show help                          [boolean]
+2026-06-14T19:43:32.6780496Z       --version                     Show version number                [boolean]
+2026-06-14T19:43:32.6781049Z   -c, --config                      Path to Wrangler configuration file [string]
+2026-06-14T19:43:32.6781618Z       --configPath                  Path to Wrangler configuration file
+2026-06-14T19:43:32.6782122Z                                                            [deprecated] [string]
+2026-06-14T19:43:32.6782618Z   -e, --env                         Wrangler environment to use for operations
+2026-06-14T19:43:32.6783090Z                                                                         [string]
+2026-06-14T19:43:32.6783657Z   -s, --skipNextBuild, --skipBuild  Skip building the Next.js app
+2026-06-14T19:43:32.6784333Z                                                       [boolean] [default: ***]
+2026-06-14T19:43:32.6784815Z       --noMinify                    Disable worker minification
+2026-06-14T19:43:32.6785543Z                                                       [boolean] [default: ***]
+2026-06-14T19:43:32.6787065Z       --skipWranglerConfigCheck     Skip checking for a Wrangler config
+2026-06-14T19:43:32.6787914Z                                                       [boolean] [default: ***]
+2026-06-14T19:43:32.6788755Z       --openNextConfigPath          Path to the OpenNext configuration file
+2026-06-14T19:43:32.6789570Z                                                                         [string]
+2026-06-14T19:43:32.6789836Z 
+2026-06-14T19:43:32.6790064Z Error: Command failed: pnpm build
+2026-06-14T19:43:32.6790507Z     at genericNodeError (node:internal/errors:985:15)
+2026-06-14T19:43:32.6790956Z     at wrappedFn (node:internal/errors:539:14)
+2026-06-14T19:43:32.6791420Z     at checkExecSyncError (node:child_process:925:11)
+2026-06-14T19:43:32.6791840Z     at Object.execSync (node:child_process:997:15)
+2026-06-14T19:43:32.6793099Z     at buildNextjsApp (file:///home/runner/work/MoonTVPlus/MoonTVPlus/node_modules/.pnpm/@opennextjs+aws@3.9.12_next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1_/node_modules/@opennextjs/aws/dist/build/buildNextApp.js:15:8)
+2026-06-14T19:43:32.6795455Z     at build (file:///home/runner/work/MoonTVPlus/MoonTVPlus/node_modules/.pnpm/@opennextjs+cloudflare@1.15.1_next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18_717cb6cbd55da02b8be163864df0144d/node_modules/@opennextjs/cloudflare/dist/cli/build/build.js:48:9)
+2026-06-14T19:43:32.6809526Z     at async buildCommand (file:///home/runner/work/MoonTVPlus/MoonTVPlus/node_modules/.pnpm/@opennextjs+cloudflare@1.15.1_next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18_717cb6cbd55da02b8be163864df0144d/node_modules/@opennextjs/cloudflare/dist/cli/commands/build.js:21:5) {
+2026-06-14T19:43:32.6810693Z   status: 1,
+2026-06-14T19:43:32.6810962Z   signal: null,
+2026-06-14T19:43:32.6811264Z   output: [ null, null, null ],
+2026-06-14T19:43:32.6811572Z   pid: 2469,
+2026-06-14T19:43:32.6811826Z   stdout: null,
+2026-06-14T19:43:32.6812097Z   stderr: null
+2026-06-14T19:43:32.6812348Z }
+2026-06-14T19:43:32.7620547Z  ELIFECYCLE  Command failed with exit code 1.
+2026-06-14T19:43:32.7834096Z ##[error]Process completed with exit code 1.
