@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /* eslint-disable @typescript-eslint/no-explicit-any,no-console,@typescript-eslint/no-non-null-assertion */
 
 import { NextRequest, NextResponse } from 'next/server';
@@ -7,7 +8,7 @@ import { getConfig } from '@/lib/config';
 import { db } from '@/lib/db';
 import { sanitizeFeaturePermissions } from '@/lib/feature-permissions';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 // 支持的操作类型
 const ACTIONS = [

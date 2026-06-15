@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /* eslint-disable no-console,@typescript-eslint/no-explicit-any */
 import { NextRequest, NextResponse } from 'next/server';
 
@@ -10,7 +11,7 @@ import {
   TOKEN_CONFIG,
 } from '@/lib/refresh-token';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 // 生成签名
 async function generateSignature(

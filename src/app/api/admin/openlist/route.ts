@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /* eslint-disable no-console */
 
 import { NextRequest, NextResponse } from 'next/server';
@@ -7,7 +8,7 @@ import { getConfig } from '@/lib/config';
 import { db } from '@/lib/db';
 import { OpenListClient } from '@/lib/openlist.client';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 /**
  * 清理字符串中的 BOM 和其他不可见字符

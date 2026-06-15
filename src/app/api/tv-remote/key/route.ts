@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { NextRequest, NextResponse } from 'next/server';
 
 import { getAuthInfoFromCookie } from '@/lib/auth';
@@ -6,7 +7,7 @@ import type { TVRemoteKeyCommand } from '@/lib/tv-remote-types';
 
 const { sendTVRemoteCommand } = require('@/lib/tv-remote-hub');
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 export async function POST(request: NextRequest) {
   if (!isTVModeEnabled()) {

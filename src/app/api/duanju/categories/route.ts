@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /* eslint-disable @typescript-eslint/no-explicit-any,no-console */
 
 import { NextRequest, NextResponse } from 'next/server';
@@ -6,7 +7,7 @@ import { API_CONFIG, getCacheTime, getConfig } from '@/lib/config';
 import { getDuanjuSources, isDuanjuTypeName } from '@/lib/duanju';
 import { yellowWords } from '@/lib/yellow';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 interface CmsClassResponse {
   class?: Array<{

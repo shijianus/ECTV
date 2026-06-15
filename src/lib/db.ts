@@ -110,11 +110,32 @@ function getD1Adapter(): any {
     const getAdapter = async () => {
       if (!cachedAdapter) {
         try {
+          // 检查是否在构建环境中 (Next.js 14+)
+          const isBuildPhase = process.env.NEXT_PHASE === 'phase-production-build' || 
+                               process.env.NODE_ENV === 'production' && !process.env.CF_PAGES;
+
           const { getCloudflareContext } = require('@opennextjs/cloudflare');
-          // 关键修复：使用 async 模式避免在顶层作用域或静态路由中报错
-          const { env } = await getCloudflareContext({ async: true });
+          
+          // 如果在构建环境，我们可能无法获得真正的 Context
+          // 使用 try-catch 进一步保护
+          let context: any;
+          try {
+            context = await getCloudflareContext({ async: true });
+          } catch (ctxError) {
+            if (isBuildPhase) {
+              console.log('Skipping Cloudflare Context during build phase');
+              return null; // 返回 null 并在后续操作中处理
+            }
+            throw ctxError;
+          }
+
+          const { env } = context;
 
           if (!env.DB) {
+            if (isBuildPhase) {
+              console.log('D1 binding not found during build phase, returning mock');
+              return null;
+            }
             throw new Error(
               'D1 database binding (DB) not found in Cloudflare environment'
             );
@@ -130,6 +151,11 @@ function getD1Adapter(): any {
       return cachedAdapter;
     };
 
+    const handleEmptyAdapter = (method: string) => {
+      // 如果是构建阶段返回了 null 适配器，我们返回空结果而不抛错，避免中断 build
+      return { success: true, results: [], meta: { changes: 0 } };
+    };
+
     return {
       prepare(query: string) {
         let params: any[] = [];
@@ -142,16 +168,19 @@ function getD1Adapter(): any {
           },
           async first(colName?: string) {
             const adapter = await getAdapter();
+            if (!adapter) return null;
             const stmt = adapter.prepare(query).bind(...params);
             return stmt.first(colName);
           },
           async run() {
             const adapter = await getAdapter();
+            if (!adapter) return handleEmptyAdapter('run');
             const stmt = adapter.prepare(query).bind(...params);
             return stmt.run();
           },
           async all() {
             const adapter = await getAdapter();
+            if (!adapter) return handleEmptyAdapter('all') as any;
             const stmt = adapter.prepare(query).bind(...params);
             return stmt.all();
           }
@@ -159,6 +188,7 @@ function getD1Adapter(): any {
       },
       async batch(statements: any[]) {
         const adapter = await getAdapter();
+        if (!adapter) return statements.map(() => handleEmptyAdapter('batch'));
         const realStatements = statements.map((stmt: any) => 
           adapter.prepare(stmt.query).bind(...(stmt.params || []))
         );

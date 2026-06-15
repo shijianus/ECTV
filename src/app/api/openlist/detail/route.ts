@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /* eslint-disable @typescript-eslint/no-explicit-any, no-console */
 
 import { NextRequest, NextResponse } from 'next/server';
@@ -13,7 +14,7 @@ import {
 } from '@/lib/openlist-cache';
 import { parseVideoFileName } from '@/lib/video-parser';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 /**
  * GET /api/openlist/detail?folder=xxx

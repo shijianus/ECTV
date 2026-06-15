@@ -1,9 +1,10 @@
+export const dynamic = 'force-dynamic';
 import { NextRequest, NextResponse } from 'next/server';
 
 import { extractSongmid, isMusicSource, lxPostJson, normalizeMusicQuality, normalizeSong } from '@/lib/music-v2';
 import { badRequest } from '@/lib/music-v2-api';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 const STREAM_URL_CACHE_TTL_MS = 10 * 60 * 1000;
 

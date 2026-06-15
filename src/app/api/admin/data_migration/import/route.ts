@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /* eslint-disable @typescript-eslint/no-explicit-any,no-console */
 
 import { NextRequest, NextResponse } from 'next/server';
@@ -10,7 +11,7 @@ import { SimpleCrypto } from '@/lib/crypto';
 import { db } from '@/lib/db';
 import { updateProgress, clearProgress } from '@/lib/data-migration-progress';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 const gunzipAsync = promisify(gunzip);
 

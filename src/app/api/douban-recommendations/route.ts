@@ -1,10 +1,11 @@
+export const dynamic = 'force-dynamic';
 import * as cheerio from 'cheerio/slim';
 import { NextRequest, NextResponse } from 'next/server';
 
 import { fetchDoubanData } from '@/lib/douban';
 import { fetchDoubanWithVerification } from '@/lib/douban-anti-crawler';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 interface DoubanRecommendation {
   doubanId: string;

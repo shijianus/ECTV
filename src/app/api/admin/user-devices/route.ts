@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /* eslint-disable no-console */
 
 import { NextRequest, NextResponse } from 'next/server';
@@ -10,7 +11,7 @@ import {
   revokeRefreshToken,
 } from '@/lib/refresh-token';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 async function getOperatorRole(username: string): Promise<'owner' | 'admin' | 'user'> {
   if (username === process.env.USERNAME) return 'owner';

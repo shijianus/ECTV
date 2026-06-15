@@ -1,8 +1,9 @@
+export const dynamic = 'force-dynamic';
 import { NextRequest, NextResponse } from 'next/server';
 
 import { fetchDoubanData } from '@/lib/douban';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 interface DoubanSearchResult {
   id: string;

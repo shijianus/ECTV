@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /* eslint-disable @typescript-eslint/no-explicit-any,no-console */
 
 import { NextResponse } from 'next/server';
@@ -5,7 +6,7 @@ import { NextResponse } from 'next/server';
 import { getCacheTime } from '@/lib/config';
 import { getDuanjuSources } from '@/lib/duanju';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 /**
  * 获取包含短剧分类的视频源列表

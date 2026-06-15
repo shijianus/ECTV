@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { NextRequest, NextResponse } from 'next/server';
@@ -6,7 +7,7 @@ import { getConfig } from '@/lib/config';
 import { EmbyClient } from '@/lib/emby.client';
 import { hasFeaturePermission } from '@/lib/permissions';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 /**
  * Emby CMS 代理接口（动态路由）

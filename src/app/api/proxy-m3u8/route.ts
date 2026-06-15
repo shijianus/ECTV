@@ -1,9 +1,10 @@
+export const dynamic = 'force-dynamic';
 import { NextRequest, NextResponse } from 'next/server';
 
 import { getConfig } from '@/lib/config';
 import { validateProxyUrlServerSide } from '@/lib/server/ssrf';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 export const maxDuration = 60; // 设置最大执行时间为 60 秒
 

@@ -1,10 +1,11 @@
+export const dynamic = 'force-dynamic';
 import { NextRequest, NextResponse } from 'next/server';
 
 import { suwayomiClient } from '@/lib/suwayomi.client';
 
 import { getAuthorizedUsername } from '../../_utils';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 function sse(data: unknown): string {
   return `data: ${JSON.stringify(data)}\n\n`;

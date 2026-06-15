@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /* eslint-disable no-console */
 
 import { NextRequest, NextResponse } from 'next/server';
@@ -6,7 +7,7 @@ import { getConfig } from '@/lib/config';
 import { requireFeaturePermission } from '@/lib/permissions';
 import { OpenListClient } from '@/lib/openlist.client';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 // 获取 OpenList 客户端
 async function getOpenListClient(): Promise<OpenListClient | null> {

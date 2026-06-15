@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { NextRequest, NextResponse } from 'next/server';
 
 import { legadoClient } from '@/lib/legado.client';
@@ -6,7 +7,7 @@ import { validateProxyUrlServerSide } from '@/lib/server/ssrf';
 
 import { getAuthorizedBooksUsername } from '../_utils';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 const imageCache = new Map<string, { expiresAt: number; contentType: string; data: Uint8Array }>();
 

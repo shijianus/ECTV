@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { NextRequest, NextResponse } from 'next/server';
 
 import { BookAcquisitionLink } from '@/lib/book.types';
@@ -6,7 +7,7 @@ import { bookProvider } from '@/lib/book-provider';
 
 import { getAuthorizedBooksUsername } from '../../_utils';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 type ManifestPayload = {
   sourceId?: string;

@@ -1,10 +1,11 @@
+export const dynamic = 'force-dynamic';
 import { NextRequest, NextResponse } from 'next/server';
 
 import { getBookTtsConfig, synthesizeBookTts } from '@/lib/book-tts';
 
 import { getAuthorizedBooksUsername } from '../../_utils';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 type SynthesizePayload = {
   sourceId?: string;

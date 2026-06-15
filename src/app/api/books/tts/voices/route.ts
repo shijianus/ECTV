@@ -1,10 +1,11 @@
+export const dynamic = 'force-dynamic';
 import { NextRequest, NextResponse } from 'next/server';
 
 import { getBookTtsConfig, listBookTtsVoices } from '@/lib/book-tts';
 
 import { getAuthorizedBooksUsername } from '../../_utils';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 export async function GET(request: NextRequest) {
   const username = await getAuthorizedBooksUsername(request);

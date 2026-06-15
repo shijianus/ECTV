@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { NextRequest, NextResponse } from 'next/server';
@@ -7,7 +8,7 @@ import { db } from '@/lib/db';
 import { getCachedLiveChannels } from '@/lib/live';
 import { hasFeaturePermission } from '@/lib/permissions';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 /**
  * TVBOX订阅API

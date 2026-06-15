@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { NextRequest, NextResponse } from 'next/server';
 
 import { getAuthInfoFromCookie } from '@/lib/auth';
@@ -8,7 +9,7 @@ import {
   isWebPushConfigured,
 } from '@/lib/web-push';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 function extractSubscriptionKeys(subscription: any) {
   const p256dh = subscription?.keys?.p256dh || subscription?.toJSON?.()?.keys?.p256dh;

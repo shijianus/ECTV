@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /* eslint-disable no-console */
 
 import { NextRequest, NextResponse } from 'next/server';
@@ -5,7 +6,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getAvailableApiSites } from '@/lib/config';
 import { listEnabledSourceScripts } from '@/lib/source-script';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 // OrionTV 兼容接口
 export async function GET(request: NextRequest) {

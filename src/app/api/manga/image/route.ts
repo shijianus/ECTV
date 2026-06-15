@@ -1,9 +1,10 @@
+export const dynamic = 'force-dynamic';
 import { NextRequest, NextResponse } from 'next/server';
 
 import { getAuthorizedUsername } from '../_utils';
 import { getSuwayomiConfig, loginWithSimpleAuth } from '@/lib/suwayomi.client';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 function resolveUpstreamUrl(serverBaseUrl: string, pathOrUrl: string): string {
   if (/^https?:\/\//i.test(pathOrUrl)) {

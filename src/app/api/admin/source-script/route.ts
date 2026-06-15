@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { NextRequest, NextResponse } from 'next/server';
@@ -14,7 +15,7 @@ import {
   toggleSourceScriptEnabled,
 } from '@/lib/source-script';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 async function assertAdmin(request: NextRequest) {
   const storageType = process.env.NEXT_PUBLIC_STORAGE_TYPE || 'localstorage';

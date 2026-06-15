@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /* eslint-disable no-console */
 
 import { NextRequest, NextResponse } from 'next/server';
@@ -10,7 +11,7 @@ import {
   revokeRefreshToken,
 } from '@/lib/refresh-token';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 // 获取所有设备
 export async function GET(request: NextRequest) {

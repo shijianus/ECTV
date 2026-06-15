@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { NextRequest, NextResponse } from 'next/server';
 
 import { getAuthInfoFromCookie } from '@/lib/auth';
@@ -5,7 +6,7 @@ import { isTVModeEnabled } from '@/lib/tv-mode';
 
 const { listTVRemoteDevices } = require('@/lib/tv-remote-hub');
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 export async function GET(request: NextRequest) {
   if (!isTVModeEnabled()) {

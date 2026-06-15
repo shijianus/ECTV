@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /* eslint-disable no-console */
 
 import { NextRequest, NextResponse } from 'next/server';
@@ -28,7 +29,7 @@ import {
   validateUCCookieReadable,
 } from '@/lib/netdisk/uc.client';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 function requireOwner(username: string | undefined) {
   return username === process.env.USERNAME;

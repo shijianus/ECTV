@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /* eslint-disable @typescript-eslint/no-explicit-any,no-console */
 
 import { NextRequest, NextResponse } from 'next/server';
@@ -7,7 +8,7 @@ import { getDuanjuSources } from '@/lib/duanju';
 import { SearchResult } from '@/lib/types';
 import { cleanHtmlTags } from '@/lib/utils';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 interface CmsVideoItem {
   vod_id: string | number;

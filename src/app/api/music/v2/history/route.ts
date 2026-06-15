@@ -1,10 +1,11 @@
+export const dynamic = 'force-dynamic';
 import { NextRequest, NextResponse } from 'next/server';
 
 import { db } from '@/lib/db';
 import { MusicV2HistoryRecord, normalizeSong } from '@/lib/music-v2';
 import { badRequest, getMusicV2Username, internalError, unauthorized } from '@/lib/music-v2-api';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 function toHistoryRecord(input: any, previous?: MusicV2HistoryRecord): MusicV2HistoryRecord {
   const song = normalizeSong(input.song || input);

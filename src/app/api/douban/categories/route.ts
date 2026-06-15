@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { NextResponse } from 'next/server';
 
 import { getCacheTime } from '@/lib/config';
@@ -20,7 +21,7 @@ interface DoubanCategoryApiResponse {
   }>;
 }
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);

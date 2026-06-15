@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { NextRequest, NextResponse } from 'next/server';
 
 import { db } from '@/lib/db';
@@ -5,7 +6,7 @@ import { bookProvider } from '@/lib/book-provider';
 
 import { getAuthorizedBooksUsername } from '../_utils';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 type FilePayload = {
   sourceId?: string;

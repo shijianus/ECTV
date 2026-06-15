@@ -1,8 +1,9 @@
+export const dynamic = 'force-dynamic';
 import { NextRequest, NextResponse } from 'next/server';
 
 import { getQrLoginSession, saveQrLoginSession } from '@/lib/qr-login/store';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 export async function POST(request: NextRequest) {
   const { token } = await request.json();

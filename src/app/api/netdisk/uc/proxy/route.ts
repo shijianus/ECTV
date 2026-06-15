@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { NextRequest, NextResponse } from 'next/server';
 
 import { getAuthInfoFromCookie } from '@/lib/auth';
@@ -5,7 +6,7 @@ import { ensureUCPlayFolder, getUCPlayUrls, saveUCShareFile } from '@/lib/netdis
 import { refreshUCNetdiskSession } from '@/lib/netdisk/uc-session-cache';
 import { resolveUCSession } from '@/lib/netdisk/uc-session-resolver';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 export async function GET(request: NextRequest) {
   try {

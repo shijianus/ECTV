@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { NextRequest, NextResponse } from 'next/server';
 
@@ -10,7 +11,7 @@ import {
 } from '@/lib/openlist-offline-download';
 import { hasFeaturePermission } from '@/lib/permissions';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 const downloadTools = ['aria2', 'Transmission', 'qBittorrent'] as const;
 type DownloadTool = typeof downloadTools[number];

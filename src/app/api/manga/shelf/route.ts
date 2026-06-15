@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { NextRequest, NextResponse } from 'next/server';
 
 import { db } from '@/lib/db';
@@ -5,7 +6,7 @@ import { MangaShelfItem } from '@/lib/manga.types';
 
 import { getAuthorizedUsername } from '../_utils';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 export async function GET(request: NextRequest) {
   const username = await getAuthorizedUsername(request);

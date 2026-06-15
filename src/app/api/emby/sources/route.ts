@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { embyManager } from '@/lib/emby-manager';
 import { requireFeaturePermission } from '@/lib/permissions';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 export const dynamic = 'force-dynamic'; // 禁用缓存
 
 /**

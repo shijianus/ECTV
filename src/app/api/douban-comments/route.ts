@@ -1,9 +1,10 @@
+export const dynamic = 'force-dynamic';
 import * as cheerio from 'cheerio/slim';
 import { NextRequest, NextResponse } from 'next/server';
 
 import { fetchDoubanWithVerification } from '@/lib/douban-anti-crawler';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 interface DoubanComment {
   id: string;

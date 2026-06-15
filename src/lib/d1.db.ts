@@ -54,6 +54,15 @@ export class D1Storage implements IStorage {
   }
 
   private async ensureMangaShelfColumns(): Promise<void> {
+    const isBuildPhase =
+      process.env.NEXT_PHASE === 'phase-production-build' ||
+      (process.env.NODE_ENV === 'production' && !process.env.CF_PAGES);
+
+    if (isBuildPhase) {
+      console.log('Skipping D1 schema check during build phase');
+      return;
+    }
+
     const statements = [
       'ALTER TABLE manga_shelf ADD COLUMN latest_chapter_id TEXT',
       'ALTER TABLE manga_shelf ADD COLUMN latest_chapter_name TEXT',
