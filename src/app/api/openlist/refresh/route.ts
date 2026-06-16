@@ -8,7 +8,7 @@ import { getConfig } from '@/lib/config';
 import { requireFeaturePermission } from '@/lib/permissions';
 import { startOpenListRefresh } from '@/lib/openlist-refresh';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 /**
  * POST /api/openlist/refresh

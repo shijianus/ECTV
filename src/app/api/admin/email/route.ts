@@ -7,7 +7,7 @@ import { getConfig } from '@/lib/config';
 import { getStorage } from '@/lib/db';
 import { EmailService } from '@/lib/email.service';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 /**
  * GET - 获取邮件配置

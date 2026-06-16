@@ -8,7 +8,7 @@ import { createMobileNetdiskSession } from '@/lib/netdisk/mobile-session-cache';
 import { NETDISK_MOBILE_SOURCE } from '@/lib/netdisk/source';
 import { hasFeaturePermission } from '@/lib/permissions';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 export async function POST(request: NextRequest) {
   try {

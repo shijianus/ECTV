@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { extractSongmid, fetchLxLyric, MusicQuality, normalizeMusicQuality, normalizeSong, lxPostJson } from '@/lib/music-v2';
 import { badRequest, internalError } from '@/lib/music-v2-api';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 const PLAY_META_CACHE_TTL_MS = 2 * 60 * 60 * 1000;
 

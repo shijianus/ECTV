@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { isMusicSource, lxGetJson } from '@/lib/music-v2';
 import { badRequest, internalError } from '@/lib/music-v2-api';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 type HotSearchItem = { keyword: string; name: string; artist: string; source: string };
 type LxHotSearchPayload =

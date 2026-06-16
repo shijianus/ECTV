@@ -5,7 +5,7 @@ import { getAuthInfoFromCookie } from '@/lib/auth';
 import { getStorage } from '@/lib/db';
 import { revokeRefreshToken } from '@/lib/refresh-token';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 export async function POST(request: NextRequest) {
   const authInfo = getAuthInfoFromCookie(request);

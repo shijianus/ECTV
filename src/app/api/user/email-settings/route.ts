@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getAuthInfoFromCookie } from '@/lib/auth';
 import { getStorage } from '@/lib/db';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 /**
  * GET - 获取用户通知设置

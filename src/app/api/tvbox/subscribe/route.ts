@@ -8,7 +8,7 @@ import { db } from '@/lib/db';
 import { getCachedLiveChannels } from '@/lib/live';
 import { hasFeaturePermission } from '@/lib/permissions';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 /**
  * TVBOX订阅API

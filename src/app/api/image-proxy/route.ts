@@ -7,7 +7,7 @@ import { NextResponse } from 'next/server';
 
 import { getConfig } from '@/lib/config';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 function isCloudflareEnvironment(): boolean {
   return (

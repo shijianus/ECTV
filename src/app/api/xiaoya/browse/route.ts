@@ -8,7 +8,7 @@ import { getConfig } from '@/lib/config';
 import { requireFeaturePermission } from '@/lib/permissions';
 import { XiaoyaClient } from '@/lib/xiaoya.client';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 /**
  * GET /api/xiaoya/browse?path=<path>

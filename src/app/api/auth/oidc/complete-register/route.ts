@@ -11,7 +11,7 @@ import {
   TOKEN_CONFIG,
 } from '@/lib/refresh-token';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 // 生成签名
 async function generateSignature(

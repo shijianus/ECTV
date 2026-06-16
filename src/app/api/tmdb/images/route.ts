@@ -7,7 +7,7 @@ import { getAuthInfoFromCookie } from '@/lib/auth';
 import { getConfig } from '@/lib/config';
 import { getTMDBImages } from '@/lib/tmdb.client';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 /**
  * GET /api/tmdb/images?id=xxx&type=movie|tv&page=1&pageSize=24

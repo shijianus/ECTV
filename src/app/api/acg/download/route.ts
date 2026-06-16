@@ -11,7 +11,7 @@ import {
 } from '@/lib/openlist-offline-download';
 import { hasFeaturePermission } from '@/lib/permissions';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 const downloadTools = ['aria2', 'Transmission', 'qBittorrent'] as const;
 type DownloadTool = typeof downloadTools[number];

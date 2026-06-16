@@ -1,0 +1,21 @@
+﻿2026-06-15T19:34:37.2550745Z ##[group]Run pnpm/action-setup@v4
+2026-06-15T19:34:37.2551187Z with:
+2026-06-15T19:34:37.2551477Z   dest: ~/setup-pnpm
+2026-06-15T19:34:37.2552250Z   run_install: null
+2026-06-15T19:34:37.2552841Z   cache: ***
+2026-06-15T19:34:37.2553185Z   cache_dependency_path: pnpm-lock.yaml
+2026-06-15T19:34:37.2553592Z   package_json_file: package.json
+2026-06-15T19:34:37.2554254Z   standalone: ***
+2026-06-15T19:34:37.2554564Z ##[endgroup]
+2026-06-15T19:34:37.3972886Z ##[group]Running self-installer...
+2026-06-15T19:34:38.0461218Z Progress: resolved 1, reused 0, downloaded 0, added 0
+2026-06-15T19:34:38.0561224Z Packages: +1
+2026-06-15T19:34:38.0562534Z +
+2026-06-15T19:34:38.4919543Z Progress: resolved 1, reused 0, downloaded 1, added 1, done
+2026-06-15T19:34:38.5199457Z 
+2026-06-15T19:34:38.5200894Z dependencies:
+2026-06-15T19:34:38.5202659Z + pnpm 10.14.0 (11.7.0 is available)
+2026-06-15T19:34:38.5203847Z 
+2026-06-15T19:34:38.5228896Z Done in 956ms
+2026-06-15T19:34:38.5393453Z ##[endgroup]
+2026-06-15T19:34:38.5398089Z Installation Completed!

@@ -8,7 +8,7 @@ import { getDuanjuSources } from '@/lib/duanju';
 import { SearchResult } from '@/lib/types';
 import { cleanHtmlTags } from '@/lib/utils';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 // 服务端内存缓存
 let cachedRecommends: {

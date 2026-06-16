@@ -1,4 +1,4 @@
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { NextResponse } from 'next/server';

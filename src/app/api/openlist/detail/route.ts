@@ -14,7 +14,7 @@ import {
 } from '@/lib/openlist-cache';
 import { parseVideoFileName } from '@/lib/video-parser';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 /**
  * GET /api/openlist/detail?folder=xxx

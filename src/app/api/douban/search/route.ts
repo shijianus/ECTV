@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 import { fetchDoubanData } from '@/lib/douban';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 interface DoubanSearchResult {
   id: string;

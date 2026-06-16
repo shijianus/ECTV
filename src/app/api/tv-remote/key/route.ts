@@ -7,7 +7,7 @@ import type { TVRemoteKeyCommand } from '@/lib/tv-remote-types';
 
 const { sendTVRemoteCommand } = require('@/lib/tv-remote-hub');
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 export async function POST(request: NextRequest) {
   if (!isTVModeEnabled()) {

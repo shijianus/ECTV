@@ -5,7 +5,7 @@ import { getAuthInfoFromCookie } from '@/lib/auth';
 import { getBaiduDirectPlayUrl } from '@/lib/netdisk/baidu.client';
 import { resolveBaiduSession } from '@/lib/netdisk/baidu-session-resolver';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 export async function GET(request: NextRequest) {
   try {

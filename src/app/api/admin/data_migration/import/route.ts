@@ -9,7 +9,7 @@ import { SimpleCrypto } from '@/lib/crypto';
 import { db } from '@/lib/db';
 import { updateProgress, clearProgress } from '@/lib/data-migration-progress';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 /**
  * 使用 DecompressionStream 进行 gzip 解压 (Edge 运行时兼容)

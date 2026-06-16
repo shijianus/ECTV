@@ -6,7 +6,7 @@ import { isTVModeEnabled } from '@/lib/tv-mode';
 
 const { listTVRemoteDevices } = require('@/lib/tv-remote-hub');
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 export async function GET(request: NextRequest) {
   if (!isTVModeEnabled()) {

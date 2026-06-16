@@ -6,7 +6,7 @@ import { NextResponse } from 'next/server';
 import { getCacheTime } from '@/lib/config';
 import { getDuanjuSources } from '@/lib/duanju';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 /**
  * 获取包含短剧分类的视频源列表

@@ -7,7 +7,7 @@ import {
   resolveSavedScriptPlayUrl,
 } from '@/lib/source-script';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 /**
  * GET /api/source-script/play?key=xxx&sourceId=xxx&episodeIndex=0&playUrl=base64url&format=json

@@ -15,7 +15,7 @@ import {
   setCachedMetaInfo,
 } from '@/lib/openlist-cache';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 /**
  * POST /api/openlist/correct

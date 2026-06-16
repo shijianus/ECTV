@@ -15,7 +15,7 @@ import {
 } from '@/lib/openlist-cache';
 import { getTMDBImageUrl } from '@/lib/tmdb.search';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 /**
  * GET /api/openlist/list?page=1&pageSize=20&includeFailed=false&noCache=false

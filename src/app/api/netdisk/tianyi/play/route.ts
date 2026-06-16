@@ -7,7 +7,7 @@ import { getTianyiSharePlayUrl } from '@/lib/netdisk/tianyi.client';
 import { listTianyiShareVideos } from '@/lib/netdisk/tianyi.client';
 import { createTianyiNetdiskSession, getTianyiNetdiskSession, parseTianyiNetdiskId, refreshTianyiNetdiskSession } from '@/lib/netdisk/tianyi-session-cache';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 export async function GET(request: NextRequest) {
   try {

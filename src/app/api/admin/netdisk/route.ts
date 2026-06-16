@@ -29,7 +29,7 @@ import {
   validateUCCookieReadable,
 } from '@/lib/netdisk/uc.client';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 function requireOwner(username: string | undefined) {
   return username === process.env.USERNAME;

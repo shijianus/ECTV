@@ -1,0 +1,110 @@
+﻿2026-06-15T19:34:49.2200264Z ##[group]Run pnpm install --frozen-lockfile
+2026-06-15T19:34:49.2200767Z [36;1mpnpm install --frozen-lockfile[0m
+2026-06-15T19:34:49.2863744Z shell: /usr/bin/bash -e {0}
+2026-06-15T19:34:49.2864241Z env:
+2026-06-15T19:34:49.2864728Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-06-15T19:34:49.2865337Z ##[endgroup]
+2026-06-15T19:34:49.6546256Z Lockfile is up to date, resolution step is skipped
+2026-06-15T19:34:49.7680842Z Progress: resolved 1, reused 0, downloaded 0, added 0
+2026-06-15T19:34:49.9589940Z Packages: +1776
+2026-06-15T19:34:49.9591007Z ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-06-15T19:34:50.7712465Z Progress: resolved 1776, reused 1776, downloaded 0, added 0
+2026-06-15T19:34:51.7713609Z Progress: resolved 1776, reused 1776, downloaded 0, added 590
+2026-06-15T19:34:52.7717519Z Progress: resolved 1776, reused 1776, downloaded 0, added 1733
+2026-06-15T19:34:52.8651252Z Progress: resolved 1776, reused 1776, downloaded 0, added 1776, done
+2026-06-15T19:34:53.6053653Z 
+2026-06-15T19:34:53.6054661Z dependencies:
+2026-06-15T19:34:53.6055448Z + @dnd-kit/core 6.3.1
+2026-06-15T19:34:53.6056162Z + @dnd-kit/modifiers 9.0.0
+2026-06-15T19:34:53.6056859Z + @dnd-kit/sortable 10.0.0
+2026-06-15T19:34:53.6057535Z + @dnd-kit/utilities 3.2.2
+2026-06-15T19:34:53.6058169Z + @headlessui/react 2.2.9
+2026-06-15T19:34:53.6058769Z + @heroicons/react 2.2.0
+2026-06-15T19:34:53.6059424Z + @types/crypto-js 4.2.2
+2026-06-15T19:34:53.6060035Z + @types/nprogress 0.2.3
+2026-06-15T19:34:53.6060577Z + @types/qrcode 1.5.6
+2026-06-15T19:34:53.6061136Z + @upstash/redis 1.36.0
+2026-06-15T19:34:53.6062260Z + @vercel/postgres 0.10.0
+2026-06-15T19:34:53.6062652Z + @vidstack/react 1.12.13
+2026-06-15T19:34:53.6063241Z + @xmldom/xmldom 0.9.10
+2026-06-15T19:34:53.6063814Z + anime4k-webgpu 1.0.0
+2026-06-15T19:34:53.6064386Z + artplayer 5.4.0
+2026-06-15T19:34:53.6065136Z + artplayer-plugin-auto-thumbnail 1.1.0
+2026-06-15T19:34:53.6065873Z + artplayer-plugin-danmuku 5.2.0
+2026-06-15T19:34:53.6066318Z + better-sqlite3 12.6.2
+2026-06-15T19:34:53.6066619Z + bs58 6.0.0
+2026-06-15T19:34:53.6066885Z + cheerio 1.1.2
+2026-06-15T19:34:53.6067161Z + clsx 2.1.1
+2026-06-15T19:34:53.6067435Z + crypto-js 4.2.0
+2026-06-15T19:34:53.6067813Z + edge-tts-universal 1.4.0
+2026-06-15T19:34:53.6068121Z + flv.js 1.6.2
+2026-06-15T19:34:53.6068408Z + framer-motion 12.23.26
+2026-06-15T19:34:53.6068698Z + he 1.2.0
+2026-06-15T19:34:53.6068952Z + hls.js 1.6.15
+2026-06-15T19:34:53.6069253Z + https-proxy-agent 7.0.6
+2026-06-15T19:34:53.6069586Z + lucide-react 0.438.0
+2026-06-15T19:34:53.6069903Z + media-icons 1.1.5
+2026-06-15T19:34:53.6070201Z + mux.js 6.3.0
+2026-06-15T19:34:53.6070456Z + nanoid 5.1.6
+2026-06-15T19:34:53.6070707Z + next 14.2.35
+2026-06-15T19:34:53.6070962Z + next-pwa 5.6.0
+2026-06-15T19:34:53.6071242Z + next-themes 0.4.6
+2026-06-15T19:34:53.6071538Z + node-fetch 2.7.0
+2026-06-15T19:34:53.6072127Z + nodemailer 7.0.12
+2026-06-15T19:34:53.6072416Z + nprogress 0.2.0
+2026-06-15T19:34:53.6072699Z + opencc-js 1.0.5
+2026-06-15T19:34:53.6073007Z + parse-torrent-name 0.5.4
+2026-06-15T19:34:53.6073308Z + qrcode 1.5.4
+2026-06-15T19:34:53.6073563Z + react 18.3.1
+2026-06-15T19:34:53.6073826Z + react-dom 18.3.1
+2026-06-15T19:34:53.6074109Z + react-icons 5.5.0
+2026-06-15T19:34:53.6074399Z + react-markdown 10.1.0
+2026-06-15T19:34:53.6074686Z + redis 4.7.1
+2026-06-15T19:34:53.6074950Z + server-only 0.0.1
+2026-06-15T19:34:53.6075219Z + sharp 0.34.5
+2026-06-15T19:34:53.6075486Z + socket.io 4.8.3
+2026-06-15T19:34:53.6075771Z + socket.io-client 4.8.3
+2026-06-15T19:34:53.6076059Z + swiper 11.2.10
+2026-06-15T19:34:53.6076341Z + tailwind-merge 2.6.0
+2026-06-15T19:34:53.6076628Z + vidstack 0.6.15
+2026-06-15T19:34:53.6076889Z + xml2js 0.6.2
+2026-06-15T19:34:53.6077138Z + xpath 0.0.34
+2026-06-15T19:34:53.6077385Z + zod 3.25.76
+2026-06-15T19:34:53.6077528Z 
+2026-06-15T19:34:53.6077653Z devDependencies:
+2026-06-15T19:34:53.6077979Z + @opennextjs/cloudflare 1.15.1
+2026-06-15T19:34:53.6078308Z + @svgr/webpack 8.1.0
+2026-06-15T19:34:53.6078607Z + @tailwindcss/forms 0.5.11
+2026-06-15T19:34:53.6079236Z + @tailwindcss/typography 0.5.19
+2026-06-15T19:34:53.6079609Z + @testing-library/jest-dom 5.17.0
+2026-06-15T19:34:53.6079979Z + @testing-library/react 15.0.7
+2026-06-15T19:34:53.6080327Z + @types/better-sqlite3 7.6.13
+2026-06-15T19:34:53.6080740Z + @types/bs58 5.0.0
+2026-06-15T19:34:53.6081078Z + @types/he 1.2.3
+2026-06-15T19:34:53.6081359Z + @types/node 24.0.3
+2026-06-15T19:34:53.6082126Z + @types/node-fetch 2.6.13
+2026-06-15T19:34:53.6082575Z + @types/nodemailer 7.0.5
+2026-06-15T19:34:53.6082898Z + @types/pg 8.16.0
+2026-06-15T19:34:53.6083202Z + @types/react 18.3.27
+2026-06-15T19:34:53.6083516Z + @types/react-dom 19.2.3
+2026-06-15T19:34:53.6083891Z + @types/testing-library__jest-dom 5.14.9
+2026-06-15T19:34:53.6084260Z + @types/xml2js 0.4.14
+2026-06-15T19:34:53.6084628Z + @typescript-eslint/eslint-plugin 5.62.0
+2026-06-15T19:34:53.6085032Z + @typescript-eslint/parser 5.62.0
+2026-06-15T19:34:53.6085376Z + autoprefixer 10.4.23
+2026-06-15T19:34:53.6085662Z + eslint 8.57.1
+2026-06-15T19:34:53.6085964Z + eslint-config-next 14.2.35
+2026-06-15T19:34:53.6086343Z + eslint-config-prettier 8.10.2
+2026-06-15T19:34:53.6086732Z + eslint-plugin-simple-import-sort 7.0.0
+2026-06-15T19:34:53.6087151Z + eslint-plugin-unused-imports 2.0.0
+2026-06-15T19:34:53.6087481Z + jest 27.5.1
+2026-06-15T19:34:53.6087764Z + next-router-mock 0.9.13
+2026-06-15T19:34:53.6088058Z + postcss 8.5.6
+2026-06-15T19:34:53.6088326Z + prettier 2.8.8
+2026-06-15T19:34:53.6088656Z + prettier-plugin-tailwindcss 0.5.14
+2026-06-15T19:34:53.6089001Z + tailwindcss 3.4.19
+2026-06-15T19:34:53.6089519Z + typescript 4.9.5
+2026-06-15T19:34:53.6089809Z + vercel 50.4.10
+2026-06-15T19:34:53.6090097Z + webpack-obfuscator 3.6.0
+2026-06-15T19:34:53.6090285Z 
+2026-06-15T19:34:53.6347916Z Done in 4.3s using pnpm v10.14.0

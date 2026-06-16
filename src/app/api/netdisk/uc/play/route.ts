@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getAuthInfoFromCookie } from '@/lib/auth';
 import { getUCNetdiskSession, refreshUCNetdiskSession } from '@/lib/netdisk/uc-session-cache';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 export async function GET(request: NextRequest) {
   try {

@@ -9,7 +9,7 @@ import {
   isWebPushConfigured,
 } from '@/lib/web-push';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 function extractSubscriptionKeys(subscription: any) {
   const p256dh = subscription?.keys?.p256dh || subscription?.toJSON?.()?.keys?.p256dh;

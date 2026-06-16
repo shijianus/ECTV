@@ -10,7 +10,7 @@ import {
   TOKEN_CONFIG,
 } from '@/lib/refresh-token';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
 // 生成签名

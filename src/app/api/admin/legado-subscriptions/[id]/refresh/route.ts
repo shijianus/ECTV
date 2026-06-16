@@ -6,7 +6,7 @@ import { getConfig, setCachedConfig } from '@/lib/config';
 import { db } from '@/lib/db';
 import { legadoSubscriptionStore } from '@/lib/legado/subscription-store';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 async function ensureAdmin(request: NextRequest) {
   const authInfo = getAuthInfoFromCookie(request);

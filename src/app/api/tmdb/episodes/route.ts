@@ -7,7 +7,7 @@ import { getAuthInfoFromCookie } from '@/lib/auth';
 import { getConfig } from '@/lib/config';
 import { getTVSeasonDetails } from '@/lib/tmdb.search';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 /**
  * GET /api/tmdb/episodes?id=xxx&season=xxx

@@ -15,7 +15,7 @@ import {
   refreshMobileNetdiskSession,
 } from '@/lib/netdisk/mobile-session-cache';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 export async function GET(request: NextRequest) {
   try {

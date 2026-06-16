@@ -1,0 +1,34 @@
+﻿2026-06-15T19:34:34.4943043Z Current runner version: '2.335.1'
+2026-06-15T19:34:34.4979726Z ##[group]Runner Image Provisioner
+2026-06-15T19:34:34.4981222Z Hosted Compute Agent
+2026-06-15T19:34:34.4982703Z Version: 20260527.539
+2026-06-15T19:34:34.4984089Z Commit: a891dd388383b896fa6ac04a82c0b75cec981078
+2026-06-15T19:34:34.4985617Z Build Date: 2026-05-27T21:39:57Z
+2026-06-15T19:34:34.4987131Z Worker ID: {c96963f7-c1ee-4afe-bd88-76d78aa5388e}
+2026-06-15T19:34:34.4988502Z Azure Region: eastus
+2026-06-15T19:34:34.4989918Z ##[endgroup]
+2026-06-15T19:34:34.4992760Z ##[group]Operating System
+2026-06-15T19:34:34.4994209Z Ubuntu
+2026-06-15T19:34:34.4995181Z 24.04.4
+2026-06-15T19:34:34.4996442Z LTS
+2026-06-15T19:34:34.4997472Z ##[endgroup]
+2026-06-15T19:34:34.4998710Z ##[group]Runner Image
+2026-06-15T19:34:34.5000016Z Image: ubuntu-24.04
+2026-06-15T19:34:34.5001201Z Version: 20260607.184.1
+2026-06-15T19:34:34.5003600Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260607.184/images/ubuntu/Ubuntu2404-Readme.md
+2026-06-15T19:34:34.5006873Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260607.184
+2026-06-15T19:34:34.5008877Z ##[endgroup]
+2026-06-15T19:34:34.5011396Z ##[group]GITHUB_TOKEN Permissions
+2026-06-15T19:34:34.5014480Z Contents: read
+2026-06-15T19:34:34.5015775Z Deployments: write
+2026-06-15T19:34:34.5016933Z Metadata: read
+2026-06-15T19:34:34.5018008Z ##[endgroup]
+2026-06-15T19:34:34.5021229Z Secret source: Actions
+2026-06-15T19:34:34.5023060Z Prepare workflow directory
+2026-06-15T19:34:34.5491658Z Prepare all required actions
+2026-06-15T19:34:34.5547867Z Getting action download info
+2026-06-15T19:34:35.4152369Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381a***6eb***3914f8d5)
+2026-06-15T19:34:35.4891006Z Download action repository 'pnpm/action-setup@v4' (SHA:b906affcce14559a***aafd4ab0e942779e9f58b1)
+2026-06-15T19:34:35.6763951Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642***e84afbd3f7d6820020)
+2026-06-15T19:34:35.8237999Z Download action repository 'cloudflare/wrangler-action@v3' (SHA:9acf94ace14e7dc412b076f2c5c20b8ce93c79cd)
+2026-06-15T19:34:36.0460584Z Complete job name: Deploy to Cloudflare Pages

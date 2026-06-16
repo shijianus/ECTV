@@ -8,7 +8,7 @@ import { createBaiduNetdiskSession } from '@/lib/netdisk/baidu-session-cache';
 import { NETDISK_BAIDU_SOURCE } from '@/lib/netdisk/source';
 import { hasFeaturePermission } from '@/lib/permissions';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 export async function POST(request: NextRequest) {
   try {

@@ -8,7 +8,7 @@ import { listTianyiShareVideos } from '@/lib/netdisk/tianyi.client';
 import { createTianyiNetdiskSession } from '@/lib/netdisk/tianyi-session-cache';
 import { hasFeaturePermission } from '@/lib/permissions';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 export async function POST(request: NextRequest) {
   try {

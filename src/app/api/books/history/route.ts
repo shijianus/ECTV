@@ -6,7 +6,7 @@ import { db } from '@/lib/db';
 
 import { getAuthorizedBooksUsername } from '../_utils';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 export async function GET(request: NextRequest) {
   const username = await getAuthorizedBooksUsername(request);

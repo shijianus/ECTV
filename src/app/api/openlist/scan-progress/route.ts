@@ -7,7 +7,7 @@ import { getAuthInfoFromCookie } from '@/lib/auth';
 import { requireFeaturePermission } from '@/lib/permissions';
 import { getScanTask } from '@/lib/scan-task';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 /**
  * GET /api/openlist/scan-progress?taskId=xxx

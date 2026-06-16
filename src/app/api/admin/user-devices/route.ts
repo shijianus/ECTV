@@ -11,7 +11,7 @@ import {
   revokeRefreshToken,
 } from '@/lib/refresh-token';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 async function getOperatorRole(username: string): Promise<'owner' | 'admin' | 'user'> {
   if (username === process.env.USERNAME) return 'owner';

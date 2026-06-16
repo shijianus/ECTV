@@ -5,7 +5,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { fetchDoubanData } from '@/lib/douban';
 import { fetchDoubanWithVerification } from '@/lib/douban-anti-crawler';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 interface DoubanRecommendation {
   doubanId: string;

@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 import { getAuthInfoFromCookie } from '@/lib/auth';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 /**
  * 获取TVBOX订阅配置

@@ -6,7 +6,7 @@ import { ensureUCPlayFolder, getUCPlayUrls, saveUCShareFile } from '@/lib/netdis
 import { refreshUCNetdiskSession } from '@/lib/netdisk/uc-session-cache';
 import { resolveUCSession } from '@/lib/netdisk/uc-session-resolver';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 export async function GET(request: NextRequest) {
   try {

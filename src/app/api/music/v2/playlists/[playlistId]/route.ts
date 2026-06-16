@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { db } from '@/lib/db';
 import { badRequest, getMusicV2Username, internalError, unauthorized } from '@/lib/music-v2-api';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 export async function PATCH(request: NextRequest, { params }: { params: Promise<{ playlistId: string }> }) {
   const username = await getMusicV2Username(request);

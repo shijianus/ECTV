@@ -6,7 +6,7 @@ import { getConfig } from '@/lib/config';
 import { transferQuarkShare } from '@/lib/netdisk/quark.client';
 import { hasFeaturePermission } from '@/lib/permissions';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 export async function POST(request: NextRequest) {
   try {

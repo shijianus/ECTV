@@ -9,7 +9,7 @@ import { db } from '@/lib/db';
 import { CURRENT_VERSION } from '@/lib/version';
 import { updateProgress, clearProgress } from '@/lib/data-migration-progress';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 /**
  * 使用 CompressionStream 进行 gzip 压缩 (Edge 运行时兼容)

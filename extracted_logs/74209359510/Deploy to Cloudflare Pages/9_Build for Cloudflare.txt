@@ -1,0 +1,216 @@
+﻿2026-06-15T19:34:53.7407019Z ##[group]Run pnpm run build:cloudflare
+2026-06-15T19:34:53.7407435Z [36;1mpnpm run build:cloudflare[0m
+2026-06-15T19:34:53.7435950Z shell: /usr/bin/bash -e {0}
+2026-06-15T19:34:53.7436491Z env:
+2026-06-15T19:34:53.7436934Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-06-15T19:34:53.7437346Z   BUILD_TARGET: cloudflare
+2026-06-15T19:34:53.7437688Z   NODE_ENV: production
+2026-06-15T19:34:53.7438130Z   NEXT_PUBLIC_STORAGE_TYPE: ***
+2026-06-15T19:34:53.7438475Z   NEXT_PUBLIC_SITE_NAME: ***
+2026-06-15T19:34:53.7438797Z   NEXT_PUBLIC_SEARCH_MAX_PAGE: 
+2026-06-15T19:34:53.7439266Z   NEXT_PUBLIC_DOUBAN_PROXY_TYPE: 
+2026-06-15T19:34:53.7439607Z   NEXT_PUBLIC_DOUBAN_PROXY: 
+2026-06-15T19:34:53.7439933Z   NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE: 
+2026-06-15T19:34:53.7440434Z   NEXT_PUBLIC_DOUBAN_IMAGE_PROXY: 
+2026-06-15T19:34:53.7440789Z   NEXT_PUBLIC_DISABLE_YELLOW_FILTER: 
+2026-06-15T19:34:53.7441134Z   NEXT_PUBLIC_FLUID_SEARCH: 
+2026-06-15T19:34:53.7441585Z   NEXT_PUBLIC_PROXY_M3U8_TOKEN: 
+2026-06-15T19:34:53.7442146Z   NEXT_PUBLIC_DANMAKU_CACHE_EXPIRE_MINUTES: 
+2026-06-15T19:34:53.7442581Z   NEXT_PUBLIC_VOICE_CHAT_STRATEGY: 
+2026-06-15T19:34:53.7443222Z   NEXT_PUBLIC_ENABLE_OFFLINE_DOWNLOAD: 
+2026-06-15T19:34:53.7443626Z   NEXT_PUBLIC_ENABLE_SOURCE_SEARCH: ***
+2026-06-15T19:34:53.7444141Z   USERNAME: ***
+2026-06-15T19:34:53.7444446Z   PASSWORD: ***
+2026-06-15T19:34:53.7444726Z   UPSTASH_URL: 
+2026-06-15T19:34:53.7445042Z   UPSTASH_TOKEN: 
+2026-06-15T19:34:53.7447143Z   TMDB_API_KEY: ***
+2026-06-15T19:34:53.7447512Z   TMDB_PROXY: ***
+2026-06-15T19:34:53.7447907Z   TMDB_REVERSE_PROXY: 
+2026-06-15T19:34:53.7448214Z   DANMAKU_API_BASE: 
+2026-06-15T19:34:53.7448508Z   DANMAKU_API_TOKEN: 
+2026-06-15T19:34:53.7448912Z   ANNOUNCEMENT: 
+2026-06-15T19:34:53.7449228Z   CRON_PASSWORD: 
+2026-06-15T19:34:53.7449507Z   SITE_BASE: 
+2026-06-15T19:34:53.7449778Z   REDIS_URL: 
+2026-06-15T19:34:53.7450172Z   KVROCKS_URL: 
+2026-06-15T19:34:53.7450458Z   INIT_CONFIG: 
+2026-06-15T19:34:53.7450866Z   CONFIG_SUBSCRIPTION_URL: 
+2026-06-15T19:34:53.7451325Z   ENABLE_TVBOX_SUBSCRIBE: 
+2026-06-15T19:34:53.7451911Z   TVBOX_SUBSCRIBE_TOKEN: 
+2026-06-15T19:34:53.7452273Z   WATCH_ROOM_ENABLED: ***
+2026-06-15T19:34:53.7452748Z   WATCH_ROOM_EXTERNAL_SERVER_AUTH: 
+2026-06-15T19:34:53.7453110Z   WATCH_ROOM_EXTERNAL_SERVER_URL: 
+2026-06-15T19:34:53.7453426Z   WATCH_ROOM_SERVER_TYPE: 
+2026-06-15T19:34:53.7453835Z ##[endgroup]
+2026-06-15T19:34:54.0397904Z 
+2026-06-15T19:34:54.0398839Z > moontv@0.1.0 build:cloudflare /home/runner/work/***/***
+2026-06-15T19:34:54.0400331Z > BUILD_TARGET=cloudflare pnpm gen:manifest && BUILD_TARGET=cloudflare npx @opennextjs/cloudflare build
+2026-06-15T19:34:54.0401175Z 
+2026-06-15T19:34:54.3389893Z 
+2026-06-15T19:34:54.3390731Z > moontv@0.1.0 gen:manifest /home/runner/work/***/***
+2026-06-15T19:34:54.3391518Z > node scripts/generate-manifest.js
+2026-06-15T19:34:54.3392122Z 
+2026-06-15T19:34:54.3651522Z ✅ Generated manifest.json with site name: ***
+2026-06-15T19:34:55.5483982Z npm warn Unknown env config "verify-deps-before-run". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-15T19:34:55.5487252Z npm warn Unknown env config "_jsr-registry". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-15T19:35:01.4158748Z 
+2026-06-15T19:35:01.4159918Z ┌─────────────────────────────┐
+2026-06-15T19:35:01.4160841Z │ OpenNext — Cloudflare build │
+2026-06-15T19:35:01.4161627Z └─────────────────────────────┘
+2026-06-15T19:35:01.4162302Z 
+2026-06-15T19:35:01.4926067Z App directory: /home/runner/work/***/***
+2026-06-15T19:35:01.4926955Z Next.js version : 14.2.35
+2026-06-15T19:35:01.4939821Z @opennextjs/cloudflare version: 1.15.1
+2026-06-15T19:35:01.4940563Z @opennextjs/aws version: 3.9.12
+2026-06-15T19:35:01.4948524Z 
+2026-06-15T19:35:01.4949260Z ┌─────────────────────────────────┐
+2026-06-15T19:35:01.4949915Z │ OpenNext — Building Next.js app │
+2026-06-15T19:35:01.4950525Z └─────────────────────────────────┘
+2026-06-15T19:35:01.4951178Z 
+2026-06-15T19:35:01.7886821Z 
+2026-06-15T19:35:01.7887840Z > moontv@0.1.0 build /home/runner/work/***/***
+2026-06-15T19:35:01.7888836Z > pnpm gen:manifest && next build
+2026-06-15T19:35:01.7889414Z 
+2026-06-15T19:35:02.0847227Z 
+2026-06-15T19:35:02.0848325Z > moontv@0.1.0 gen:manifest /home/runner/work/***/***
+2026-06-15T19:35:02.0849611Z > node scripts/generate-manifest.js
+2026-06-15T19:35:02.0850004Z 
+2026-06-15T19:35:02.1134025Z ✅ Generated manifest.json with site name: ***
+2026-06-15T19:35:02.6089907Z ⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+2026-06-15T19:35:02.6377327Z Attention: Next.js now collects completely anonymous telemetry regarding usage.
+2026-06-15T19:35:02.6379519Z This information is used to shape Next.js' roadmap and prioritize features.
+2026-06-15T19:35:02.6381619Z You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+2026-06-15T19:35:02.6383368Z https://nextjs.org/telemetry
+2026-06-15T19:35:02.6383769Z 
+2026-06-15T19:35:02.6885710Z   ▲ Next.js 14.2.35
+2026-06-15T19:35:02.6887005Z   - Experiments (use with caution):
+2026-06-15T19:35:02.6888182Z     · webpackBuildWorker
+2026-06-15T19:35:02.6888558Z 
+2026-06-15T19:35:02.7232021Z    Creating an optimized production build ...
+2026-06-15T19:35:29.8299392Z <w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (135kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+2026-06-15T19:35:30.7960283Z Failed to compile.
+2026-06-15T19:35:30.7960814Z 
+2026-06-15T19:35:30.7961466Z ./node_modules/.pnpm/xml2js@0.6.2/node_modules/xml2js/lib/parser.js:17:1
+2026-06-15T19:35:30.7962832Z Module not found: Can't resolve 'timers'
+2026-06-15T19:35:30.7963302Z 
+2026-06-15T19:35:30.7963785Z https://nextjs.org/docs/messages/module-not-found
+2026-06-15T19:35:30.7964309Z 
+2026-06-15T19:35:30.7964712Z Import trace for requested module:
+2026-06-15T19:35:30.7965764Z ./node_modules/.pnpm/xml2js@0.6.2/node_modules/xml2js/lib/xml2js.js
+2026-06-15T19:35:30.7966706Z ./src/lib/opds.client.ts
+2026-06-15T19:35:30.7967421Z ./src/lib/book-provider.ts
+2026-06-15T19:35:30.7968384Z ./src/app/api/books/catalog/route.ts
+2026-06-15T19:35:30.8012563Z ./node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/webpack/loaders/next-edge-app-route-loader/index.js?absolutePagePath=private-next-app-dir%2Fapi%2Fbooks%2Fcatalog%2Froute.ts&page=%2Fapi%2Fbooks%2Fcatalog%2Froute&appDirLoader=bmV4dC1hcHAtbG9hZGVyP25hbWU9YXBwJTJGYXBpJTJGYm9va3MlMkZjYXRhbG9nJTJGcm91dGUmcGFnZT0lMkZhcGklMkZib29rcyUyRmNhdGFsb2clMkZyb3V0ZSZwYWdlUGF0aD1wcml2YXRlLW5leHQtYXBwLWRpciUyRmFwaSUyRmJvb2tzJTJGY2F0YWxvZyUyRnJvdXRlLnRzJmFwcERpcj0lMkZob21lJTJGcnVubmVyJTJGd29yayUyRkVDVFYlMkZF***JTJGc3JjJTJGYXBwJmFwcFBhdGhzPSUyRmFwaSUyRmJvb2tzJTJGY2F0YWxvZyUyRnJvdXRlJnBhZ2VFeHRlbnNpb25zPXRzeCZwYWdlRXh0ZW5zaW9ucz10cyZwYWdlRXh0ZW5zaW9ucz1qc3gmcGFnZUV4dGVuc2lvbnM9anMmYmFzZVBhdGg9JmFzc2V0UHJlZml4PSZuZXh0Q29uZmlnT3V0cHV0PXN0YW5kYWxvbmUmcHJlZmVycmVkUmVnaW9uPSZtaWRkbGV3YXJlQ29uZmlnPWUzMCUzRCE%3D&nextConfigOutput=standalone&preferredRegion=&middlewareConfig=e30%3D!
+2026-06-15T19:35:30.8022045Z 
+2026-06-15T19:35:30.8022245Z ./src/lib/db.ts:202:16
+2026-06-15T19:35:30.8022667Z Module not found: Can't resolve 'path'
+2026-06-15T19:35:30.8023463Z [0m [90m 200 |[39m   [90m// 开发环境：better-sqlite3[39m[0m
+2026-06-15T19:35:30.8024399Z [0m [90m 201 |[39m   [36mconst[39m [33mDatabase[39m [33m=[39m require([32m'better-sqlite3'[39m)[33m;[39m[0m
+2026-06-15T19:35:30.8025498Z [0m[31m[1m>[22m[39m[90m 202 |[39m   [36mconst[39m path [33m=[39m require([32m'path'[39m)[33m;[39m[0m
+2026-06-15T19:35:30.8026274Z [0m [90m     |[39m                [31m[1m^[22m[39m[0m
+2026-06-15T19:35:30.8026750Z [0m [90m 203 |[39m[0m
+2026-06-15T19:35:30.8027226Z [0m [90m 204 |[39m   [36mconst[39m dbPath [33m=[39m[0m
+2026-06-15T19:35:30.8028256Z [0m [90m 205 |[39m     process[33m.[39menv[33m.[39m[33mSQLITE_DB_PATH[39m [33m||[39m[0m
+2026-06-15T19:35:30.8028834Z 
+2026-06-15T19:35:30.8029196Z https://nextjs.org/docs/messages/module-not-found
+2026-06-15T19:35:30.8029619Z 
+2026-06-15T19:35:30.8029900Z Import trace for requested module:
+2026-06-15T19:35:30.8030623Z ./src/app/api/admin/config_file/route.ts
+2026-06-15T19:35:30.8039982Z ./node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/webpack/loaders/next-edge-app-route-loader/index.js?absolutePagePath=private-next-app-dir%2Fapi%2Fadmin%2Fconfig_file%2Froute.ts&page=%2Fapi%2Fadmin%2Fconfig_file%2Froute&appDirLoader=bmV4dC1hcHAtbG9hZGVyP25hbWU9YXBwJTJGYXBpJTJGYWRtaW4lMkZjb25maWdfZmlsZSUyRnJvdXRlJnBhZ2U9JTJGYXBpJTJGYWRtaW4lMkZjb25maWdfZmlsZSUyRnJvdXRlJnBhZ2VQYXRoPXByaXZhdGUtbmV4dC1hcHAtZGlyJTJGYXBpJTJGYWRtaW4lMkZjb25maWdfZmlsZSUyRnJvdXRlLnRzJmFwcERpcj0lMkZob21lJTJGcnVubmVyJTJGd29yayUyRkVDVFYlMkZF***JTJGc3JjJTJGYXBwJmFwcFBhdGhzPSUyRmFwaSUyRmFkbWluJTJGY29uZmlnX2ZpbGUlMkZyb3V0ZSZwYWdlRXh0ZW5zaW9ucz10c3gmcGFnZUV4dGVuc2lvbnM9dHMmcGFnZUV4dGVuc2lvbnM9anN4JnBhZ2VFeHRlbnNpb25zPWpzJmJhc2VQYXRoPSZhc3NldFByZWZpeD0mbmV4dENvbmZpZ091dHB1dD1zdGFuZGFsb25lJnByZWZlcnJlZFJlZ2lvbj0mbWlkZGxld2FyZUNvbmZpZz1lMzAlM0Qh&nextConfigOutput=standalone&preferredRegion=&middlewareConfig=e30%3D!
+2026-06-15T19:35:30.8045961Z 
+2026-06-15T19:35:30.8046160Z ./src/lib/legado.client.ts:5:1
+2026-06-15T19:35:30.8046545Z Module not found: Can't resolve 'vm'
+2026-06-15T19:35:30.8047692Z [0m [90m 3 |[39m [36mimport[39m crypto [36mfrom[39m [32m'crypto'[39m[33m;[39m[0m
+2026-06-15T19:35:30.8048507Z [0m [90m 4 |[39m [36mimport[39m he [36mfrom[39m [32m'he'[39m[33m;[39m[0m
+2026-06-15T19:35:30.8049307Z [0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m vm [36mfrom[39m [32m'vm'[39m[33m;[39m[0m
+2026-06-15T19:35:30.8049900Z [0m [90m   |[39m [31m[1m^[22m[39m[0m
+2026-06-15T19:35:30.8050635Z [0m [90m 6 |[39m [36mimport[39m { [33mDOMParser[39m } [36mfrom[39m [32m'@xmldom/xmldom'[39m[33m;[39m[0m
+2026-06-15T19:35:30.8051461Z [0m [90m 7 |[39m [36mimport[39m xpath [36mfrom[39m [32m'xpath'[39m[33m;[39m[0m
+2026-06-15T19:35:30.8052286Z [0m [90m 8 |[39m[0m
+2026-06-15T19:35:30.8052466Z 
+2026-06-15T19:35:30.8052698Z https://nextjs.org/docs/messages/module-not-found
+2026-06-15T19:35:30.8052962Z 
+2026-06-15T19:35:30.8053138Z Import trace for requested module:
+2026-06-15T19:35:30.8053532Z ./src/app/api/books/read/chapters/route.ts
+2026-06-15T19:35:30.8061939Z ./node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/webpack/loaders/next-edge-app-route-loader/index.js?absolutePagePath=private-next-app-dir%2Fapi%2Fbooks%2Fread%2Fchapters%2Froute.ts&page=%2Fapi%2Fbooks%2Fread%2Fchapters%2Froute&appDirLoader=bmV4dC1hcHAtbG9hZGVyP25hbWU9YXBwJTJGYXBpJTJGYm9va3MlMkZyZWFkJTJGY2hhcHRlcnMlMkZyb3V0ZSZwYWdlPSUyRmFwaSUyRmJvb2tzJTJGcmVhZCUyRmNoYXB0ZXJzJTJGcm91dGUmcGFnZVBhdGg9cHJpdmF0ZS1uZXh0LWFwcC1kaXIlMkZhcGklMkZib29rcyUyRnJlYWQlMkZjaGFwdGVycyUyRnJvdXRlLnRzJmFwcERpcj0lMkZob21lJTJGcnVubmVyJTJGd29yayUyRkVDVFYlMkZF***JTJGc3JjJTJGYXBwJmFwcFBhdGhzPSUyRmFwaSUyRmJvb2tzJTJGcmVhZCUyRmNoYXB0ZXJzJTJGcm91dGUmcGFnZUV4dGVuc2lvbnM9dHN4JnBhZ2VFeHRlbnNpb25zPXRzJnBhZ2VFeHRlbnNpb25zPWpzeCZwYWdlRXh0ZW5zaW9ucz1qcyZiYXNlUGF0aD0mYXNzZXRQcmVmaXg9Jm5leHRDb25maWdPdXRwdXQ9c3RhbmRhbG9uZSZwcmVmZXJyZWRSZWdpb249Jm1pZGRsZXdhcmVDb25maWc9ZTMwJTNEIQ%3D%3D&nextConfigOutput=standalone&preferredRegion=&middlewareConfig=e30%3D!
+2026-06-15T19:35:30.8067583Z 
+2026-06-15T19:35:30.8067741Z ./src/lib/live.ts:184:26
+2026-06-15T19:35:30.8068110Z Module not found: Can't resolve 'zlib'
+2026-06-15T19:35:30.8090882Z [0m [90m 182 |[39m[0m
+2026-06-15T19:35:30.8092022Z [0m [90m 183 |[39m       [90m// 使用 zlib 解压[39m[0m
+2026-06-15T19:35:30.8093610Z [0m[31m[1m>[22m[39m[90m 184 |[39m       [36mconst[39m zlib [33m=[39m [36mawait[39m [36mimport[39m([32m'zlib'[39m)[33m;[39m[0m
+2026-06-15T19:35:30.8095250Z [0m [90m     |[39m                          [31m[1m^[22m[39m[0m
+2026-06-15T19:35:30.8097066Z [0m [90m 185 |[39m       [36mconst[39m decompressed [33m=[39m zlib[33m.[39mgunzipSync([33mBuffer[39m[33m.[39m[36mfrom[39m(allChunks))[33m;[39m[0m
+2026-06-15T19:35:30.8098357Z [0m [90m 186 |[39m[0m
+2026-06-15T19:35:30.8099289Z [0m [90m 187 |[39m       [90m// 创建一个新的 ReadableStream 从解压后的数据[39m[0m
+2026-06-15T19:35:30.8099808Z 
+2026-06-15T19:35:30.8100216Z https://nextjs.org/docs/messages/module-not-found
+2026-06-15T19:35:30.8100671Z 
+2026-06-15T19:35:30.8100968Z Import trace for requested module:
+2026-06-15T19:35:30.8101616Z ./src/app/api/admin/live/route.ts
+2026-06-15T19:35:30.8117079Z ./node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/webpack/loaders/next-edge-app-route-loader/index.js?absolutePagePath=private-next-app-dir%2Fapi%2Fadmin%2Flive%2Froute.ts&page=%2Fapi%2Fadmin%2Flive%2Froute&appDirLoader=bmV4dC1hcHAtbG9hZGVyP25hbWU9YXBwJTJGYXBpJTJGYWRtaW4lMkZsaXZlJTJGcm91dGUmcGFnZT0lMkZhcGklMkZhZG1pbiUyRmxpdmUlMkZyb3V0ZSZwYWdlUGF0aD1wcml2YXRlLW5leHQtYXBwLWRpciUyRmFwaSUyRmFkbWluJTJGbGl2ZSUyRnJvdXRlLnRzJmFwcERpcj0lMkZob21lJTJGcnVubmVyJTJGd29yayUyRkVDVFYlMkZF***JTJGc3JjJTJGYXBwJmFwcFBhdGhzPSUyRmFwaSUyRmFkbWluJTJGbGl2ZSUyRnJvdXRlJnBhZ2VFeHRlbnNpb25zPXRzeCZwYWdlRXh0ZW5zaW9ucz10cyZwYWdlRXh0ZW5zaW9ucz1qc3gmcGFnZUV4dGVuc2lvbnM9anMmYmFzZVBhdGg9JmFzc2V0UHJlZml4PSZuZXh0Q29uZmlnT3V0cHV0PXN0YW5kYWxvbmUmcHJlZmVycmVkUmVnaW9uPSZtaWRkbGV3YXJlQ29uZmlnPWUzMCUzRCE%3D&nextConfigOutput=standalone&preferredRegion=&middlewareConfig=e30%3D!
+2026-06-15T19:35:30.8127402Z 
+2026-06-15T19:35:30.8127844Z ./src/lib/pancheck/vendor/checkers/http.ts:3:1
+2026-06-15T19:35:30.8128581Z Module not found: Can't resolve 'http'
+2026-06-15T19:35:30.8129189Z Did you mean './http'?
+2026-06-15T19:35:30.8130071Z Requests that should resolve in the current directory need to start with './'.
+2026-06-15T19:35:30.8148918Z Requests that start with a name are treated as module requests and resolve within module directories (node_modules, /home/runner/work/***/***/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/bin/node_modules, /home/runner/work/***/***/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/node_modules, /home/runner/work/***/***/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/node_modules, /home/runner/work/***/***/node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules, /home/runner/work/***/***/node_modules/.pnpm/node_modules, /home/runner/setup-pnpm/node_modules/.pnpm/pnpm@10.14.0/node_modules/pnpm/bin/node_modules, /home/runner/setup-pnpm/node_modules/.pnpm/pnpm@10.14.0/node_modules/pnpm/node_modules, /home/runner/setup-pnpm/node_modules/.pnpm/pnpm@10.14.0/node_modules, /home/runner/setup-pnpm/node_modules/.pnpm/node_modules, /home/runner/work/***/***/node_modules/.pnpm/@opennextjs+cloudflare@1.15.1_next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18_717cb6cbd55da02b8be163864df0144d/node_modules/@opennextjs/cloudflare/dist/cli/node_modules, /home/runner/work/***/***/node_modules/.pnpm/@opennextjs+cloudflare@1.15.1_next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18_717cb6cbd55da02b8be163864df0144d/node_modules/@opennextjs/cloudflare/dist/node_modules, /home/runner/work/***/***/node_modules/.pnpm/@opennextjs+cloudflare@1.15.1_next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18_717cb6cbd55da02b8be163864df0144d/node_modules/@opennextjs/cloudflare/node_modules, /home/runner/work/***/***/node_modules/.pnpm/@opennextjs+cloudflare@1.15.1_next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18_717cb6cbd55da02b8be163864df0144d/node_modules/@opennextjs/node_modules, /home/runner/work/***/***/node_modules/.pnpm/@opennextjs+cloudflare@1.15.1_next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18_717cb6cbd55da02b8be163864df0144d/node_modules, /home/runner/work/***/***).
+2026-06-15T19:35:30.8164389Z If changing the source code is not an option there is also a resolve options called 'preferRelative' which tries to resolve these kind of requests in the current directory too.
+2026-06-15T19:35:30.8166060Z [0m [90m 1 |[39m [90m// @ts-nocheck[39m[0m
+2026-06-15T19:35:30.8166743Z [0m [90m 2 |[39m[0m
+2026-06-15T19:35:30.8167864Z [0m[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m http [36mfrom[39m [32m'http'[39m[33m;[39m[0m
+2026-06-15T19:35:30.8168906Z [0m [90m   |[39m [31m[1m^[22m[39m[0m
+2026-06-15T19:35:30.8169979Z [0m [90m 4 |[39m [36mimport[39m https [36mfrom[39m [32m'https'[39m[33m;[39m[0m
+2026-06-15T19:35:30.8170852Z [0m [90m 5 |[39m[0m
+2026-06-15T19:35:30.8173165Z [0m [90m 6 |[39m [36mexport[39m [36mconst[39m [33mDEFAULT_UA[39m [33m=[39m [32m'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'[39m[33m;[39m[0m
+2026-06-15T19:35:30.8174465Z 
+2026-06-15T19:35:30.8174859Z https://nextjs.org/docs/messages/module-not-found
+2026-06-15T19:35:30.8175677Z 
+2026-06-15T19:35:30.8175982Z Import trace for requested module:
+2026-06-15T19:35:30.8176682Z ./src/lib/pancheck/vendor/checkers/pan115.ts
+2026-06-15T19:35:30.8177343Z ./src/lib/pancheck/index.ts
+2026-06-15T19:35:30.8177941Z ./src/lib/netdisk-check-task.ts
+2026-06-15T19:35:30.8178597Z ./src/app/api/netdisk/check/cancel/route.ts
+2026-06-15T19:35:30.8196575Z ./node_modules/.pnpm/next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/webpack/loaders/next-edge-app-route-loader/index.js?absolutePagePath=private-next-app-dir%2Fapi%2Fnetdisk%2Fcheck%2Fcancel%2Froute.ts&page=%2Fapi%2Fnetdisk%2Fcheck%2Fcancel%2Froute&appDirLoader=bmV4dC1hcHAtbG9hZGVyP25hbWU9YXBwJTJGYXBpJTJGbmV0ZGlzayUyRmNoZWNrJTJGY2FuY2VsJTJGcm91dGUmcGFnZT0lMkZhcGklMkZuZXRkaXNrJTJGY2hlY2slMkZjYW5jZWwlMkZyb3V0ZSZwYWdlUGF0aD1wcml2YXRlLW5leHQtYXBwLWRpciUyRmFwaSUyRm5ldGRpc2slMkZjaGVjayUyRmNhbmNlbCUyRnJvdXRlLnRzJmFwcERpcj0lMkZob21lJTJGcnVubmVyJTJGd29yayUyRkVDVFYlMkZF***JTJGc3JjJTJGYXBwJmFwcFBhdGhzPSUyRmFwaSUyRm5ldGRpc2slMkZjaGVjayUyRmNhbmNlbCUyRnJvdXRlJnBhZ2VFeHRlbnNpb25zPXRzeCZwYWdlRXh0ZW5zaW9ucz10cyZwYWdlRXh0ZW5zaW9ucz1qc3gmcGFnZUV4dGVuc2lvbnM9anMmYmFzZVBhdGg9JmFzc2V0UHJlZml4PSZuZXh0Q29uZmlnT3V0cHV0PXN0YW5kYWxvbmUmcHJlZmVycmVkUmVnaW9uPSZtaWRkbGV3YXJlQ29uZmlnPWUzMCUzRCE%3D&nextConfigOutput=standalone&preferredRegion=&middlewareConfig=e30%3D!
+2026-06-15T19:35:30.8207978Z 
+2026-06-15T19:35:30.8207991Z 
+2026-06-15T19:35:30.8208321Z > Build failed because of webpack errors
+2026-06-15T19:35:30.9262909Z  ELIFECYCLE  Command failed with exit code 1.
+2026-06-15T19:35:30.9469791Z opennextjs-cloudflare build
+2026-06-15T19:35:30.9470438Z 
+2026-06-15T19:35:30.9470945Z Build an OpenNext Cloudflare worker
+2026-06-15T19:35:30.9471637Z 
+2026-06-15T19:35:30.9472191Z Options:
+2026-06-15T19:35:30.9473326Z       --help                        Show help                          [boolean]
+2026-06-15T19:35:30.9475005Z       --version                     Show version number                [boolean]
+2026-06-15T19:35:30.9476411Z   -c, --config                      Path to Wrangler configuration file [string]
+2026-06-15T19:35:30.9478019Z       --configPath                  Path to Wrangler configuration file
+2026-06-15T19:35:30.9479402Z                                                            [deprecated] [string]
+2026-06-15T19:35:30.9480373Z   -e, --env                         Wrangler environment to use for operations
+2026-06-15T19:35:30.9481243Z                                                                         [string]
+2026-06-15T19:35:30.9482060Z   -s, --skipNextBuild, --skipBuild  Skip building the Next.js app
+2026-06-15T19:35:30.9482729Z                                                       [boolean] [default: ***]
+2026-06-15T19:35:30.9483298Z       --noMinify                    Disable worker minification
+2026-06-15T19:35:30.9483865Z                                                       [boolean] [default: ***]
+2026-06-15T19:35:30.9484773Z       --skipWranglerConfigCheck     Skip checking for a Wrangler config
+2026-06-15T19:35:30.9485411Z                                                       [boolean] [default: ***]
+2026-06-15T19:35:30.9486021Z       --openNextConfigPath          Path to the OpenNext configuration file
+2026-06-15T19:35:30.9486625Z                                                                         [string]
+2026-06-15T19:35:30.9486930Z 
+2026-06-15T19:35:30.9487153Z Error: Command failed: pnpm build
+2026-06-15T19:35:30.9487624Z     at genericNodeError (node:internal/errors:985:15)
+2026-06-15T19:35:30.9488129Z     at wrappedFn (node:internal/errors:539:14)
+2026-06-15T19:35:30.9488629Z     at checkExecSyncError (node:child_process:925:11)
+2026-06-15T19:35:30.9489139Z     at Object.execSync (node:child_process:997:15)
+2026-06-15T19:35:30.9490538Z     at buildNextjsApp (file:///home/runner/work/***/***/node_modules/.pnpm/@opennextjs+aws@3.9.12_next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18.3.1__react@18.3.1_/node_modules/@opennextjs/aws/dist/build/buildNextApp.js:15:8)
+2026-06-15T19:35:30.9493354Z     at build (file:///home/runner/work/***/***/node_modules/.pnpm/@opennextjs+cloudflare@1.15.1_next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18_717cb6cbd55da02b8be163864df0144d/node_modules/@opennextjs/cloudflare/dist/cli/build/build.js:48:9)
+2026-06-15T19:35:30.9495588Z     at async buildCommand (file:///home/runner/work/***/***/node_modules/.pnpm/@opennextjs+cloudflare@1.15.1_next@14.2.35_@babel+core@7.28.5_react-dom@18.3.1_react@18_717cb6cbd55da02b8be163864df0144d/node_modules/@opennextjs/cloudflare/dist/cli/commands/build.js:21:5) {
+2026-06-15T19:35:30.9496789Z   status: 1,
+2026-06-15T19:35:30.9497088Z   signal: null,
+2026-06-15T19:35:30.9497561Z   output: [ null, null, null ],
+2026-06-15T19:35:30.9498020Z   pid: 2472,
+2026-06-15T19:35:30.9498282Z   stdout: null,
+2026-06-15T19:35:30.9498576Z   stderr: null
+2026-06-15T19:35:30.9498834Z }
+2026-06-15T19:35:31.0284439Z  ELIFECYCLE  Command failed with exit code 1.
+2026-06-15T19:35:31.0490240Z ##[error]Process completed with exit code 1.

@@ -11,7 +11,7 @@ import {
   revokeRefreshToken,
 } from '@/lib/refresh-token';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 // 获取所有设备
 export async function GET(request: NextRequest) {

@@ -38,7 +38,7 @@ interface DoubanDetailApiResponse {
   [key: string]: any; // 允许其他字段
 }
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);

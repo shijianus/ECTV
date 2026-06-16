@@ -9,7 +9,7 @@ import { requireFeaturePermission } from '@/lib/permissions';
 import { OpenListClient } from '@/lib/openlist.client';
 import { invalidateVideoInfoCache } from '@/lib/openlist-cache';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 /**
  * POST /api/openlist/refresh-video

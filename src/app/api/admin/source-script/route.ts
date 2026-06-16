@@ -15,7 +15,7 @@ import {
   toggleSourceScriptEnabled,
 } from '@/lib/source-script';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 async function assertAdmin(request: NextRequest) {
   const storageType = process.env.NEXT_PUBLIC_STORAGE_TYPE || 'localstorage';

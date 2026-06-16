@@ -12,7 +12,7 @@ import {
 import { getTMDBImageUrl } from '@/lib/tmdb.search';
 import { yellowWords } from '@/lib/yellow';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
 /**

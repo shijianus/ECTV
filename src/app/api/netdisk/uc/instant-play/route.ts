@@ -8,7 +8,7 @@ import { listUCShareVideos } from '@/lib/netdisk/uc.client';
 import { createUCNetdiskSession } from '@/lib/netdisk/uc-session-cache';
 import { hasFeaturePermission } from '@/lib/permissions';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 export async function POST(request: NextRequest) {
   try {

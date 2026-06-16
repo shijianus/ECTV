@@ -8,7 +8,7 @@ import { getConfig } from '@/lib/config';
 import { db } from '@/lib/db';
 import { XiaoyaClient } from '@/lib/xiaoya.client';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 /**
  * POST /api/admin/xiaoya

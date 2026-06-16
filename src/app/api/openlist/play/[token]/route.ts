@@ -8,7 +8,7 @@ import { getConfig } from '@/lib/config';
 import { OpenListClient } from '@/lib/openlist.client';
 import { hasFeaturePermission } from '@/lib/permissions';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 /**
  * GET /api/openlist/play/{token}?folder=xxx&fileName=xxx

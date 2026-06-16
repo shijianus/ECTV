@@ -11,7 +11,7 @@ import {
   parseScriptSourceValue,
 } from '@/lib/source-script';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 export async function GET(request: NextRequest) {
   const authInfo = getAuthInfoFromCookie(request);

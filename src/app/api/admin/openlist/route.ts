@@ -8,7 +8,7 @@ import { getConfig } from '@/lib/config';
 import { db } from '@/lib/db';
 import { OpenListClient } from '@/lib/openlist.client';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 /**
  * 清理字符串中的 BOM 和其他不可见字符

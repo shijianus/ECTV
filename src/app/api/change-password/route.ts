@@ -8,7 +8,7 @@ import { getStorage } from '@/lib/db';
 import { db } from '@/lib/db';
 import { getUserDevices, revokeRefreshToken } from '@/lib/refresh-token';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 export async function POST(request: NextRequest) {
   const storageType = process.env.NEXT_PUBLIC_STORAGE_TYPE || 'localstorage';

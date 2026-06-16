@@ -7,7 +7,7 @@ import { requireFeaturePermission } from '@/lib/permissions';
 import { getConfig } from '@/lib/config';
 import { PansouLink, searchPansou } from '@/lib/pansou.client';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 export async function POST(request: NextRequest) {
   try {

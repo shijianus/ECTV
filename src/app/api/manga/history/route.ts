@@ -6,7 +6,7 @@ import { MangaReadRecord } from '@/lib/manga.types';
 
 import { getAuthorizedUsername } from '../_utils';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 export async function GET(request: NextRequest) {
   const username = await getAuthorizedUsername(request);

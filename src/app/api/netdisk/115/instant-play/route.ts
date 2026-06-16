@@ -8,7 +8,7 @@ import { createPan115NetdiskSession } from '@/lib/netdisk/pan115-session-cache';
 import { NETDISK_115_SOURCE } from '@/lib/netdisk/source';
 import { hasFeaturePermission } from '@/lib/permissions';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 export async function POST(request: NextRequest) {
   try {

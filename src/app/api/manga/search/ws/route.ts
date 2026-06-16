@@ -5,7 +5,7 @@ import { suwayomiClient } from '@/lib/suwayomi.client';
 
 import { getAuthorizedUsername } from '../../_utils';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 function sse(data: unknown): string {
   return `data: ${JSON.stringify(data)}\n\n`;

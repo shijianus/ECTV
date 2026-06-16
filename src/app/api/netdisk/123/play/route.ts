@@ -11,7 +11,7 @@ import {
   refreshPan123NetdiskSession,
 } from '@/lib/netdisk/pan123-session-cache';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 export async function GET(request: NextRequest) {
   try {

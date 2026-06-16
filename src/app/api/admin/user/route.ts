@@ -8,7 +8,7 @@ import { getConfig } from '@/lib/config';
 import { db } from '@/lib/db';
 import { sanitizeFeaturePermissions } from '@/lib/feature-permissions';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 // 支持的操作类型
 const ACTIONS = [

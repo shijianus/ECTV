@@ -9,7 +9,7 @@ import { requireFeaturePermission } from '@/lib/permissions';
 import { MusicPlayRecord } from '@/lib/db.client';
 import { getCachedSongs, setCachedSong } from '@/lib/music-song-cache';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 export async function GET(request: NextRequest) {
   try {

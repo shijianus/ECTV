@@ -7,7 +7,7 @@ import { API_CONFIG, getCacheTime, getConfig } from '@/lib/config';
 import { getDuanjuSources, isDuanjuTypeName } from '@/lib/duanju';
 import { yellowWords } from '@/lib/yellow';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 interface CmsClassResponse {
   class?: Array<{

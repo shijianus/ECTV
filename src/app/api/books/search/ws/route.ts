@@ -5,7 +5,7 @@ import { bookProvider } from '@/lib/book-provider';
 
 import { getAuthorizedBooksUsername } from '../../_utils';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 function sse(data: unknown): string {
   return `data: ${JSON.stringify(data)}\n\n`;
