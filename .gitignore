@@ -1,0 +1,17 @@
+# 依賴與建置產物
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+
+# 環境變數（密碼等機密，不進版控）
+.env
+.env.*
+!.env.example
+
+# 系統檔
+.DS_Store
+Thumbs.db
+
+# 日誌
+*.log

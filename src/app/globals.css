@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ECTV 全域基底：預設暗色深海軍藍 */
+:root {
+  color-scheme: dark;
+  --ectv-brand: #2e7cf6;
+  --ectv-accent: #22d3ee;
+  --ectv-abyss: #050b18;
+  --ectv-deep: #0a1428;
+}
+
+html.dark body {
+  background-color: #050b18;
+  color: #eaf2ff;
+  font-family: Inter, system-ui, -apple-system, 'PingFang SC',
+    'Microsoft YaHei', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgba(46, 124, 246, 0.4);
+}
+
+/* 細滾動條（深色主題） */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e2f55;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2e7cf6;
+}
+
+/* 隱藏滾動條（橫滑排專用） */
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
