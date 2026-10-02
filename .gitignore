@@ -4,6 +4,9 @@ node_modules/
 out/
 *.tsbuildinfo
 
+# 本地開發資料庫（better-sqlite3）
+.data/
+
 # 環境變數（密碼等機密，不進版控）
 .env
 .env.*
@@ -15,3 +18,4 @@ Thumbs.db
 
 # 日誌
 *.log
+.tunnel-url

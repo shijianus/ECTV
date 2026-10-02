@@ -17,6 +17,10 @@ html.dark body {
   font-family: Inter, system-ui, -apple-system, 'PingFang SC',
     'Microsoft YaHei', sans-serif;
   -webkit-font-smoothing: antialiased;
+  /* 移動端：去掉點擊灰色閃爍、雙擊縮放延遲、字體自動放大 */
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  -webkit-text-size-adjust: 100%;
 }
 
 ::selection {

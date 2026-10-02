@@ -20,7 +20,7 @@ const TABS = [
   },
   {
     label: '收藏',
-    href: '/favorites',
+    href: '/watchlist',
     icon: (
       <path strokeLinecap="round" strokeLinejoin="round" d="M4.3 12.5l5 5L19.7 7l-1.4-1.4a2 2 0 00-2.8 0l-6.2 6.2-3.6-3.6a2 2 0 00-2.8 0L4.3 12.5zM4 20h16" />
     ),

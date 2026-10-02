@@ -33,8 +33,7 @@ export default function Footer() {
           <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-fog">
             <Link href="/" className="hover:text-brand-300 transition-colors">首頁</Link>
             <Link href="/search" className="hover:text-brand-300 transition-colors">搜尋</Link>
-            <Link href="/favorites" className="hover:text-brand-300 transition-colors">收藏</Link>
-            <Link href="/admin" className="hover:text-brand-300 transition-colors">管理</Link>
+            <Link href="/watchlist" className="hover:text-brand-300 transition-colors">收藏</Link>
           </nav>
         </div>
 

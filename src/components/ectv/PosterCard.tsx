@@ -14,7 +14,7 @@ interface PosterCardProps {
  */
 export default function PosterCard({
   item,
-  detailHref = (it) => `/detail?id=${encodeURIComponent(it.id)}&source=douban`,
+  detailHref = (it) => `/detail?id=${encodeURIComponent(it.id)}&source=douban&title=${encodeURIComponent(it.title)}`,
 }: PosterCardProps) {
   return (
     <Link

@@ -108,7 +108,7 @@ export default async function HomePage() {
           <div className="pt-24">
             <EmptyState
               title="深海影院尚未開幕"
-              hint="沒有拉取到任何影片資料。請先前往管理後台配置片源（或編輯 config.json 添加 API 站點），再回來開場。"
+              hint="沒有拉取到任何影片資料。請檢查網路連線後重新整理，或使用上方搜尋直接找片。"
             />
           </div>
         )}

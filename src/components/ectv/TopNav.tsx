@@ -11,6 +11,7 @@ const NAV_LINKS = [
   { label: '電影', href: '/douban?type=movie' },
   { label: '劇集', href: '/douban?type=tv' },
   { label: '動漫', href: '/douban?type=anime' },
+  { label: '片單', href: '/watchlist' },
   { label: '直播', href: '/live' },
 ];
 
@@ -79,7 +80,7 @@ export default function TopNav() {
             value={keyword}
             onChange={(e) => setKeyword(e.target.value)}
             placeholder="搜尋電影、劇集…"
-            className="w-44 focus:w-64 transition-all duration-300 bg-surface/70 border border-edge rounded-full pl-9 pr-4 py-1.5 text-sm text-mist placeholder:text-dim outline-none focus:border-brand-500/70 focus:ring-2 focus:ring-brand-500/20"
+            className="w-44 focus:w-64 transition-all duration-300 bg-surface/70 border border-edge rounded-full pl-9 pr-4 py-1.5 text-base text-mist placeholder:text-dim outline-none focus:border-brand-500/70 focus:ring-2 focus:ring-brand-500/20"
           />
           <svg
             className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-dim"

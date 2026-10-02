@@ -6,6 +6,7 @@ import EctvLogo from '@/components/ectv/EctvLogo';
 
 export default function LoginPage() {
   const router = useRouter();
+  const [username, setUsername] = useState('admin');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -19,14 +20,15 @@ export default function LoginPage() {
       const res = await fetch('/api/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ password }),
+        // 帳號＋密碼：資料庫模式需要 username，localstorage 模式會忽略 username
+        body: JSON.stringify({ username: username.trim(), password }),
       });
       const data = await res.json().catch(() => ({}));
       if (res.ok && (data.ok ?? true)) {
         router.replace('/');
         router.refresh();
       } else {
-        setError(data.message || '密碼錯誤，請重試');
+        setError(data.error || data.message || '帳號或密碼錯誤，請重試');
       }
     } catch {
       setError('連線失敗，請檢查網路後重試');
@@ -46,13 +48,21 @@ export default function LoginPage() {
           className="rounded-2xl border border-white/10 bg-deep/80 backdrop-blur p-8 shadow-[0_0_60px_-15px_rgba(46,124,246,0.4)]"
         >
           <h1 className="text-xl font-bold text-mist text-center">歡迎回到 ECTV</h1>
-          <p className="text-sm text-fog text-center mt-1 mb-6">請輸入密碼進入你的深海影城</p>
+          <p className="text-sm text-fog text-center mt-1 mb-6">請登入進入你的深海影城</p>
+          <input
+            type="text"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            placeholder="帳號"
+            autoComplete="username"
+            className="w-full rounded-xl bg-abyss border border-white/10 px-4 py-3 text-mist placeholder:text-fog/60 outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/30 transition mb-3"
+          />
           <input
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="密碼"
-            autoFocus
+            autoComplete="current-password"
             className="w-full rounded-xl bg-abyss border border-white/10 px-4 py-3 text-mist placeholder:text-fog/60 outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/30 transition"
           />
           {error && <p className="text-sm text-red-400 mt-3">{error}</p>}
